@@ -176,7 +176,7 @@ export function Landing() {
             <ShareBar label="Research papers" value={stats?.shareP ?? 0} color="#e0623a" />
             <p className="font-display text-2xl leading-snug text-paper sm:text-3xl">
               Every year, <span className="num text-[#e0623a]">{stats ? fmtCount(stats.missed) : "…"}</span> of these children are born with a
-              disease a heel-prick test can catch, in a country that doesn't test for it.
+              disease a heel-prick test can catch, in a country whose national programme doesn't screen for it.
             </p>
             <p className="text-sm text-paper/60">
               Share in the 14 countries outside Western Europe and the US · {stats ? fmtCount(stats.tot) : "…"} expected births a year ·
