@@ -2,7 +2,7 @@
  "gene": "GALC",
  "gene_id": "ENSG00000054983",
  "dataset": "gnomad_r4",
- "retrieved_at": "2026-10-03T19:55:01+00:00",
+ "retrieved_at": "2026-10-03T22:45:44+00:00",
  "max_an": {
   "afr": 75068,
   "amr": 60034,
@@ -11152,6 +11152,2556 @@
      1146842
     ]
    }
+  }
+ ],
+ "clinvar_plp": [
+  {
+   "id": "14-87934734-A-G",
+   "hgvsc": "c.2056T>C",
+   "hgvsp": "p.Ter686GlnextTer42",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87934760-TC-T",
+   "hgvsc": "c.2029del",
+   "hgvsp": "p.Asp677ThrfsTer12",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87934787-G-A",
+   "hgvsc": "c.2003C>T",
+   "hgvsp": "p.Thr668Ile",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87934788-T-C",
+   "hgvsc": "c.2002A>G",
+   "hgvsp": "p.Thr668Ala",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87934788-T-G",
+   "hgvsc": "c.2002A>C",
+   "hgvsp": "p.Thr668Pro",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87934801-C-T",
+   "hgvsc": "c.1989G>A",
+   "hgvsp": "p.Trp663Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87934802-CA-C",
+   "hgvsc": "c.1987del",
+   "hgvsp": "p.Trp663GlyfsTer26",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87934812-T-A",
+   "hgvsc": "c.1978A>T",
+   "hgvsp": "p.Lys660Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87934825-AG-A",
+   "hgvsc": "c.1964del",
+   "hgvsp": "p.Pro655LeufsTer2",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87934838-C-T",
+   "hgvsc": "c.1952G>A",
+   "hgvsp": "p.Trp651Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87934856-A-C",
+   "hgvsc": "c.1934T>G",
+   "hgvsp": "p.Leu645Arg",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87934877-C-A",
+   "hgvsc": "c.1913G>T",
+   "hgvsp": "p.Gly638Val",
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87934879-C-G",
+   "hgvsc": "c.1912-1G>C",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87939899-ACTTAC-A",
+   "hgvsc": "c.1911+1_1911+5del",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87939904-C-T",
+   "hgvsc": "c.1911+1G>A",
+   "hgvsp": null,
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87939914-TA-T",
+   "hgvsc": "c.1901del",
+   "hgvsp": "p.Leu634Ter",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87939915-AACGTG-A",
+   "hgvsc": "c.1896_1900del",
+   "hgvsp": "p.Thr633AsnfsTer3",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87939915-A-G",
+   "hgvsc": "c.1901T>C",
+   "hgvsp": "p.Leu634Ser",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87939918-G-A",
+   "hgvsc": "c.1898C>T",
+   "hgvsp": "p.Thr633Met",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87939918-G-C",
+   "hgvsc": "c.1898C>G",
+   "hgvsp": "p.Thr633Arg",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87939918-G-GT",
+   "hgvsc": "c.1897dup",
+   "hgvsp": "p.Thr633AsnfsTer5",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87939921-AGTGTATACCATTTTTTT-A",
+   "hgvsc": "c.1878_1894del",
+   "hgvsp": "p.Lys627HisfsTer5",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87939926-A-T",
+   "hgvsc": "c.1890T>A",
+   "hgvsp": "p.Tyr630Ter",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87939927-TACCATTTTTTTGCTGTA-T",
+   "hgvsc": "c.1872_1888del",
+   "hgvsp": "p.Thr625TyrfsTer7",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87939928-AC-A",
+   "hgvsc": "c.1887del",
+   "hgvsp": "p.Trp629CysfsTer6",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87939930-CATTT-C",
+   "hgvsc": "c.1882_1885del",
+   "hgvsp": "p.Lys628GlyfsTer6",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87939931-A-AT",
+   "hgvsc": "c.1884dup",
+   "hgvsp": "p.Trp629MetfsTer9",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87939931-AT-A",
+   "hgvsc": "c.1884del",
+   "hgvsp": "p.Lys628AsnfsTer7",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87939934-T-A",
+   "hgvsc": "c.1882A>T",
+   "hgvsp": "p.Lys628Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87939958-C-T",
+   "hgvsc": "c.1858G>A",
+   "hgvsp": "p.Gly620Arg",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87939962-AG-A",
+   "hgvsc": "c.1853del",
+   "hgvsp": "p.Ala618ValfsTer2",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87939964-CA-C",
+   "hgvsc": "c.1851del",
+   "hgvsp": "p.Tyr617Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87939974-C-T",
+   "hgvsc": "c.1842G>A",
+   "hgvsp": "p.Trp614Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87939979-C-A",
+   "hgvsc": "c.1837G>T",
+   "hgvsp": "p.Gly613Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87939982-C-T",
+   "hgvsc": "c.1835-1G>A",
+   "hgvsp": null,
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87941394-C-T",
+   "hgvsc": "c.1834+1G>A",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87941400-T-G",
+   "hgvsc": "c.1829A>C",
+   "hgvsp": "p.Asp610Ala",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87941407-T-TA",
+   "hgvsc": "c.1821dup",
+   "hgvsp": "p.Thr608TyrfsTer3",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87941413-T-TG",
+   "hgvsc": "c.1815dup",
+   "hgvsp": "p.Arg606GlnfsTer5",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87941414-G-GT",
+   "hgvsc": "c.1814dup",
+   "hgvsp": "p.Tyr605Ter",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87941433-A-C",
+   "hgvsc": "c.1796T>G",
+   "hgvsp": "p.Ile599Ser",
+   "clinvar": "Pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87941436-C-T",
+   "hgvsc": "c.1793G>A",
+   "hgvsp": "p.Trp598Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87941448-C-A",
+   "hgvsc": "c.1781G>T",
+   "hgvsp": "p.Gly594Val",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87941461-T-A",
+   "hgvsc": "c.1768A>T",
+   "hgvsp": "p.Arg590Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87941465-CAA-C",
+   "hgvsc": "c.1762_1763del",
+   "hgvsp": "p.Leu588AspfsTer2",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87941465-CA-C",
+   "hgvsc": "c.1763del",
+   "hgvsp": "p.Leu588Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87941472-C-T",
+   "hgvsc": "c.1757G>A",
+   "hgvsp": "p.Gly586Asp",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87941476-C-A",
+   "hgvsc": "c.1753G>T",
+   "hgvsp": "p.Gly585Cys",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87941489-TCCTG-T",
+   "hgvsc": "c.1736_1739del",
+   "hgvsp": "p.Ala579GlufsTer3",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87941493-G-T",
+   "hgvsc": "c.1736C>A",
+   "hgvsp": "p.Ala579Glu",
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87941505-C-CA",
+   "hgvsc": "c.1723_1724insT",
+   "hgvsp": "p.Gly575ValfsTer10",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87941511-G-GT",
+   "hgvsc": "c.1717dup",
+   "hgvsp": "p.Thr573AsnfsTer12",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87941516-A-AG",
+   "hgvsc": "c.1712dup",
+   "hgvsp": "p.Asp572Ter",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87941529-T-G",
+   "hgvsc": "c.1700A>C",
+   "hgvsp": "p.Tyr567Ser",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87941539-A-C",
+   "hgvsc": "c.1690T>G",
+   "hgvsp": "p.Cys564Gly",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87941541-T-TTTATAAAA",
+   "hgvsc": "c.1687_1688insTTTTATAA",
+   "hgvsp": "p.Lys563IlefsTer3",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87941544-A-T",
+   "hgvsc": "c.1685T>A",
+   "hgvsp": "p.Ile562Lys",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87941552-AT-A",
+   "hgvsc": "c.1676del",
+   "hgvsp": "p.Asn559IlefsTer2",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87941558-C-T",
+   "hgvsc": "c.1671G>A",
+   "hgvsp": "p.Trp557Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87941559-C-T",
+   "hgvsc": "c.1671-1G>A",
+   "hgvsp": null,
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87941560-T-C",
+   "hgvsc": "c.1671-2A>G",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87945551-A-C",
+   "hgvsc": "c.1670+2T>G",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87945551-A-T",
+   "hgvsc": "c.1670+2T>A",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87945552-C-A",
+   "hgvsc": "c.1670+1G>T",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87945552-C-T",
+   "hgvsc": "c.1670+1G>A",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87945558-G-C",
+   "hgvsc": "c.1665C>G",
+   "hgvsp": "p.Tyr555Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87945566-C-T",
+   "hgvsc": "c.1657G>A",
+   "hgvsp": "p.Gly553Arg",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87945574-C-CT",
+   "hgvsc": "c.1648dup",
+   "hgvsp": "p.Ser550LysfsTer16",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87945593-C-T",
+   "hgvsc": "c.1630G>A",
+   "hgvsp": "p.Asp544Asn",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87945600-C-T",
+   "hgvsc": "c.1623G>A",
+   "hgvsp": "p.Trp541Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87945605-T-TA",
+   "hgvsc": "c.1617dup",
+   "hgvsp": "p.Thr540TyrfsTer26",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87945610-G-CTGCTGAGT",
+   "hgvsc": "c.1613delinsACTCAGCAG",
+   "hgvsp": "p.Pro538HisfsTer18",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87945617-G-A",
+   "hgvsc": "c.1606C>T",
+   "hgvsp": "p.Gln536Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87945629-G-A",
+   "hgvsc": "c.1594C>T",
+   "hgvsp": "p.Gln532Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87945631-C-A",
+   "hgvsc": "c.1592G>T",
+   "hgvsp": "p.Arg531Leu",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87945631-C-T",
+   "hgvsc": "c.1592G>A",
+   "hgvsp": "p.Arg531His",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87945632-G-A",
+   "hgvsc": "c.1591C>T",
+   "hgvsp": "p.Arg531Cys",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87945637-G-A",
+   "hgvsc": "c.1586C>T",
+   "hgvsp": "p.Thr529Met",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87945651-GC-G",
+   "hgvsc": "c.1571del",
+   "hgvsp": "p.Gly524AlafsTer29",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87945680-C-T",
+   "hgvsc": "c.1543G>A",
+   "hgvsp": "p.Glu515Lys",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87945691-GT-G",
+   "hgvsc": "c.1531del",
+   "hgvsp": "p.Thr511LeufsTer42",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87945716-C-A",
+   "hgvsc": "c.1507G>T",
+   "hgvsp": "p.Glu503Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947725-CACCA-C",
+   "hgvsc": "c.1488_1489+2del",
+   "hgvsp": null,
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87947727-C-G",
+   "hgvsc": "c.1489+1G>C",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947727-C-T",
+   "hgvsc": "c.1489+1G>A",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947744-CT-C",
+   "hgvsc": "c.1472del",
+   "hgvsp": "p.Lys491ArgfsTer62",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87947749-A-T",
+   "hgvsc": "c.1468T>A",
+   "hgvsp": "p.Tyr490Asn",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87947751-G-GT",
+   "hgvsc": "c.1465dup",
+   "hgvsp": "p.Thr489AsnfsTer3",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947761-AGGGCT-A",
+   "hgvsc": "c.1451_1455del",
+   "hgvsp": "p.Gln484LeufsTer6",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947766-TG-T",
+   "hgvsc": "c.1450del",
+   "hgvsp": "p.Gln484SerfsTer69",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947767-G-A",
+   "hgvsc": "c.1450C>T",
+   "hgvsp": "p.Gln484Ter",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87947779-G-GA",
+   "hgvsc": "c.1437dup",
+   "hgvsp": "p.Pro480SerfsTer12",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947783-CG-C",
+   "hgvsc": "c.1433del",
+   "hgvsp": "p.Pro478ArgfsTer75",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947784-GGGTAGCTGCCTTTGCGACCAGT-G",
+   "hgvsc": "c.1411_1432del",
+   "hgvsp": "p.Thr471ArgfsTer75",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947790-C-CT",
+   "hgvsc": "c.1426dup",
+   "hgvsp": "p.Ser476LysfsTer16",
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87947797-T-A",
+   "hgvsc": "c.1420A>T",
+   "hgvsp": "p.Lys474Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947817-G-GT",
+   "hgvsc": "c.1399dup",
+   "hgvsp": "p.Thr467AsnfsTer25",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947817-G-T",
+   "hgvsc": "c.1400C>A",
+   "hgvsp": "p.Thr467Asn",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947823-G-A",
+   "hgvsc": "c.1394C>T",
+   "hgvsp": "p.Thr465Ile",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947848-TCA-T",
+   "hgvsc": "c.1367_1368del",
+   "hgvsp": "p.Leu456GlnfsTer4",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947850-AGT-A",
+   "hgvsc": "c.1365_1366del",
+   "hgvsp": "p.Leu456GlufsTer4",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947855-G-GA",
+   "hgvsc": "c.1361dup",
+   "hgvsp": "p.Thr455HisfsTer6",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87947879-C-A",
+   "hgvsc": "c.1339-1G>T",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87949844-C-A",
+   "hgvsc": "c.1338+1G>T",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87949844-C-G",
+   "hgvsc": "c.1338+1G>C",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87949846-CAT-C",
+   "hgvsc": "c.1335_1336del",
+   "hgvsp": "p.Trp446AlafsTer3",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87949858-AGCTGCTTAAAAAGAAATCTTTCGGATGTTTTTCCAAGTTT-A",
+   "hgvsc": "c.1285_1324del",
+   "hgvsp": "p.Lys429TrpfsTer15",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87949862-G-A",
+   "hgvsc": "c.1321C>T",
+   "hgvsp": "p.Gln441Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87949865-T-A",
+   "hgvsc": "c.1318A>T",
+   "hgvsp": "p.Lys440Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87949885-G-GA",
+   "hgvsc": "c.1297_1298insT",
+   "hgvsp": "p.Thr433IlefsTer8",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87949885-G-GT",
+   "hgvsc": "c.1297dup",
+   "hgvsp": "p.Thr433AsnfsTer8",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87949892-C-A",
+   "hgvsc": "c.1291G>T",
+   "hgvsp": "p.Gly431Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87949906-C-T",
+   "hgvsc": "c.1277G>A",
+   "hgvsp": "p.Trp426Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87949907-A-C",
+   "hgvsc": "c.1276T>G",
+   "hgvsp": "p.Trp426Gly",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87949909-AC-A",
+   "hgvsc": "c.1273del",
+   "hgvsp": "p.Val425TyrfsTer32",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87949909-A-AC",
+   "hgvsc": "c.1273dup",
+   "hgvsp": "p.Val425GlyfsTer16",
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87949910-C-CCTA",
+   "hgvsc": "c.1272_1273insTAG",
+   "hgvsp": "p.Gln424_Val425insTer",
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87949913-G-A",
+   "hgvsc": "c.1270C>T",
+   "hgvsp": "p.Gln424Ter",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87949920-TGGTATTTCACTCTG-T",
+   "hgvsc": "c.1252-3_1262del",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87949932-C-G",
+   "hgvsc": "c.1252-1G>C",
+   "hgvsp": null,
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87949933-T-C",
+   "hgvsc": "c.1252-2A>G",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87950654-C-G",
+   "hgvsc": "c.1251+5G>C",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87950657-AC-A",
+   "hgvsc": "c.1251+1del",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87950658-C-G",
+   "hgvsc": "c.1251+1G>C",
+   "hgvsp": null,
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87950658-C-T",
+   "hgvsc": "c.1251+1G>A",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87950667-C-T",
+   "hgvsc": "c.1243G>A",
+   "hgvsp": "p.Gly415Arg",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87950670-T-A",
+   "hgvsc": "c.1240A>T",
+   "hgvsp": "p.Lys414Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87950679-AG-A",
+   "hgvsc": "c.1230del",
+   "hgvsp": "p.Phe411LeufsTer46",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87950724-G-A",
+   "hgvsc": "c.1186C>T",
+   "hgvsp": "p.Arg396Trp",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87950724-G-GT",
+   "hgvsc": "c.1185dup",
+   "hgvsp": "p.Arg396ThrfsTer19",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87950731-CT-C",
+   "hgvsc": "c.1178del",
+   "hgvsp": "p.Lys393SerfsTer64",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87950735-GAATG-T",
+   "hgvsc": "c.1171_1175delinsA",
+   "hgvsp": "p.His391IlefsTer65",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87950735-GA-G",
+   "hgvsc": "c.1174del",
+   "hgvsp": "p.Ser392LeufsTer65",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87950742-T-A",
+   "hgvsc": "c.1168A>T",
+   "hgvsp": "p.Lys390Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87950749-C-T",
+   "hgvsc": "c.1162-1G>A",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87950750-T-C",
+   "hgvsc": "c.1162-2A>G",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87950750-T-A",
+   "hgvsc": "c.1162-2A>T",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87963382-A-T",
+   "hgvsc": "c.1161+2T>A",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87963382-A-C",
+   "hgvsc": "c.1161+2T>G",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87963382-AC-A",
+   "hgvsc": "c.1161+1del",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87963392-C-A",
+   "hgvsc": "c.1153G>T",
+   "hgvsp": "p.Glu385Ter",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87963394-A-T",
+   "hgvsc": "c.1151T>A",
+   "hgvsp": "p.Ile384Asn",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87963414-TAAGC-ATCAGT",
+   "hgvsc": "c.1127_1131delinsACTGAT",
+   "hgvsp": "p.Gly376AspfsTer2",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87963415-A-AAGCCATC",
+   "hgvsc": "c.1123_1129dup",
+   "hgvsp": "p.Leu377Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87963436-T-C",
+   "hgvsc": "c.1109A>G",
+   "hgvsp": "p.Tyr370Cys",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87963438-G-C",
+   "hgvsc": "c.1107C>G",
+   "hgvsp": "p.Ser369Arg",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87963443-C-A",
+   "hgvsc": "c.1102G>T",
+   "hgvsp": "p.Gly368Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87963460-CCAACTGTCTT-C",
+   "hgvsc": "c.1075_1084del",
+   "hgvsp": "p.Lys359AlafsTer3",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87963461-C-CA",
+   "hgvsc": "c.1083dup",
+   "hgvsp": "p.Gly362TrpfsTer14",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87963477-A-C",
+   "hgvsc": "c.1068T>G",
+   "hgvsp": "p.Tyr356Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87963480-C-T",
+   "hgvsc": "c.1065G>A",
+   "hgvsp": "p.Trp355Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87963512-C-G",
+   "hgvsc": "c.1034-1G>C",
+   "hgvsp": null,
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87963513-T-C",
+   "hgvsc": "c.1034-2A>G",
+   "hgvsp": null,
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87965504-C-T",
+   "hgvsc": "c.1033+1G>A",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87965507-G-C",
+   "hgvsc": "c.1031C>G",
+   "hgvsp": "p.Ser344Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87965507-G-T",
+   "hgvsc": "c.1031C>A",
+   "hgvsp": "p.Ser344Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87965516-AC-A",
+   "hgvsc": "c.1021del",
+   "hgvsp": "p.Val341SerfsTer18",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87965525-TC-T",
+   "hgvsc": "c.1012del",
+   "hgvsp": "p.Glu338AsnfsTer21",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87965526-C-A",
+   "hgvsc": "c.1012G>T",
+   "hgvsp": "p.Glu338Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87965530-CACGT-C",
+   "hgvsc": "c.1004_1007del",
+   "hgvsp": "p.Tyr335TrpfsTer2",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87965532-CGTAGTGCCCACTCCATGGCTCCTGGGCCGTCATCAACCCGCATCTCCCATAAGGCAACTGTTCATA-C",
+   "hgvsc": "c.940_1005del",
+   "hgvsp": "p.Tyr314_Tyr335del",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87965534-T-C",
+   "hgvsc": "c.1004A>G",
+   "hgvsp": "p.Tyr335Cys",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87965545-C-CAG",
+   "hgvsc": "c.992_993insCT",
+   "hgvsp": "p.Trp331CysfsTer2",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87965554-CTG-TTA",
+   "hgvsc": "c.982_984delinsTAA",
+   "hgvsp": "p.Gln328Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87965556-G-A",
+   "hgvsc": "c.982C>T",
+   "hgvsp": "p.Gln328Ter",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87965565-TC-T",
+   "hgvsc": "c.972del",
+   "hgvsp": "p.Met325Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87965571-C-A",
+   "hgvsc": "c.967G>T",
+   "hgvsp": "p.Gly323Trp",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87965571-C-T",
+   "hgvsc": "c.967G>A",
+   "hgvsp": "p.Gly323Arg",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87965581-A-T",
+   "hgvsc": "c.957T>A",
+   "hgvsp": "p.Tyr319Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87965582-TA-T",
+   "hgvsc": "c.955del",
+   "hgvsp": "p.Tyr319MetfsTer6",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87965585-G-C",
+   "hgvsc": "c.953C>G",
+   "hgvsp": "p.Pro318Arg",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87965585-G-A",
+   "hgvsc": "c.953C>T",
+   "hgvsp": "p.Pro318Leu",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87965586-G-C",
+   "hgvsc": "c.952C>G",
+   "hgvsp": "p.Pro318Ala",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87965587-C-CAACT",
+   "hgvsc": "c.947_950dup",
+   "hgvsp": "p.Pro318ValfsTer59",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87965592-G-A",
+   "hgvsc": "c.946C>T",
+   "hgvsp": "p.Gln316Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87965594-TC-T",
+   "hgvsc": "c.943del",
+   "hgvsp": "p.Glu315AsnfsTer10",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87965596-ATAG-A",
+   "hgvsc": "c.939_941del",
+   "hgvsp": "p.Tyr314del",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87965597-T-C",
+   "hgvsc": "c.941A>G",
+   "hgvsp": "p.Tyr314Cys",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87965618-C-T",
+   "hgvsc": "c.920G>A",
+   "hgvsp": "p.Trp307Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87965627-G-A",
+   "hgvsc": "c.911C>T",
+   "hgvsp": "p.Thr304Ile",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87965630-C-T",
+   "hgvsc": "c.909-1G>A",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968330-C-T",
+   "hgvsc": "c.908+5G>A",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968334-C-T",
+   "hgvsc": "c.908+1G>A",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87968334-C-A",
+   "hgvsc": "c.908+1G>T",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968335-G-A",
+   "hgvsc": "c.908C>T",
+   "hgvsp": "p.Ser303Phe",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87968359-T-G",
+   "hgvsc": "c.884A>C",
+   "hgvsp": "p.Asn295Thr",
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87968359-T-A",
+   "hgvsc": "c.884A>T",
+   "hgvsp": "p.Asn295Ile",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87968375-G-T",
+   "hgvsc": "c.868C>A",
+   "hgvsp": "p.Arg290Ser",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968375-G-A",
+   "hgvsc": "c.868C>T",
+   "hgvsp": "p.Arg290Cys",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87968376-A-AC",
+   "hgvsc": "c.866dup",
+   "hgvsp": "p.Arg290SerfsTer23",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968380-C-T",
+   "hgvsc": "c.863G>A",
+   "hgvsp": "p.Trp288Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968381-A-G",
+   "hgvsc": "c.862T>C",
+   "hgvsp": "p.Trp288Arg",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968383-C-T",
+   "hgvsc": "c.860G>A",
+   "hgvsp": "p.Cys287Tyr",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968386-C-T",
+   "hgvsc": "c.857G>A",
+   "hgvsp": "p.Gly286Asp",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87968387-C-G",
+   "hgvsc": "c.856G>C",
+   "hgvsp": "p.Gly286Arg",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968391-AC-A",
+   "hgvsc": "c.851del",
+   "hgvsp": "p.Gly284ValfsTer9",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968392-C-T",
+   "hgvsc": "c.851G>A",
+   "hgvsp": "p.Gly284Asp",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968393-C-T",
+   "hgvsc": "c.850G>A",
+   "hgvsp": "p.Gly284Ser",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87968407-A-C",
+   "hgvsc": "c.836T>G",
+   "hgvsp": "p.Leu279Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968411-T-G",
+   "hgvsc": "c.832A>C",
+   "hgvsp": "p.Thr278Pro",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968413-C-T",
+   "hgvsc": "c.830G>A",
+   "hgvsp": "p.Ser277Asn",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87968414-TAA-T",
+   "hgvsc": "c.827_828del",
+   "hgvsp": "p.Phe276Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87968419-T-C",
+   "hgvsc": "c.824A>G",
+   "hgvsp": "p.Asp275Gly",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968421-T-G",
+   "hgvsc": "c.822A>C",
+   "hgvsp": "p.Glu274Asp",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968422-T-G",
+   "hgvsc": "c.821A>C",
+   "hgvsp": "p.Glu274Ala",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87968446-G-A",
+   "hgvsc": "c.797C>T",
+   "hgvsp": "p.Thr266Ile",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968459-C-CTT",
+   "hgvsc": "c.782_783dup",
+   "hgvsp": "p.Asp262LysfsTer5",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968467-GA-G",
+   "hgvsc": "c.775del",
+   "hgvsp": "p.Ser259GlnfsTer7",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968467-G-C",
+   "hgvsc": "c.776C>G",
+   "hgvsp": "p.Ser259Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968476-C-T",
+   "hgvsc": "c.767G>A",
+   "hgvsp": "p.Gly256Glu",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968479-G-C",
+   "hgvsc": "c.764C>G",
+   "hgvsp": "p.Pro255Arg",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87968479-G-T",
+   "hgvsc": "c.764C>A",
+   "hgvsp": "p.Pro255His",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87976357-C-T",
+   "hgvsc": "c.752+1G>A",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87976361-A-G",
+   "hgvsc": "c.749T>C",
+   "hgvsp": "p.Ile250Thr",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87976371-C-A",
+   "hgvsc": "c.739G>T",
+   "hgvsp": "p.Val247Phe",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87976377-T-A",
+   "hgvsc": "c.733A>T",
+   "hgvsp": "p.Lys245Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87976415-GACTCCCA-G",
+   "hgvsc": "c.688_694del",
+   "hgvsp": "p.Trp230ProfsTer19",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87976416-ACTCCCAGAGAT-GAG",
+   "hgvsc": "c.683_694delinsCTC",
+   "hgvsp": "p.Asn228_Ser232delinsThrPro",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87976418-TC-T",
+   "hgvsc": "c.691del",
+   "hgvsp": "p.Glu231SerfsTer20",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87976432-AC-A",
+   "hgvsc": "c.677del",
+   "hgvsp": "p.Ser226MetfsTer25",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87976435-T-TG",
+   "hgvsc": "c.674dup",
+   "hgvsp": "p.Ser226LysfsTer2",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87976436-G-T",
+   "hgvsc": "c.674C>A",
+   "hgvsp": "p.Ala225Glu",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87976437-C-T",
+   "hgvsc": "c.673G>A",
+   "hgvsp": "p.Ala225Thr",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87976452-G-A",
+   "hgvsc": "c.658C>T",
+   "hgvsp": "p.Arg220Ter",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87976455-G-A",
+   "hgvsc": "c.655C>T",
+   "hgvsp": "p.Gln219Ter",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87976462-TTG-T",
+   "hgvsc": "c.646_647del",
+   "hgvsp": "p.Gln216ArgfsTer11",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87976464-G-A",
+   "hgvsc": "c.646C>T",
+   "hgvsp": "p.Gln216Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87976464-GA-G",
+   "hgvsc": "c.645del",
+   "hgvsp": "p.Gln216LysfsTer6",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87976482-T-A",
+   "hgvsc": "c.628A>T",
+   "hgvsp": "p.Arg210Ter",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87976489-C-A",
+   "hgvsc": "c.622-1G>T",
+   "hgvsp": null,
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87981433-C-G",
+   "hgvsc": "c.621+772G>C",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87982200-C-T",
+   "hgvsc": "c.621+5G>A",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87982204-C-T",
+   "hgvsc": "c.621+1G>A",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87982205-CT-C",
+   "hgvsc": "c.620del",
+   "hgvsp": "p.Lys207ArgfsTer3",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87982211-A-T",
+   "hgvsc": "c.615T>A",
+   "hgvsp": "p.Tyr205Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87982227-G-T",
+   "hgvsc": "c.599C>A",
+   "hgvsp": "p.Ser200Ter",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87982233-T-G",
+   "hgvsc": "c.593A>C",
+   "hgvsp": "p.Glu198Ala",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87982234-C-CA",
+   "hgvsc": "c.591dup",
+   "hgvsp": "p.Glu198Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87982244-C-G",
+   "hgvsc": "c.583-1G>C",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87982245-T-C",
+   "hgvsc": "c.583-2A>G",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87984392-A-G",
+   "hgvsc": "c.582+2T>C",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87984393-C-G",
+   "hgvsc": "c.582+1G>C",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87984393-C-T",
+   "hgvsc": "c.582+1G>A",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87984396-CA-C",
+   "hgvsc": "c.579del",
+   "hgvsp": "p.Ile193MetfsTer17",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87984416-T-A",
+   "hgvsc": "c.560A>T",
+   "hgvsp": "p.Asp187Val",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87984433-GC-G",
+   "hgvsc": "c.542del",
+   "hgvsp": "p.Gly181AlafsTer29",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87984443-C-T",
+   "hgvsc": "c.533G>A",
+   "hgvsp": "p.Trp178Ter",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87984454-AT-A",
+   "hgvsc": "c.521del",
+   "hgvsp": "p.Tyr174LeufsTer3",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87984454-A-C",
+   "hgvsc": "c.522T>G",
+   "hgvsp": "p.Tyr174Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87984458-TAG-T",
+   "hgvsc": "c.516_517del",
+   "hgvsp": "p.Tyr173LeufsTer14",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87984471-G-A",
+   "hgvsc": "c.505C>T",
+   "hgvsp": "p.Gln169Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87984477-TG-T",
+   "hgvsc": "c.498del",
+   "hgvsp": "p.Asn167IlefsTer4",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87984487-C-T",
+   "hgvsc": "c.489G>A",
+   "hgvsp": "p.Trp163Ter",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87984488-C-T",
+   "hgvsc": "c.488G>A",
+   "hgvsp": "p.Trp163Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87984492-C-A",
+   "hgvsc": "c.484G>T",
+   "hgvsp": "p.Asp162Tyr",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87984507-G-GCC",
+   "hgvsc": "c.467_468dup",
+   "hgvsp": "p.Leu157GlyfsTer15",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87984515-G-T",
+   "hgvsc": "c.461C>A",
+   "hgvsp": "p.Pro154His",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87984523-C-T",
+   "hgvsc": "c.453G>A",
+   "hgvsp": "p.Trp151Ter",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87984534-C-G",
+   "hgvsc": "c.443-1G>C",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87984535-T-C",
+   "hgvsc": "c.443-2A>G",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87986487-A-C",
+   "hgvsc": "c.442+2T>G",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87986488-C-T",
+   "hgvsc": "c.442+1G>A",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87986497-G-GTA",
+   "hgvsc": "c.432_433dup",
+   "hgvsp": "p.Thr145IlefsTer27",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87986497-G-GT",
+   "hgvsc": "c.433dup",
+   "hgvsp": "p.Thr145AsnfsTer43",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87986498-T-TAATATTGGGATTCCTCTTCTTA",
+   "hgvsc": "c.411_432dup",
+   "hgvsp": "p.Thr145Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87986500-AT-A",
+   "hgvsc": "c.430del",
+   "hgvsp": "p.Ile144LeufsTer27",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87986516-T-A",
+   "hgvsc": "c.415A>T",
+   "hgvsp": "p.Lys139Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87986517-CTTA-C",
+   "hgvsc": "c.411_413del",
+   "hgvsp": "p.Lys139del",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87986522-CT-C",
+   "hgvsc": "c.408del",
+   "hgvsp": "p.Ala137LeufsTer34",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87986525-C-A",
+   "hgvsc": "c.406G>T",
+   "hgvsp": "p.Glu136Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87986528-T-A",
+   "hgvsc": "c.403A>T",
+   "hgvsp": "p.Lys135Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87986535-C-T",
+   "hgvsc": "c.396G>A",
+   "hgvsp": "p.Trp132Ter",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87986536-C-T",
+   "hgvsc": "c.395G>A",
+   "hgvsp": "p.Trp132Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87986538-C-T",
+   "hgvsc": "c.393G>A",
+   "hgvsp": "p.Trp131Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87986539-C-T",
+   "hgvsc": "c.392G>A",
+   "hgvsp": "p.Trp131Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87986540-A-G",
+   "hgvsc": "c.391T>C",
+   "hgvsp": "p.Trp131Arg",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87986542-T-C",
+   "hgvsc": "c.389A>G",
+   "hgvsp": "p.Glu130Gly",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87986543-C-T",
+   "hgvsc": "c.388G>A",
+   "hgvsp": "p.Glu130Lys",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87986543-C-G",
+   "hgvsc": "c.388G>C",
+   "hgvsp": "p.Glu130Gln",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87986544-G-C",
+   "hgvsc": "c.387C>G",
+   "hgvsp": "p.Tyr129Ter",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87986552-G-A",
+   "hgvsc": "c.379C>T",
+   "hgvsp": "p.Arg127Ter",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87986559-A-AAGTTTGCAATG",
+   "hgvsc": "c.371_372insCATTGCAAACT",
+   "hgvsp": "p.Tyr125IlefsTer13",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87986582-T-G",
+   "hgvsc": "c.349A>C",
+   "hgvsp": "p.Met117Leu",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87986582-T-A",
+   "hgvsc": "c.349A>T",
+   "hgvsp": "p.Met117Leu",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87986598-GC-G",
+   "hgvsc": "c.332del",
+   "hgvsp": "p.Gly111AlafsTer11",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87986600-C-T",
+   "hgvsc": "c.331G>A",
+   "hgvsp": "p.Gly111Ser",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87986603-C-T",
+   "hgvsc": "c.329-1G>A",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87986604-T-C",
+   "hgvsc": "c.329-2A>G",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87988142-A-C",
+   "hgvsc": "c.328+2T>G",
+   "hgvsp": null,
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87988143-C-A",
+   "hgvsc": "c.328+1G>T",
+   "hgvsp": null,
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87988143-C-T",
+   "hgvsc": "c.328+1G>A",
+   "hgvsp": null,
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87988153-GC-G",
+   "hgvsc": "c.318del",
+   "hgvsp": "p.Gln107ArgfsTer15",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988156-C-T",
+   "hgvsc": "c.316G>A",
+   "hgvsp": "p.Gly106Arg",
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87988163-A-ACCTATTT",
+   "hgvsc": "c.302_308dup",
+   "hgvsp": "p.Gly104AsnfsTer4",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988171-CC-AA",
+   "hgvsc": "c.300_301delinsTT",
+   "hgvsp": "p.Glu101Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988177-T-C",
+   "hgvsc": "c.295A>G",
+   "hgvsp": "p.Lys99Glu",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988178-TA-T",
+   "hgvsc": "c.293del",
+   "hgvsp": "p.Leu98Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988178-T-TA",
+   "hgvsc": "c.293dup",
+   "hgvsp": "p.Leu98PhefsTer8",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87988187-C-CA",
+   "hgvsc": "c.284dup",
+   "hgvsp": "p.Leu95PhefsTer11",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988187-CAA-C",
+   "hgvsc": "c.283_284del",
+   "hgvsp": "p.Leu95AlafsTer10",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988190-AG-A",
+   "hgvsc": "c.281del",
+   "hgvsp": "p.Ser94PhefsTer5",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988209-T-C",
+   "hgvsc": "c.265-2A>G",
+   "hgvsp": null,
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87988452-T-G",
+   "hgvsc": "c.264+3A>C",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988453-A-C",
+   "hgvsc": "c.264+2T>G",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988453-A-G",
+   "hgvsc": "c.264+2T>C",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988454-C-T",
+   "hgvsc": "c.264+1G>A",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87988464-A-T",
+   "hgvsc": "c.255T>A",
+   "hgvsp": "p.Tyr85Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988473-T-C",
+   "hgvsc": "c.246A>G",
+   "hgvsp": "p.Ile82Met",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87988474-A-ATC",
+   "hgvsc": "c.243_244dup",
+   "hgvsp": "p.Ile82ArgfsTer18",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988483-C-T",
+   "hgvsc": "c.236G>A",
+   "hgvsp": "p.Arg79His",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87988486-TAG-T",
+   "hgvsc": "c.231_232del",
+   "hgvsp": "p.Tyr78SerfsTer10",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988497-G-C",
+   "hgvsc": "c.222C>G",
+   "hgvsp": "p.Tyr74Ter",
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87988508-G-GA",
+   "hgvsc": "c.210dup",
+   "hgvsp": "p.Leu71SerfsTer18",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988514-G-A",
+   "hgvsc": "c.205C>T",
+   "hgvsp": "p.Arg69Ter",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87988516-G-A",
+   "hgvsc": "c.203C>T",
+   "hgvsp": "p.Ser68Phe",
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87988519-G-T",
+   "hgvsc": "c.200C>A",
+   "hgvsp": "p.Thr67Asn",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988520-T-G",
+   "hgvsc": "c.199A>C",
+   "hgvsp": "p.Thr67Pro",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87988523-C-T",
+   "hgvsc": "c.196G>A",
+   "hgvsp": "p.Ala66Thr",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87992960-TGCCGCTCACCCCGCC-T",
+   "hgvsc": "c.190_195+9del",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87992968-A-G",
+   "hgvsc": "c.195+2T>C",
+   "hgvsp": null,
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87992969-C-G",
+   "hgvsc": "c.195+1G>C",
+   "hgvsp": null,
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87992969-C-T",
+   "hgvsc": "c.195+1G>A",
+   "hgvsp": null,
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87992970-C-G",
+   "hgvsc": "c.195G>C",
+   "hgvsp": "p.Gly65Gly",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87992971-C-T",
+   "hgvsc": "c.194G>A",
+   "hgvsp": "p.Gly65Glu",
+   "clinvar": "Pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87992972-C-A",
+   "hgvsc": "c.193G>T",
+   "hgvsp": "p.Gly65Trp",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87992972-C-CGCCGCCGCTG",
+   "hgvsc": "c.183_192dup",
+   "hgvsp": "p.Gly65GlnfsTer27",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87992977-C-G",
+   "hgvsc": "c.188G>C",
+   "hgvsp": "p.Gly63Ala",
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87992983-A-ACT",
+   "hgvsc": "c.181_182insAG",
+   "hgvsp": "p.Val61GlufsTer12",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87992988-GC-G",
+   "hgvsc": "c.176del",
+   "hgvsp": "p.Gly59AlafsTer13",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87992990-C-A",
+   "hgvsc": "c.175G>T",
+   "hgvsp": "p.Gly59Cys",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87992990-C-T",
+   "hgvsc": "c.175G>A",
+   "hgvsp": "p.Gly59Ser",
+   "clinvar": "Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87992990-C-G",
+   "hgvsc": "c.175G>C",
+   "hgvsp": "p.Gly59Arg",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87992991-GA-G",
+   "hgvsc": "c.173del",
+   "hgvsp": "p.Ile58ThrfsTer14",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87992995-C-A",
+   "hgvsc": "c.170G>T",
+   "hgvsp": "p.Gly57Val",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87992995-C-T",
+   "hgvsc": "c.170G>A",
+   "hgvsp": "p.Gly57Asp",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87992996-C-A",
+   "hgvsc": "c.169G>T",
+   "hgvsp": "p.Gly57Cys",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87992996-C-T",
+   "hgvsc": "c.169G>A",
+   "hgvsp": "p.Gly57Ser",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87992999-C-G",
+   "hgvsc": "c.166G>C",
+   "hgvsp": "p.Asp56His",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87993009-GC-G",
+   "hgvsc": "c.155del",
+   "hgvsp": "p.Gly52AlafsTer20",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87993022-GAG-C",
+   "hgvsc": "c.141_143delinsG",
+   "hgvsp": "p.Asp47GlufsTer41",
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87993031-A-ACGAC",
+   "hgvsc": "c.133_134insGTCG",
+   "hgvsp": "p.Leu45ArgfsTer45",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87993036-G-C",
+   "hgvsc": "c.129C>G",
+   "hgvsp": "p.Tyr43Ter",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87993036-G-T",
+   "hgvsc": "c.129C>A",
+   "hgvsp": "p.Tyr43Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87993041-C-CGCCGCCGGGCGCCA",
+   "hgvsc": "c.110_123dup",
+   "hgvsp": "p.Ala42TrpfsTer35",
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87993044-C-T",
+   "hgvsc": "c.121G>A",
+   "hgvsp": "p.Gly41Ser",
+   "clinvar": "Pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87993047-CG-C",
+   "hgvsc": "c.117del",
+   "hgvsp": "p.Gly40AlafsTer32",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87993052-G-GC",
+   "hgvsc": "c.112dup",
+   "hgvsp": "p.Ala38GlyfsTer51",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87993062-CA-AT",
+   "hgvsc": "c.102_103delinsAT",
+   "hgvsp": "p.Cys34_Ala35delinsTer",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87993080-C-CCGCGG",
+   "hgvsc": "c.80_84dup",
+   "hgvsp": "p.Val29ProfsTer45",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87993085-G-GCGCGGCCCGCCGAACC",
+   "hgvsc": "c.64_79dup",
+   "hgvsp": "p.Ala27GlyfsTer67",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87993090-GCCCGCCGAAC-G",
+   "hgvsc": "c.65_74del",
+   "hgvsp": "p.Gly22AlafsTer47",
+   "clinvar": "Likely pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87993097-G-T",
+   "hgvsc": "c.68C>A",
+   "hgvsp": "p.Ser23Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87993114-CAT-C",
+   "hgvsc": "c.49_50del",
+   "hgvsp": "p.Met17AspfsTer71",
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87993128-G-A",
+   "hgvsc": "c.37C>T",
+   "hgvsp": "p.Arg13Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87993136-C-T",
+   "hgvsc": "c.29G>A",
+   "hgvsp": "p.Trp10Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87993137-AG-A",
+   "hgvsc": "c.27del",
+   "hgvsp": "p.Trp10GlyfsTer8",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87993144-CGA-C",
+   "hgvsc": "c.19_20del",
+   "hgvsp": "p.Ser7GlyfsTer81",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87993154-C-T",
+   "hgvsc": "c.11G>A",
+   "hgvsp": "p.Trp4Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87993155-AC-A",
+   "hgvsc": "c.9del",
+   "hgvsp": "p.Glu3AspfsTer15",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87993157-T-TC",
+   "hgvsc": "c.7dup",
+   "hgvsp": "p.Glu3GlyfsTer86",
+   "clinvar": "Pathogenic",
+   "stars": 2
+  },
+  {
+   "id": "14-87993158-C-A",
+   "hgvsc": "c.7G>T",
+   "hgvsp": "p.Glu3Ter",
+   "clinvar": "Pathogenic",
+   "stars": 1
+  },
+  {
+   "id": "14-87993162-C-T",
+   "hgvsc": "c.3G>A",
+   "hgvsp": "p.Met1?",
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87993163-A-T",
+   "hgvsc": "c.2T>A",
+   "hgvsp": "p.Met1?",
+   "clinvar": "Likely pathogenic",
+   "stars": 0
+  },
+  {
+   "id": "14-87993164-T-C",
+   "hgvsc": "c.1A>G",
+   "hgvsp": "p.Met1?",
+   "clinvar": "Likely pathogenic",
+   "stars": 0
   }
  ]
 }

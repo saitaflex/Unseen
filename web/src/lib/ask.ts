@@ -21,6 +21,8 @@ export interface Answer {
   citations: Citation[];
   refused?: boolean;
   facts: Record<string, unknown>;
+  /** The tools this answer was built from (shown in the UI as the reasoning trace). */
+  tools?: { name: string; args: Record<string, unknown> }[];
 }
 
 const COUNTRY_WORDS: Record<string, string[]> = {
@@ -92,6 +94,10 @@ function detect(qRaw: string) {
   ]);
   const intent = medical
     ? "medical"
+    : has(q, ["how is", "how was", "how did", "explain", "calculat", "show the math", "formula", "comment est", "calcul", "كيف", "حساب"])
+      ? "explain"
+      : has(q, ["newborn screening", "screening program", "screening programme", "does it screen", "screened", "dépistage néonatal", "فحص المواليد", "فحص حديثي الولادة"])
+        ? "screening"
     : has(q, ["panel", "test", "screen", "which genes", "dépistage", "gènes", "فحص", "جينات", "الجينات"])
       ? "panel"
       : has(q, ["trial", "essai", "تجارب", "تجربة"])
@@ -150,6 +156,22 @@ const T = {
     fr: "L'atlas n'a **aucune preuve étayée** pour cette maladie. UNSEEN modélise 22 maladies récessives bien captées par les données de séquençage court ; les maladies dues surtout à des délétions ou expansions (ex. SMA, ataxie de Friedreich) sont exclues volontairement. Ce qui changerait la réponse : des données de population capables de détecter les délétions.",
     ar: "لا يملك الأطلس **أي دليل موثّق** لهذا المرض. يغطي UNSEEN حاليًا 22 مرضًا متنحيًا تلتقطها بيانات التسلسل القصير جيدًا؛ الأمراض الناتجة أساسًا عن حذف جيني أو تكرارات (مثل SMA ورنح فريدريك) مستبعدة عمدًا. ما قد يغيّر الإجابة: بيانات سكانية قادرة على كشف الحذف الجيني.",
   },
+  explain: {
+    en: (d: string, c: string, steps: string, exp: string, mc: string) =>
+      `How UNSEEN gets ${d} in **${c}**: ${steps} So P × births = **${exp}** affected births a year (simulation median ${mc}).`,
+    fr: (d: string, c: string, steps: string, exp: string, mc: string) =>
+      `Comment UNSEEN calcule ${d} en **${c}** : ${steps} Donc P × naissances = **${exp}** naissances atteintes par an (médiane de simulation ${mc}).`,
+    ar: (d: string, c: string, steps: string, exp: string, mc: string) =>
+      `كيف يحسب UNSEEN ${d} في **${c}**: ${steps} إذن P × الولادات = **${exp}** ولادة مصابة سنويًا (وسيط المحاكاة ${mc}).`,
+  },
+  screening: {
+    en: (c: string, status: string, covered: string, missed: string, list: string) =>
+      `**${c}**: ${status}. Its programme reaches about **${covered}** expected affected births a year; **${missed}** more are born each year with blood-spot-detectable diseases it does not screen for${list ? ` (${list})` : ""}.`,
+    fr: (c: string, status: string, covered: string, missed: string, list: string) =>
+      `**${c}** : ${status}. Le programme couvre environ **${covered}** naissances atteintes attendues par an ; **${missed}** autres naissent chaque année avec des maladies dépistables non couvertes${list ? ` (${list})` : ""}.`,
+    ar: (c: string, status: string, covered: string, missed: string, list: string) =>
+      `**${c}**: ${status}. يغطي البرنامج نحو **${covered}** ولادة مصابة متوقعة سنويًا؛ ويولد **${missed}** آخرون كل عام بأمراض قابلة للكشف لا يشملها الفحص${list ? ` (${list})` : ""}.`,
+  },
   needCountry: {
     en: "Which country? Try: “How many PKU babies are born in Tunisia each year?”",
     fr: "Quel pays ? Essayez : « Combien d'enfants atteints de PCU naissent en Tunisie chaque année ? »",
@@ -168,7 +190,21 @@ const COUNTRY_FR: Record<string, string> = {
   GBR: "Royaume-Uni", USA: "États-Unis",
 };
 
+/** Grounded answer plus the tool trace it was built from. */
 export function answer(atlas: Atlas, question: string, fallbackDisease: string | "all", fallbackCountry: string | null): Answer {
+  const a = answerCore(atlas, question, fallbackDisease, fallbackCountry);
+  if (a.tools || a.refused) return a;
+  const { country, disease, intent } = detect(question);
+  const c = country ?? fallbackCountry;
+  const d = disease ?? (fallbackDisease === "all" ? "pku" : fallbackDisease);
+  const tool =
+    intent === "panel" ? { name: "diagnostic_panel", args: { country: c, k: 10 } }
+      : intent === "rank" || !c ? { name: "rank_countries", args: { disease: d, metric: "unseen" } }
+        : { name: "get_estimate", args: { disease: d, country: c } };
+  return { ...a, tools: a.text ? [tool] : [] };
+}
+
+function answerCore(atlas: Atlas, question: string, fallbackDisease: string | "all", fallbackCountry: string | null): Answer {
   const lang = detectLang(question);
   const { country: cDetected, disease: dDetected, intent, unknownDisease } = detect(question);
   const index = indexPairs(atlas);
@@ -213,6 +249,30 @@ export function answer(atlas: Atlas, question: string, fallbackDisease: string |
   const birthsCite: Citation = { label: `World Bank births ${country.births.cbr_year}`, url: country.births.url, kind: "observed" };
   const consCite: Citation = { label: country.consanguinity.source.label, url: country.consanguinity.source.url, kind: country.consanguinity.first_cousin_kind === "literature" ? "literature" : "inferred" };
 
+  if (intent === "explain") {
+    const t = pair.trace;
+    const g = t.genes
+      .map((x) => `${x.gene}: q = ${x.groups.map((gr) => `${gr.weight}×${gr.q_hat.toExponential(2)} (${gr.group})`).join(" + ")} = ${x.q.toExponential(2)}`)
+      .join("; ");
+    const steps = `${g}. F = ${t.F.first_cousin_pct.toFixed(1)}% first cousins ÷ 16 + ${t.F.other_pct.toFixed(1)}% other ÷ 64 = ${t.F.F.toFixed(4)}. P = q²(1−F) + q·F = ${t.P.toExponential(3)}; births = ${t.births.toLocaleString("en-US")}.`;
+    return {
+      lang,
+      text: T.explain[lang](disease.name, cName, steps, fmtCount(t.expected), fmtCount(t.mc.median)),
+      citations: [...geneCites, consCite, birthsCite, methodCite],
+      facts: { trace: t },
+      tools: [{ name: "explain_calculation", args: { disease: dId, country: country.iso3 } }],
+    };
+  }
+  if (intent === "screening") {
+    const names = country.screening_gap.missed_diseases.map((id) => atlas.diseases.find((d) => d.id === id)?.name ?? id);
+    return {
+      lang,
+      text: T.screening[lang](cName, country.screening.status, fmtCount(country.screening_gap.covered_births), fmtCount(country.screening_gap.missed_births), names.slice(0, 6).join(", ")),
+      citations: [{ label: country.screening.src.label, url: country.screening.src.url, kind: country.screening.kind === "literature" ? "literature" : "inferred" }, methodCite],
+      facts: { screening: country.screening, gap: country.screening_gap },
+      tools: [{ name: "country_profile", args: { country: country.iso3 } }],
+    };
+  }
   if (intent === "panel") {
     const genes = optimisePanel(atlas, index, country.iso3);
     const total = genes.reduce((a, g) => a + g.expected, 0);

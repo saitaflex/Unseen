@@ -80,3 +80,34 @@ def test_qualifies_rules():
     assert not qualifies(_variant(clinvar="Pathogenic", stars=2, filters=["AC0"]), "PAH")
     assert not qualifies(_variant(clinvar="Pathogenic", stars=4, hgvsc="c.1210-7_1210-6del"), "CFTR")  # low penetrance
     assert qualifies(_variant(clinvar="Conflicting classifications of pathogenicity", stars=1, hgvsc="c.563A>G"), "GALT")  # curated
+
+
+def test_evidence_agent_verification():
+    from evidence_agent import number_in_quote, verify
+    corpus = {"123": "Abstract. The c.1222C>T founder mutation accounted for 38.5% of mutant alleles in 42 Tunisian patients."}
+    good = {"pmid": "123", "value": 42, "unit": "patients", "quote": "in 42 Tunisian   patients"}
+    assert verify(good, corpus) == (True, "verified")
+    assert verify({**good, "quote": "in 420 Tunisian patients"}, corpus)[0] is False      # not verbatim
+    assert verify({**good, "value": 43}, corpus)[0] is False                                # number not in quote
+    assert verify({**good, "pmid": "999"}, corpus)[0] is False                              # never retrieved
+    assert number_in_quote(38.5, "accounted for 38.5% of mutant alleles")
+    assert number_in_quote(0.385, "accounted for 38.5% of mutant alleles")                 # fraction vs percent
+    assert not number_in_quote(3.85, "accounted for 38.5% of mutant alleles")
+
+
+def test_gme_coordinate_conversion():
+    from gme import annovar_key
+    assert annovar_key("12-102839172-C-T") == ("12", 102839172, "C", "T")             # SNV
+    assert annovar_key("7-117559590-ATCT-A") == ("7", 117559591, "TCT", "-")           # deletion (F508del-like)
+    assert annovar_key("13-20189546-A-AG") == ("13", 20189546, "-", "G")               # insertion
+    assert annovar_key("1-100-AT-GC") is None                                          # MNV: not representable
+
+
+def test_F_point_matches_formula():
+    from compute import F_point
+    c = {"first_cousin": [20, 20], "overall": [30, 30]}
+    fp = F_point(c)
+    assert fp["F"] == pytest.approx(0.20 / 16 + 0.10 / 64)
+    only_overall = F_point({"first_cousin": None, "overall": [10, 10]})
+    assert only_overall["assumed_first_cousin_share"] == pytest.approx(0.65)
+    assert only_overall["F"] == pytest.approx(0.065 / 16 + 0.035 / 64)

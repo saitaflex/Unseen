@@ -20,6 +20,12 @@ All inputs live in `pipeline/config.py`; every non-computed value must carry a c
 Needs a cited consanguinity source (first-cousin % and overall %, as ranges), ancestry weights (stated as inferred),
 an ISO3→numeric mapping in `web/src/components/WorldMap.tsx`, and demonyms in `fetch_context.py` and `web/src/lib/ask.ts`.
 
+## Other inputs (all cited in config.py)
+- `SCREENING`: national newborn-screening programme per country; `kind: inferred` if no source was found.
+- `GME_REGION` + `gme.py`: regional exomes. The full ANNOVAR table is not committed; `matched_variants.json` is the cache.
+- `mine_reported.py`: largest reported series (strict rules: disease named in the count phrase, country in sentence or title).
+- `evidence_agent.py`: needs OPENAI_API_KEY; keeps only verbatim-verified findings.
+
 ## Always finish with
 `python -m pytest -q tests` (pipeline) and `npm test && npm run build` (in `web/`).
 Never hand-edit `web/public/data/atlas.json`; regenerate it.

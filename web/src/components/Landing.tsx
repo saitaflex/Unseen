@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
-import { ArrowDown, ArrowRight, Database, Download, GitBranch, Play, RotateCcw } from "lucide-react";
+import { ArrowDown, ArrowRight, BadgeCheck, Database, Download, GitBranch, Play, RotateCcw, Wrench } from "lucide-react";
 import type { Atlas } from "../lib/types";
 import { cellsFor, indexPairs, loadAtlas } from "../lib/data";
 import { fmtCount, fmtPct } from "../lib/format";
@@ -8,7 +8,7 @@ import { AnimatedLogo } from "./AnimatedLogo";
 
 const WEST = new Set(["FRA", "DEU", "GBR", "USA"]);
 const REPO = "https://github.com/saitaflex/Unseen";
-const TESTS = 26;
+const TESTS = 48;
 
 /** Fades a block in when it scrolls into view. */
 function Reveal({ children, className = "", delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
@@ -76,6 +76,9 @@ export function Landing() {
       alleles,
       pairs: atlas.pairs.length,
       validation,
+      missed: atlas.countries.reduce((a, c) => a + c.screening_gap.missed_births, 0),
+      sudan: index.get("pku|SDN")?.expected_births ?? null,
+      covered: atlas.countries.reduce((a, c) => a + c.screening_gap.covered_births, 0),
     };
   }, [atlas]);
 
@@ -171,6 +174,10 @@ export function Landing() {
           <Reveal className="space-y-8">
             <ShareBar label="Expected affected births" value={stats?.shareE ?? 0} color="#7fd6b5" />
             <ShareBar label="Research papers" value={stats?.shareP ?? 0} color="#e0623a" />
+            <p className="font-display text-2xl leading-snug text-paper sm:text-3xl">
+              Every year, <span className="num text-[#e0623a]">{stats ? fmtCount(stats.missed) : "…"}</span> of these children are born with a
+              disease a heel-prick test can catch, in a country that doesn't test for it.
+            </p>
             <p className="text-sm text-paper/60">
               Share in the 14 countries outside Western Europe and the US · {stats ? fmtCount(stats.tot) : "…"} expected births a year ·
               22 diseases × 18 countries
@@ -190,19 +197,63 @@ export function Landing() {
         </Reveal>
       </Chapter>
 
-      {/* ---------- 05 Under the hood ---------- */}
+      {/* ---------- 05 The AI ---------- */}
+      <Chapter n="05" kicker="The AI" title="An AI that shows its work.">
+        <Reveal className="grid items-start gap-8 lg:grid-cols-[1.1fr_1fr]">
+          <div className="card space-y-3 p-5 sm:p-6">
+            <div className="ml-auto max-w-[85%] rounded-2xl rounded-br-md bg-ink px-3.5 py-2.5 text-sm text-paper">
+              Why is PKU risk so high in Sudan, and is anyone screening?
+            </div>
+            <div className="space-y-1 rounded-xl bg-paper-2/70 p-2.5">
+              {[["get_estimate", "PKU · Sudan"], ["explain_calculation", "PKU · Sudan"], ["country_profile", "Sudan"]].map(([t, a]) => (
+                <div key={t} className="flex items-center gap-1.5 text-[0.75rem] text-ink-2">
+                  <Wrench size={12} className="text-brand" /> <span className="num font-semibold text-ink">{t}</span> <span className="text-ink-3">{a}</span>
+                </div>
+              ))}
+            </div>
+            <div className="rounded-2xl rounded-bl-md border border-line bg-card px-3.5 py-3 text-sm leading-relaxed">
+              Genetics expects about <mark className="rounded bg-brand-soft px-1">{stats?.sudan ? fmtCount(stats.sudan.median) : "…"}</mark> affected
+              births a year (<mark className="rounded bg-brand-soft px-1">{stats?.sudan ? fmtCount(stats.sudan.p5) : "…"}</mark>–
+              <mark className="rounded bg-brand-soft px-1">{stats?.sudan ? fmtCount(stats.sudan.p95) : "…"}</mark>) [1]. Most come from
+              related parents: first-cousin marriage is common [2]. No national newborn screening was found, so every one is
+              diagnosed late or never [3].
+              <div className="mt-2">
+                <span className="chip" style={{ background: "#dff1e9", color: "#0f5c46" }}>
+                  <BadgeCheck size={11} /> 3/3 numbers verified
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="space-y-5">
+            {[
+              ["7 tools, no memory", "The model reads the atlas only through typed tools. It can't answer from what it remembers."],
+              ["Every number checked", "Before you see an answer, each number is matched against the tool results. Anything untraceable is sent back to be fixed, or replaced by the verified offline answer."],
+              ["Reads the literature", "A second agent mines papers for founder variants and patient counts, and keeps a finding only if its quote is found word for word in the source."],
+              ["Says no when it should", "Individual medical advice is refused, and unmodelled diseases get a straight 'no evidence'."],
+            ].map(([t, b]) => (
+              <div key={t}>
+                <div className="font-display text-xl font-semibold">{t}</div>
+                <p className="mt-1 text-ink-2">{b}</p>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+      </Chapter>
+
+      {/* ---------- 06 Under the hood ---------- */}
       <div className="border-y border-line bg-card/60">
-        <Chapter n="05" kicker="Under the hood" title="Open data in, traceable numbers out.">
-          <Reveal className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        <Chapter n="06" kicker="Under the hood" title="Open data in, traceable numbers out.">
+          <Reveal className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-7">
             <Tile v={stats ? String(stats.genes) : "…"} l="genes" />
             <Tile v={stats ? fmtCount(stats.variants) : "…"} l="pathogenic variants" />
             <Tile v={stats ? String(stats.pairs) : "…"} l="disease × country estimates" />
-            <Tile v="6" l="public data sources" />
+            <Tile v="7" l="open datasets + cited surveys" />
+            <Tile v="1,111" l="regional exomes cross-checked" />
             <Tile v={String(TESTS)} l="automated tests" />
             <Tile v="0" l="numbers written by an LLM" accent />
           </Reveal>
           <Reveal className="mt-8 flex flex-wrap gap-2" delay={120}>
-            {["gnomAD", "ClinVar", "Orphanet", "World Bank", "Europe PMC", "ClinicalTrials.gov", "Python · NumPy", "React 19 · TypeScript", "d3-geo", "Vercel"].map((t) => (
+            {["gnomAD", "ClinVar", "GME Variome", "Orphanet", "World Bank", "Europe PMC", "ClinicalTrials.gov", "OpenAI tool calling", "Python · NumPy", "React 19 · TypeScript", "d3-geo", "Vercel"].map((t) => (
               <span key={t} className="chip border border-line bg-paper text-ink-2">{t}</span>
             ))}
           </Reveal>

@@ -61,3 +61,22 @@ describe("data helpers", () => {
     expect(weighted).toBeCloseTo(1, 6);
   });
 });
+
+describe("explain and screening intents", () => {
+  it("explains the calculation with the trace's own numbers", () => {
+    const a = answer(atlas, "How is PKU in Tunisia calculated?", "all", null);
+    const t = atlas.pairs.find((p) => p.disease === "pku" && p.country === "TUN")!.trace;
+    expect(a.tools?.[0].name).toBe("explain_calculation");
+    expect(a.text).toContain(t.F.F.toFixed(4));
+  });
+  it("answers newborn-screening questions from the cited programme data", () => {
+    const a = answer(atlas, "Does Pakistan have newborn screening?", "all", null);
+    expect(a.tools?.[0].name).toBe("country_profile");
+    expect(a.citations[0].url).toContain("adbi.202200318");
+  });
+  it("every non-refused answer carries a tool trace", () => {
+    for (const q of ["How many CF babies in Egypt?", "Which genes should Sudan test first?", "Where is PKU most unseen?"]) {
+      expect(answer(atlas, q, "all", null).tools?.length).toBeGreaterThan(0);
+    }
+  });
+});

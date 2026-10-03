@@ -36,6 +36,14 @@ expected affected births / year = [q²(1−F) + q·F] × births
 
 **Headline finding:** about **91%** of the expected affected births across the 18 countries are outside Western Europe and the US. Those countries get **37%** of the papers.
 
+### What's new in v0.2 (method 0.2.0)
+- **Every calculation is traceable.** Each of the 396 estimates stores its worked calculation, so "Show the full calculation" lays out q per ancestry group, F from marriage rates, the two terms of P, births, the Monte Carlo interval, research attention, the regional-genome update and the reported series. 17 formulas are documented on the Method page.
+- **Regional genomes.** The GME Variome (1,111 Middle-Eastern exomes across 6 subregions) is matched against every ClinVar P/LP variant, *including founder alleles gnomAD never saw*, and combined with the ancestry-mix estimate by a Bayesian update. Finding: for PKU it raises Turkey and Iran, which shows the model's overestimate there is not an ancestry error.
+- **Diagnosed so far.** The largest published patient series for every disease × country is text-mined from up to 300 Europe PMC abstracts, kept with its verbatim sentence and PMID, and shown as "years of expected births".
+- **Newborn screening gap.** National programmes for all 18 countries, each with a cited source. About **26,900** treatable children a year are born in countries that don't screen for their disease. Includes a cost and benefit range (Lebanon cost-benefit study).
+- **AI agent (OpenAI tool calling).** `/api/agent` reads the atlas only through 7 typed tools. A **numeric grounding verifier** checks every number in the answer against the tool outputs and forces a rewrite, or falls back to the offline engine. It is tested against a simulated model.
+- **Evidence agent.** `pipeline/evidence_agent.py` reads papers and records founder variants and patient counts. A finding is kept only if its quote is found *verbatim* in the retrieved text and contains the number.
+
 ### Features
 - **Animated intro:** a big dot (the unseen patient) opens into the logo's ring, the dots drip down and the U draws itself. The mark is rebuilt as SVG from the logo's own measured geometry, and it respects reduced motion. Short visual chapters follow: problem, method, finding, proof, under the hood.
 - **Map:** choropleth for four layers (expected births, risk per birth, research attention, trial access). Hollow rings show the expected patients, the open circle from the logo.
@@ -45,7 +53,7 @@ expected affected births / year = [q²(1−F) + q·F] × births
 - **Ask the Atlas:** works in English, French and Arabic. The deterministic engine answers only from the atlas, with citations, and refuses individual medical advice. An optional OpenAI narrator (`/api/ask`) may only rephrase facts that are already verified.
 - **Story mode:** a 7-step guided demo with deep links (`/atlas?story=1..7`), plus shareable state (`/atlas?d=pku&c=SDN&l=attention`).
 - **Open data:** every estimate as a flat CSV (`/data/unseen_estimates.csv`) and the full atlas as JSON.
-- **Engineering:** 26 automated tests (15 pipeline + 11 web), and CI that re-runs the tests, rebuilds the app and checks that the dataset is byte-reproducible from cached inputs (pinned numpy, fixed seed).
+- **Engineering:** 48 automated tests (18 pipeline + 30 web, including the agent loop against a mocked OpenAI), and CI that re-runs the tests, rebuilds the app and checks that the dataset is byte-reproducible from cached inputs (pinned numpy, fixed seed).
 - **Validation:** the model is checked against countries with universal newborn screening, including the cases where it misses:
 
 | Check | Observed | UNSEEN |
@@ -64,6 +72,7 @@ cd pipeline
 pip install -r requirements.txt
 python fetch_gnomad.py      # cached per gene in data/raw/gnomad
 python fetch_context.py     # Orphanet, World Bank, Europe PMC, ClinicalTrials.gov
+python mine_reported.py     # largest reported patient series (cached abstracts)
 python compute.py           # → web/public/data/atlas.json
 python -m pytest -q tests
 
@@ -74,7 +83,15 @@ npm run dev                 # http://localhost:5173
 npm test && npm run build
 ```
 
-Optional AI narrator on Vercel: set `OPENAI_API_KEY` (and optionally `OPENAI_MODEL`). Without it the app uses the grounded engine.
+**Turn on the AI agent** (otherwise the app uses the offline grounded engine):
+```bash
+cd web && npx vercel env add OPENAI_API_KEY production   # paste the key when prompted
+npx vercel deploy --prod                                   # optional: OPENAI_MODEL (default gpt-5-mini)
+```
+**Run the evidence agent** (writes `data/evidence/agent_findings.json`, merged by `compute.py`):
+```bash
+cd pipeline && OPENAI_API_KEY=... python evidence_agent.py --pairs 10 && python compute.py
+```
 
 ## Repo layout
 

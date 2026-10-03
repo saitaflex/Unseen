@@ -69,6 +69,13 @@ export function layerValue(cell: CellView, layer: Layer): number | null {
       return cell.attention;
     case "trials":
       return cell.expected.median > 0 ? (cell.trials / cell.expected.median) * 100 : null;
+    case "screening":
+      // one disease: 1 = national programme screens for it, 0 = blood-spot detectable but not screened, null = n/a
+      if (cell.pairs.length === 1) {
+        const s = cell.pairs[0].screening;
+        return s.bloodspot ? (s.covered ? 1 : 0) : null;
+      }
+      return cell.country.screening_gap.missed_births;
   }
 }
 

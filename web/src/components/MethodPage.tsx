@@ -2,6 +2,7 @@ import { CheckCircle2, Database, FlaskConical, Scale, ShieldAlert } from "lucide
 import type { Atlas, Pair } from "../lib/types";
 import { fmtDate, fmtOneIn } from "../lib/format";
 import { KindBadge, SourceLink } from "./Provenance";
+import { MethodDetails } from "./MethodDetails";
 
 const DATA_SOURCES = [
   { name: "gnomAD v4.1 (joint exomes + genomes)", what: "Per-ancestry allele counts for every variant", url: "https://gnomad.broadinstitute.org", kind: "observed" as const },
@@ -10,6 +11,10 @@ const DATA_SOURCES = [
   { name: "World Bank WDI", what: "Crude birth rate × population → births per year", url: "https://data.worldbank.org", kind: "observed" as const },
   { name: "Europe PMC REST API", what: "Papers mentioning disease + country in title/abstract", url: "https://europepmc.org", kind: "observed" as const },
   { name: "ClinicalTrials.gov API v2", what: "Recruiting / not-yet-recruiting trials by site country", url: "https://clinicaltrials.gov", kind: "observed" as const },
+  { name: "GME Variome (1,111 Middle-Eastern exomes, ANNOVAR hg38 mirror)", what: "Regional allele frequencies for six subregions", url: "https://doi.org/10.1038/ng.3592", kind: "observed" as const },
+  { name: "Europe PMC abstracts (text-mined)", what: "Largest reported patient series per disease and country, with verbatim sentence", url: "https://europepmc.org", kind: "observed" as const },
+  { name: "National newborn-screening sources (18 countries)", what: "Which diseases each national programme screens for", url: "https://doi.org/10.3390/ijns6010012", kind: "literature" as const },
+  { name: "Khneisser et al. 2015 (Lebanon)", what: "Care cost saved per case detected by screening", url: "https://doi.org/10.1177/0969141315590675", kind: "literature" as const },
   { name: "Tadmouri et al. 2009 · Saadat 2004 · Pakistan DHS 2017-18 · Turkish DHS · NFHS (India) · Bittles & Black 2010", what: "Consanguineous-marriage rates", url: "https://doi.org/10.1186/1742-4755-6-17", kind: "literature" as const },
 ];
 
@@ -125,6 +130,8 @@ export function MethodPage({ atlas, index }: { atlas: Atlas; index: Map<string, 
           </table>
         </div>
       </section>
+
+      <MethodDetails atlas={atlas} index={index} />
 
       <section className="card p-6 space-y-3">
         <h2 className="flex items-center gap-2 font-display text-3xl"><Database className="text-brand" /> Data sources</h2>

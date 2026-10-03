@@ -10,3 +10,8 @@ data/raw/pdhs.pdf
 data/raw/pdhs.txt
 data/raw/context.log
 *.tsbuildinfo
+data/raw/gme/hg38_gme.txt.gz
+# third-party full texts / bulk abstracts: used locally, not redistributed (pipeline only needs the derived JSON)
+data/raw/*.xml
+data/raw/**/*.xml
+data/raw/reported_abstracts.json.gz

@@ -171,3 +171,61 @@ VALIDATION = [
      "source": {"label": "Iranian PKU screening meta-analysis, BMC Pediatrics 2020", "url": "https://doi.org/10.1186/s12887-020-02230-6"},
      "note": "Model runs high: gnomAD's Middle-Eastern sample (~3,000 people) is dominated by mild-HPA alleles (A300S, V230I) that screening may not count. Exactly the gap more regional sequencing would close."},
 ]
+
+# ---------------------------------------------------------------------------------------------
+# Newborn blood-spot screening programmes. `covers` = diseases in this model that the national
+# programme screens for. kind "literature" = a cited source states it; "inferred" = no national
+# programme was found in the reviewed sources (stated as such in the UI, never as fact).
+# GJB2 deafness is excluded from the gap metric: it is found by hearing screening, not blood spots.
+# ---------------------------------------------------------------------------------------------
+BLOODSPOT_SCREENABLE = ["pku", "cf", "msud", "galt", "hcu", "mcad", "ga1", "pa", "mma", "pompe", "mps1", "mld", "krabbe"]
+_LEBANON_NBS = {"label": "Khneisser et al. 2015, J Med Screen 22:182: 'Few countries in the Middle East-North Africa region have adopted national newborn screening for inborn errors of metabolism by tandem mass spectrometry'",
+                "url": "https://doi.org/10.1177/0969141315590675"}
+SCREENING = {
+    "DEU": {"status": "national expanded", "covers": ["pku", "msud", "hcu", "ga1", "pa", "mma", "mcad", "cf", "galt"], "kind": "literature",
+            "src": {"label": "Target Diseases for Neonatal Screening in Germany, Dtsch Arztebl Int 2022 (Table 1, 19 target diseases)", "url": "https://di.aerzteblatt.de/int/archive/article/224839"}},
+    "FRA": {"status": "national expanded (2023)", "covers": ["pku", "cf", "mcad", "msud", "hcu", "ga1"], "kind": "literature",
+            "src": {"label": "New inborn errors of metabolism added to the French neonatal screening programme (PMID 34003097)", "url": "https://pubmed.ncbi.nlm.nih.gov/34003097"}},
+    "GBR": {"status": "national (9 conditions)", "covers": ["pku", "cf", "mcad", "hcu", "msud", "ga1"], "kind": "literature",
+            "src": {"label": "UK National Screening Committee: PKU, CHT, SCD, CF, MCADD + HCU, MSUD, GA1, IVA", "url": "https://legacyscreening.phe.org.uk/policydb_download.php?doc=420"}},
+    "USA": {"status": "national recommended panel (RUSP)", "covers": ["pku", "msud", "hcu", "mcad", "ga1", "pa", "mma", "galt", "cf", "pompe", "mps1", "krabbe"], "kind": "literature",
+            "src": {"label": "HHS Recommended Uniform Screening Panel (Krabbe added July 2024)", "url": "https://www.hrsa.gov/sites/default/files/hrsa/advisory-committees/heritable-disorders/reports-recommendations/infantile-krabbe-final-response.pdf"}},
+    "SAU": {"status": "national expanded (MS/MS, 20 disorders 2024)", "covers": ["pku", "msud", "hcu", "pa", "mma", "ga1", "mcad", "galt"], "kind": "literature",
+            "src": {"label": "Newborn Screening in Saudi Arabia, Int J Neonatal Screen 2026;12:35 (panel table)", "url": "https://doi.org/10.3390/ijns12020035"}},
+    "EGY": {"status": "national, phased roll-out since 2021 (19 diseases)", "covers": ["pku", "cf", "msud", "galt", "hcu", "pa", "mma", "mcad"], "kind": "literature",
+            "src": {"label": "Egypt State Information Service: initiative for early detection of 19 genetic diseases in newborns (2021)", "url": "https://sis.gov.eg/en/media-center/news/egypt-launches-initiative-for-early-detection-of-19-genetic-diseases-in-newborns-begins-free-treatment-of-spinal-muscular-atrophy/"}},
+    "TUR": {"status": "national (6 diseases)", "covers": ["pku", "cf"], "kind": "literature",
+            "src": {"label": "Turkish national programme: PKU, CH, biotinidase, CF, CAH, SMA (Anatolian Curr Med J 2024)", "url": "https://dergipark.org.tr/en/pub/acmj/article/1532044"}},
+    "IRN": {"status": "national CH + PKU (since 2005); MS/MS expansion piloted", "covers": ["pku"], "kind": "literature",
+            "src": {"label": "MENA-ISNS 2020 country report: 'Newborn screening for inherited metabolic diseases (IMDs) started in Iran covering CH and PKU in 2005'", "url": "https://doi.org/10.3390/ijns6010012"}},
+    "TUN": {"status": "no national metabolic screening (CH pilots since 2014)", "covers": [], "kind": "literature",
+            "src": {"label": "Newborn screening for congenital hypothyroidism: worldwide coverage, Eur Thyroid J 2025", "url": "https://etj.bioscientifica.com/view/journals/etj/14/1/ETJ-24-0327.xml"}},
+    "MAR": {"status": "no national metabolic screening (regional CH programme)", "covers": [], "kind": "literature",
+            "src": {"label": "Implementation of neonatal screening for congenital hypothyroidism in Eastern Morocco (PMC12285925)", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12285925/"}},
+    "PAK": {"status": "no national metabolic screening", "covers": [], "kind": "literature",
+            "src": {"label": "Wasim et al. 2023, Advanced Biology: no national-level NBS for inborn errors of metabolism in Pakistan", "url": "https://doi.org/10.1002/adbi.202200318"}},
+    "IND": {"status": "no national programme (<1M of ~25M births screened)", "covers": [], "kind": "literature",
+            "src": {"label": "Wasim et al. 2023, Advanced Biology: India has yet to establish a nationwide NBS programme", "url": "https://doi.org/10.1002/adbi.202200318"}},
+    "DZA": {"status": "no national programme found", "covers": [], "kind": "inferred", "src": _LEBANON_NBS},
+    "LBY": {"status": "no national programme found", "covers": [], "kind": "inferred", "src": _LEBANON_NBS},
+    "SDN": {"status": "no national programme found", "covers": [], "kind": "inferred", "src": _LEBANON_NBS},
+    "YEM": {"status": "no national programme found", "covers": [], "kind": "inferred", "src": _LEBANON_NBS},
+    "JOR": {"status": "no national MS/MS programme found", "covers": [], "kind": "inferred", "src": _LEBANON_NBS},
+    "IRQ": {"status": "no national programme found", "covers": [], "kind": "inferred", "src": _LEBANON_NBS},
+}
+
+# Cost model for "what would screening cost and save?" — every input cited or stated as a range.
+COSTS = {
+    "test_usd": [5.0, 35.0],  # assumed range for a full MS/MS panel per newborn (stated as inferred in the UI)
+    "test_kind": "inferred",
+    "saving_per_case_usd": 31631,
+    "saving_src": {"label": "Khneisser et al. 2015 (Lebanon, 126,000 newborns): direct cost of care halved, 'reaching on average 31,631 USD per detected case'",
+                   "url": "https://doi.org/10.1177/0969141315590675"},
+}
+
+# Country -> GME Variome subregion (a stated approximation, shown as inferred in the UI).
+GME_REGION = {"TUN": "NWA", "MAR": "NWA", "DZA": "NWA", "LBY": "NWA", "EGY": "NEA", "SDN": "NEA",
+              "SAU": "AP", "YEM": "AP", "JOR": "SD", "IRQ": "SD", "TUR": "TP", "IRN": "PP", "PAK": "PP"}
+# Bayesian pooling: the gnomAD ancestry-mix estimate acts as a prior worth this many alleles
+# (= 500 people); the regional exomes are the data. Stated as an assumption in the UI.
+REGIONAL_PRIOR_ALLELES = 1000

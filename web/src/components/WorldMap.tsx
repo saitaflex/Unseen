@@ -44,6 +44,12 @@ export const LAYER_META: Record<Layer, { label: string; legendLow: string; legen
     legendHigh: "over-studied",
     help: "Papers ÷ expected patients. Below 1× (orange) = patients nobody is writing about.",
   },
+  screening: {
+    label: "Newborn screening gap",
+    legendLow: "screened",
+    legendHigh: "missed",
+    help: "Treatable children born each year in countries whose national programme doesn't screen for them.",
+  },
   trials: {
     label: "Open trials per 100 expected births",
     legendLow: "trial desert",
@@ -84,7 +90,16 @@ export function WorldMap({ cells, layer, view, selected, compare, onSelect }: Pr
     return { path: geoPath(proj), projection: proj };
   }, [view]);
 
+  const single = cells.length > 0 && cells[0].pairs.length === 1;
   const color = useMemo(() => {
+    if (layer === "screening" && single) {
+      return (v: number | null) => (v === null ? "#e9e3d9" : v === 1 ? "#259978" : "#e0623a");
+    }
+    if (layer === "screening") {
+      const vals = cells.map((c) => c.country.screening_gap.missed_births).filter((v) => v > 0);
+      const s = scaleLog<string>().domain([Math.max(1, Math.min(...vals)), Math.max(2, ...vals)]).range(["#fbe6dc", "#b5441f"]).clamp(true);
+      return (v: number | null) => (v === null || v <= 0 ? "#dff1e9" : s(Math.max(1, v)));
+    }
     const values = cells.map((c) => layerValue(c, layer)).filter((v): v is number => v !== null && v > 0);
     if (layer === "attention") {
       const s = scaleLog<string>().domain([0.03, 1, 30]).range(["#e0623a", "#efe9df", "#259978"]).clamp(true);
@@ -100,7 +115,7 @@ export function WorldMap({ cells, layer, view, selected, compare, onSelect }: Pr
       if (v <= 0) return layer === "trials" ? "#fbe6dc" : "#ece6dc";
       return s(v);
     };
-  }, [cells, layer]);
+  }, [cells, layer, single]);
 
   const ring = useMemo(() => {
     const max = Math.max(1, ...cells.map((c) => c.expected.median));
@@ -203,12 +218,23 @@ export function WorldMap({ cells, layer, view, selected, compare, onSelect }: Pr
   );
 }
 
-export function Legend({ layer }: { layer: Layer }) {
+export function Legend({ layer, single = false }: { layer: Layer; single?: boolean }) {
   const meta = LAYER_META[layer];
+  if (layer === "screening" && single) {
+    return (
+      <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-ink-2">
+        {[["#259978", "national programme screens for it"], ["#e0623a", "detectable, but not screened"], ["#e9e3d9", "not a blood-spot disease"]].map(([c, l]) => (
+          <span key={l} className="flex items-center gap-2"><span className="h-3 w-5 rounded-sm" style={{ background: c }} />{l}</span>
+        ))}
+      </div>
+    );
+  }
   const gradient =
     layer === "attention"
       ? "linear-gradient(90deg,#e0623a,#efe9df,#259978)"
-      : layer === "trials"
+      : layer === "screening"
+        ? "linear-gradient(90deg,#dff1e9 0 12%,#fbe6dc 12%,#b5441f)"
+        : layer === "trials"
         ? "linear-gradient(90deg,#fbe6dc 0 12%,#d9e8f5 12%,#1f4f80)"
         : "linear-gradient(90deg,#e3f1ea,#0f5c46)";
   return (

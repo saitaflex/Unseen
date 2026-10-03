@@ -36,6 +36,9 @@ query($g: String!) {
       clinical_significance
       gold_stars
       review_status
+      hgvsc
+      hgvsp
+      in_gnomad
     }
   }
 }
@@ -103,19 +106,26 @@ def compact(gene: dict) -> dict:
         "max_an": max_an,
         "n_variants_total": len(gene["variants"]),
         "variants": kept,
+        # Every ClinVar P/LP record in the gene, whether or not gnomAD saw it. Founder alleles that
+        # are rare in gnomAD but common in regional cohorts (GME) are matched against this list.
+        "clinvar_plp": [
+            {"id": c["variant_id"], "hgvsc": c.get("hgvsc"), "hgvsp": c.get("hgvsp"),
+             "clinvar": c["clinical_significance"], "stars": c["gold_stars"]}
+            for c in gene["clinvar_variants"] if is_plp(c["clinical_significance"])
+        ],
     }
 
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     genes = sorted({g for d in DISEASES for g in d["genes"]})
-    only = set(sys.argv[1:])
+    only = {a for a in sys.argv[1:] if not a.startswith("--")}
     with httpx.Client(timeout=180) as client:
         for gene in genes:
             if only and gene not in only:
                 continue
             path = OUT / f"{gene}.json"
-            if path.exists() and not only:
+            if path.exists() and not only and "--refresh" not in sys.argv:
                 print(f"skip {gene} (cached)")
                 continue
             data = compact(fetch_gene(client, gene))

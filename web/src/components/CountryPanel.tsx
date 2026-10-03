@@ -1,7 +1,9 @@
-import { AlertTriangle, Dna, FlaskConical, Users, X } from "lucide-react";
+import { useState } from "react";
+import { AlertTriangle, BadgeCheck, Baby, Calculator, Coins, Dna, FlaskConical, Globe2, LifeBuoy, ScrollText, Users, X } from "lucide-react";
 import type { Atlas, CellView, DiseaseKey } from "../lib/types";
 import { fmtCount, fmtOneIn, fmtPct, fmtRatio } from "../lib/format";
 import { EvidenceCard, KindBadge, SourceLink } from "./Provenance";
+import { MathTrace } from "./MathTrace";
 
 const GROUP_LABEL: Record<string, string> = {
   afr: "African / African-American",
@@ -30,6 +32,8 @@ export function CountryPanel({ atlas, cell, disease, onClose, onPickDisease }: P
   const ov = c.consanguinity.overall_pct;
   const range = (r: [number, number]) => (r[0] === r[1] ? `${r[0]}%` : `${r[0]}–${r[1]}%`);
   const lowAttention = cell.attention !== null && cell.attention < 0.5;
+  const [showMath, setShowMath] = useState(() => new URLSearchParams(window.location.search).get("calc") === "1");
+  const usd = (x: number) => (x >= 1e9 ? `$${(x / 1e9).toFixed(1)}B` : x >= 1e6 ? `$${(x / 1e6).toFixed(1)}M` : `$${Math.round(x / 1000)}k`);
 
   return (
     <aside className="card rise p-5 lg:p-6 space-y-5" aria-label={`Evidence for ${c.name}`}>
@@ -158,14 +162,178 @@ export function CountryPanel({ atlas, cell, disease, onClose, onPickDisease }: P
         )}
       </div>
 
+      {d && pair && (
+        <button
+          onClick={() => setShowMath(true)}
+          className="flex w-full items-center justify-center gap-2 rounded-2xl border border-ink/15 bg-paper-2/60 px-4 py-3 text-sm font-medium hover:border-brand/50"
+        >
+          <Calculator size={16} className="text-brand" /> Show the full calculation, step by step
+        </button>
+      )}
+      {showMath && pair && <MathTrace atlas={atlas} pair={pair} onClose={() => setShowMath(false)} />}
+
+      {d && pair && (
+        <div className="space-y-2.5">
+          <h3 className="flex items-center gap-2 font-semibold">
+            <ScrollText size={16} className="text-brand" /> Diagnosed so far
+          </h3>
+          {pair.reported.best ? (
+            <EvidenceCard
+              title="Largest published patient series (text-mined)"
+              kind="observed"
+              source={pair.reported.best.url ? { label: `PMID ${pair.reported.best.pmid} · ${pair.reported.best.year}`, url: pair.reported.best.url } : undefined}
+            >
+              <span className="num font-semibold">{pair.reported.best.n} {pair.reported.best.unit}</span>
+              {pair.reported.years_of_expected !== null && (
+                <>
+                  {" "}={" "}
+                  <span className="num font-semibold text-unseen">
+                    {pair.reported.years_of_expected < 1
+                      ? `${Math.max(1, Math.round(pair.reported.years_of_expected * 12))} month${Math.round(pair.reported.years_of_expected * 12) === 1 ? "" : "s"}`
+                      : `${pair.reported.years_of_expected.toFixed(1)} years`}
+                  </span>{" "}
+                  of expected births.
+                </>
+              )}
+              <blockquote className="mt-1.5 border-l-2 border-line pl-2 text-xs italic text-ink-3">"{pair.reported.best.sentence}"</blockquote>
+            </EvidenceCard>
+          ) : (
+            <EvidenceCard title="Largest published patient series" kind="observed">
+              No patient count found in {pair.reported.abstracts_scanned} abstracts
+              {pair.reported.abstracts_scanned === 0 ? " (no papers at all)" : " that name this disease and country"}. An evidence desert.
+            </EvidenceCard>
+          )}
+          {pair.evidence.length > 0 && (
+            <EvidenceCard title={`AI evidence agent · ${pair.evidence.length} verified finding${pair.evidence.length > 1 ? "s" : ""}`} kind="literature">
+              <ul className="space-y-1.5">
+                {pair.evidence.map((f, i) => (
+                  <li key={i}>
+                    <span className="num font-semibold">
+                      {f.value} {f.unit}
+                    </span>
+                    {f.variant ? ` · ${f.variant}` : ""}{" "}
+                    <span className="chip" style={{ background: "#dff1e9", color: "#0f5c46" }}>
+                      <BadgeCheck size={11} /> quote verified
+                    </span>
+                    <div className="text-xs italic text-ink-3">
+                      "{f.quote}" <SourceLink href={f.url}>PMID {f.pmid}</SourceLink>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </EvidenceCard>
+          )}
+
+          <h3 className="flex items-center gap-2 pt-2 font-semibold">
+            <Baby size={16} className="text-brand" /> Newborn screening
+          </h3>
+          <EvidenceCard title={c.screening.status} kind={c.screening.kind === "literature" ? "literature" : "inferred"} source={c.screening.src}>
+            {!pair.screening.bloodspot ? (
+              "Not detectable by standard blood-spot screening."
+            ) : pair.screening.covered ? (
+              <>
+                Screened nationally: about <span className="num font-semibold">{fmtCount(pair.expected_births.median)}</span> affected babies a year can
+                be found at birth.
+              </>
+            ) : (
+              <>
+                Not screened: about <span className="num font-semibold text-unseen">{fmtCount(pair.expected_births.median)}</span> treatable babies a
+                year are born without a test that exists.
+              </>
+            )}
+          </EvidenceCard>
+
+          {pair.regional && (
+            <>
+              <h3 className="flex items-center gap-2 pt-2 font-semibold">
+                <Globe2 size={16} className="text-brand" /> Regional genomes cross-check
+              </h3>
+              <EvidenceCard
+                title={`GME Variome · ${pair.regional.label} · ${pair.regional.people} people`}
+                kind="observed"
+                source={{ label: atlas.meta.gme.source.label, url: atlas.meta.gme.source.url }}
+              >
+                {pair.regional.genes.map((g) => (
+                  <div key={g.gene} className="num text-xs">
+                    {g.gene}: ancestry mix q {g.q_proxy.toExponential(2)} · regional q {g.q_gme.toExponential(2)}
+                  </div>
+                ))}
+                <div className="mt-1">
+                  With regional data: <span className="num font-semibold">{fmtCount(pair.regional.expected_births.median)}</span>/yr
+                  <span className="num text-ink-3">
+                    {" "}({fmtCount(pair.regional.expected_births.p5)}–{fmtCount(pair.regional.expected_births.p95)})
+                  </span>{" "}
+                  vs <span className="num">{fmtCount(pair.expected_births.median)}</span> main estimate.
+                </div>
+              </EvidenceCard>
+            </>
+          )}
+
+          <h3 className="flex items-center gap-2 pt-2 font-semibold">
+            <LifeBuoy size={16} className="text-brand" /> Find help
+          </h3>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {[
+              { l: "Orphanet: expert centres & patient groups", u: d.orphanet.url },
+              { l: "Recruiting trials", u: pair.trials.url },
+              { l: `Genetic tests for ${d.genes.join(", ")} (NCBI GTR)`, u: `https://www.ncbi.nlm.nih.gov/gtr/all/tests/?term=${encodeURIComponent(d.genes[0])}` },
+              { l: "Published research", u: pair.papers.url },
+            ].map((x) => (
+              <a key={x.l} href={x.u} target="_blank" rel="noreferrer" className="rounded-xl border border-line px-3 py-2 text-xs hover:border-brand/50">
+                {x.l} ↗
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {!d && (
+        <div className="space-y-2.5">
+          <h3 className="flex items-center gap-2 font-semibold">
+            <Baby size={16} className="text-brand" /> Newborn screening gap
+          </h3>
+          <EvidenceCard title={c.screening.status} kind={c.screening.kind === "literature" ? "literature" : "inferred"} source={c.screening.src}>
+            <div className="grid grid-cols-2 gap-2 text-center">
+              <div className="rounded-xl bg-brand-soft p-2">
+                <div className="num text-xl font-semibold text-brand-deep">{fmtCount(c.screening_gap.covered_births)}</div>
+                <div className="text-[0.7rem]">found at birth / yr</div>
+              </div>
+              <div className="rounded-xl bg-unseen-soft p-2">
+                <div className="num text-xl font-semibold text-unseen">{fmtCount(c.screening_gap.missed_births)}</div>
+                <div className="text-[0.7rem]">treatable, not screened / yr</div>
+              </div>
+            </div>
+          </EvidenceCard>
+          <EvidenceCard title="What full blood-spot screening would cost and save" kind="computed" source={atlas.meta.costs.saving_src}>
+            <div className="flex items-start gap-2">
+              <Coins size={16} className="mt-0.5 shrink-0 text-amber" />
+              <div>
+                Testing all <span className="num">{fmtCount(c.births.births_per_year)}</span> newborns at ${atlas.meta.costs.test_usd[0]}–
+                {atlas.meta.costs.test_usd[1]} each <KindBadge kind="inferred" /> costs{" "}
+                <span className="num font-semibold">
+                  {usd(c.economics.annual_cost_usd[0])}–{usd(c.economics.annual_cost_usd[1])}
+                </span>{" "}
+                a year and would find about <span className="num font-semibold">{fmtCount(c.economics.cases_per_year)}</span> children. At the Lebanese
+                figure of ${atlas.meta.costs.saving_per_case_usd.toLocaleString()} saved per case, that is{" "}
+                <span className="num font-semibold text-brand-deep">{usd(c.economics.savings_usd)}</span> a year: a benefit–cost ratio of{" "}
+                <span className="num font-semibold">
+                  {c.economics.benefit_cost_ratio[0].toFixed(1)}–{c.economics.benefit_cost_ratio[1].toFixed(1)}×
+                </span>
+                .
+              </div>
+            </div>
+          </EvidenceCard>
+        </div>
+      )}
+
       {/* Uncertainty */}
       {d && pair && (
         <div className="space-y-2">
           <h3 className="flex items-center gap-2 font-semibold">
             <Dna size={16} className="text-brand" /> What would change this estimate?
           </h3>
-          <Bar label="Uncertainty from genetic data" value={pair.uncertainty.from_genetics} color="#259978" />
-          <Bar label="Uncertainty from consanguinity data" value={pair.uncertainty.from_consanguinity} color="#c98a1b" />
+          <Bar label="Interval left from genetic data alone" value={pair.uncertainty.from_genetics} color="#259978" />
+          <Bar label="Interval left from consanguinity data alone" value={pair.uncertainty.from_consanguinity} color="#c98a1b" />
           <p className="text-sm text-ink-2">
             Sequencing <strong>1,000 more people</strong> from {c.name}'s ancestry groups would narrow the interval by about{" "}
             <span className="num font-semibold text-ink">{fmtPct(Math.max(0, pair.uncertainty.narrowing_if_1000_sequenced))}</span>

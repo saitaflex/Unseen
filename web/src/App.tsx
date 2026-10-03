@@ -12,7 +12,7 @@ import { MethodPage } from "./components/MethodPage";
 import { navigate } from "./lib/route";
 
 const WEST = new Set(["FRA", "DEU", "GBR", "USA"]);
-const LAYERS: Layer[] = ["expected", "rate", "attention", "trials"];
+const LAYERS: Layer[] = ["expected", "rate", "attention", "screening", "trials"];
 
 interface UrlState {
   disease: DiseaseKey;
@@ -65,6 +65,7 @@ export default function App() {
     if (disease !== "all") p.set("d", disease);
     if (country) p.set("c", country);
     if (layer !== "expected") p.set("l", layer);
+    if (new URLSearchParams(window.location.search).get("calc") === "1" && country && disease !== "all") p.set("calc", "1");
     const qs = p.toString();
     window.history.replaceState(null, "", `/atlas${qs ? `?${qs}` : ""}${window.location.hash}`);
   }, [disease, country, layer]);
@@ -121,7 +122,7 @@ export default function App() {
       },
       {
         title: "Validated where the truth is known",
-        body: "Where every newborn is screened, UNSEEN's expectations match: Germany for PKU, MCAD and galactosemia, Turkey for PKU. Where it misses (Iran), the method page says why. The same reason is the case for sequencing more people in the region.",
+        body: "Where every newborn is screened, UNSEEN's expectations match: Germany for PKU, MCAD and galactosemia, Turkey for PKU. Where it misses (Iran), regional genomes show it isn't an ancestry error, and the Method page says what is.",
         state: { page: "method" },
       },
       {
@@ -268,24 +269,24 @@ export default function App() {
                 ))}
               </select>
             </label>
-            <div role="radiogroup" aria-label="Map layer" className="flex flex-wrap gap-1 rounded-full bg-paper-2 p-1">
+            <div role="radiogroup" aria-label="Map layer" className="scrollbar-thin flex max-w-full gap-1 overflow-x-auto rounded-full bg-paper-2 p-1">
               {LAYERS.map((l) => (
                 <button
                   key={l}
                   role="radio"
                   aria-checked={layer === l}
                   onClick={() => setLayer(l)}
-                  className={`rounded-full px-3 py-1.5 text-xs font-medium transition sm:text-sm ${
+                  className={`shrink-0 whitespace-nowrap rounded-full px-3 py-1.5 text-xs font-medium transition sm:text-sm ${
                     layer === l ? "bg-ink text-paper shadow" : "text-ink-2 hover:text-ink"
                   }`}
                 >
-                  {l === "expected" ? "Expected births" : l === "rate" ? "Risk per birth" : l === "attention" ? "Research attention" : "Trial access"}
+                  {l === "expected" ? "Expected births" : l === "rate" ? "Risk per birth" : l === "attention" ? "Research attention" : l === "screening" ? "Screening gap" : "Trial access"}
                 </button>
               ))}
             </div>
             <button
               onClick={() => setView(view === "focus" ? "world" : "focus")}
-              className="flex items-center justify-center gap-1.5 rounded-full border border-line px-3 py-2 text-sm hover:border-brand/50"
+              className="flex shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-full border border-line px-3 py-2 text-sm hover:border-brand/50"
             >
               <Globe2 size={15} /> {view === "focus" ? "Show the US too" : "Focus region"}
             </button>
@@ -301,7 +302,7 @@ export default function App() {
                 <p className="px-1 text-xs text-ink-3">{LAYER_META[layer].help}</p>
                 <WorldMap cells={cells} layer={layer} view={view} selected={country} compare={null} onSelect={setCountry} />
                 <div className="px-1 pt-2">
-                  <Legend layer={layer} />
+                  <Legend layer={layer} single={disease !== "all"} />
                 </div>
               </section>
 

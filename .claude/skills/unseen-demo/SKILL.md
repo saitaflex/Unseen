@@ -7,15 +7,17 @@ description: Run, deploy and present the UNSEEN demo — local preview, Vercel d
 
 ## Run / deploy
 - Local: `cd web && npm run dev`, or `npm run build && npx vite preview`.
-- Vercel: `cd web && npx vercel --prod` (Vite framework, output `dist`, function `api/ask.ts`).
-  Optional env `OPENAI_API_KEY` / `OPENAI_MODEL` turns on the AI narrator; without it the grounded engine answers.
+- Vercel: `cd web && npx vercel --prod` (Vite framework, output `dist`, function `api/agent.ts`).
+  Env `OPENAI_API_KEY` (+ optional `OPENAI_MODEL`) turns on the tool-calling agent; without it the offline grounded engine answers.
 - On Windows use PowerShell for CLI args that start with `/` (Git Bash rewrites them).
 
 ## Deep links for recording
 - `?story=1` … `?story=7`: guided story steps
 - `?d=pku&c=SDN&l=attention`: PKU in Sudan, research-attention layer
 - `?c=PAK&l=rate`: Pakistan, all diseases, action plan
-- `/#method`: method, validation, sources
+- `/atlas?d=pku&c=TUN&calc=1`: opens the full step-by-step calculation
+- `/atlas?l=screening`: newborn screening gap layer
+- `/atlas#method`: method, 17 formulas, validation, sources
 
 ## 3-minute pitch
 1. Hook: "Every rare-disease map shows where patients have been found. This one shows where they haven't."

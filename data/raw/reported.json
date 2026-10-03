@@ -1,0 +1,2525 @@
+{
+ "pairs": {
+  "pku|TUN": {
+   "abstracts_scanned": 12,
+   "best": null
+  },
+  "pku|MAR": {
+   "abstracts_scanned": 5,
+   "best": null
+  },
+  "pku|DZA": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "pku|LBY": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "pku|EGY": {
+   "abstracts_scanned": 11,
+   "best": null
+  },
+  "pku|SDN": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "pku|SAU": {
+   "abstracts_scanned": 15,
+   "best": null
+  },
+  "pku|YEM": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "pku|JOR": {
+   "abstracts_scanned": 6,
+   "best": null
+  },
+  "pku|IRQ": {
+   "abstracts_scanned": 4,
+   "best": {
+    "n": 39,
+    "unit": "children",
+    "sentence": "Methods The study involved 39 children diagnosed with phenylketonuria through newborn screening at the Central Child Teaching Hospital, Baghdad, Iraq.",
+    "pmid": "40831158",
+    "title": "Growth assessment in children with phenylketonuria.",
+    "year": "2025",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/40831158"
+   }
+  },
+  "pku|PAK": {
+   "abstracts_scanned": 6,
+   "best": null
+  },
+  "pku|IRN": {
+   "abstracts_scanned": 77,
+   "best": {
+    "n": 137,
+    "unit": "patients",
+    "sentence": "This approach was used successfully for simultaneous identification of six most common PAH gene mutations in 137 phenylketonuria patients in the Iranian population.",
+    "pmid": "29616438",
+    "title": "A novel compound-primed multiplex ARMS-PCR (CPMAP) for simultaneous detection of common PAH gene mutations.",
+    "year": "2018",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/29616438"
+   }
+  },
+  "pku|TUR": {
+   "abstracts_scanned": 84,
+   "best": {
+    "n": 108,
+    "unit": "patients",
+    "sentence": "Methods Demographic characteristics of 108 patients with hyperphenylalaninemia (HPA) and 94 patients whose diagnosis was confirmed by  PAH  gene analysis (Sanger DNA Sequence Analysis and Next-Generation Sequencing) were determined retrospectively.",
+    "pmid": "35355500",
+    "title": "Spectrum of <i>PAH</i> gene mutations and genotype-phenotype correlation in patients with phenylalanine hydroxylase deficiency from Turkey.",
+    "year": "2022",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/35355500"
+   }
+  },
+  "pku|IND": {
+   "abstracts_scanned": 28,
+   "best": {
+    "n": 7,
+    "unit": "families",
+    "sentence": "Analysis of seven Indian phenylketonuria families has revealed four novel mutations in the phenylalanine hydroxylase gene; two affected consensus splice sequence and the 3' UTR, respectively, while the other two were single base insertion and deletion mutations, respectively.",
+    "pmid": "20188615",
+    "title": "Phenylalanine hydroxylase gene mutations in phenylketonuria patients from India: identification of novel mutations that affect PAH RNA.",
+    "year": "2010",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/20188615"
+   }
+  },
+  "pku|FRA": {
+   "abstracts_scanned": 65,
+   "best": {
+    "n": 3500,
+    "unit": "children",
+    "sentence": "This resulted in the diagnosis of more than 3,500 children with PKU or mild hyperphenylalaninemia.",
+    "pmid": "34003092",
+    "title": "[Newborn screening of phenylketonuria in France].",
+    "year": "2021",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/34003092"
+   }
+  },
+  "pku|DEU": {
+   "abstracts_scanned": 102,
+   "best": {
+    "n": 258,
+    "unit": "patients",
+    "sentence": "Methods We studied 258 patients with phenylketonuria from Denmark and Germany for the presence of eight mutations previously found in patients from these countries.",
+    "pmid": "2014036",
+    "title": "Molecular basis of phenotypic heterogeneity in phenylketonuria.",
+    "year": "1991",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/2014036"
+   }
+  },
+  "pku|GBR": {
+   "abstracts_scanned": 61,
+   "best": {
+    "n": 1886,
+    "unit": "infants",
+    "sentence": "Birth weight in a total of 1886 British infants with phenylketonuria (PKU) born between 1964 and 1992 was examined in relation to sex, social class, gestational age, disease severity and birth year.",
+    "pmid": "8529686",
+    "title": "No reduction in birth weight in phenylketonuria.",
+    "year": "1995",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/8529686"
+   }
+  },
+  "pku|USA": {
+   "abstracts_scanned": 176,
+   "best": {
+    "n": 367,
+    "unit": "patients",
+    "sentence": "We reviewed medical records for 367 patients diagnosed with PKU or persistent mild hyperphenylalaninemia (MHP) between 1950 and 2015 who had PAH genotyping.",
+    "pmid": "31623983",
+    "title": "Phenylalanine hydroxylase genotype-phenotype associations in the United States: A single center study.",
+    "year": "2019",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/31623983"
+   }
+  },
+  "cf|TUN": {
+   "abstracts_scanned": 26,
+   "best": null
+  },
+  "cf|MAR": {
+   "abstracts_scanned": 8,
+   "best": {
+    "n": 9,
+    "unit": "patients",
+    "sentence": "Not-yet-reported CFTR variants of unknown significance were identified from a small cohort of nine cystic fibrosis patients and parents from Fez, Morocco.",
+    "pmid": null,
+    "title": "<i>CFTR</i>Gene Variant Detection in Moroccan Individuals via Nanopore Long-Read Sequencing",
+    "year": "2025",
+    "journal": null,
+    "url": null
+   }
+  },
+  "cf|DZA": {
+   "abstracts_scanned": 9,
+   "best": null
+  },
+  "cf|LBY": {
+   "abstracts_scanned": 4,
+   "best": null
+  },
+  "cf|EGY": {
+   "abstracts_scanned": 26,
+   "best": {
+    "n": 60,
+    "unit": "patients",
+    "sentence": "The allelic frequencies of the mutations p.Phe508del, p.Ser1251Asn and the 5T variant in 60 Egyptian cystic fibrosis patients were 24.2%, 3.3% and 2.5% respectively.",
+    "pmid": "26989879",
+    "title": "Molecular screening of CFTR gene in Egyptian patients with congenital bilateral absence of the vas deferens: a preliminary study.",
+    "year": "2016",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/26989879"
+   }
+  },
+  "cf|SDN": {
+   "abstracts_scanned": 5,
+   "best": {
+    "n": 35,
+    "unit": "patients",
+    "sentence": "This is a retrospective review of 35 Sudanese patients with confirmed cystic fibrosis.",
+    "pmid": "27493388",
+    "title": "Cystic fibrosis in Sudanese children: First report of 35 cases.",
+    "year": "2014",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/27493388"
+   }
+  },
+  "cf|SAU": {
+   "abstracts_scanned": 56,
+   "best": {
+    "n": 48,
+    "unit": "children",
+    "sentence": "Methods This retrospective study included all pediatric patients (aged  Results A total of 48 children with cystic fibrosis were included (mean age: 9.7 \u00b1 5.6 years; females: 70.8%).",
+    "pmid": "41163820",
+    "title": "Risk Factors of Malnutrition in Children with Cystic Fibrosis: A 14-year Retrospective Study from Saudi Arabia.",
+    "year": "2025",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/41163820"
+   }
+  },
+  "cf|YEM": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "cf|JOR": {
+   "abstracts_scanned": 21,
+   "best": null
+  },
+  "cf|IRQ": {
+   "abstracts_scanned": 7,
+   "best": null
+  },
+  "cf|PAK": {
+   "abstracts_scanned": 33,
+   "best": null
+  },
+  "cf|IRN": {
+   "abstracts_scanned": 116,
+   "best": {
+    "n": 100,
+    "unit": "patients",
+    "sentence": "Results The Burkholderia cepacia complex was not identified in oral mucosal swab samples from 100 cystic fibrosis patients using conventional culture media, including MacConkey agar and blood agar, followed by biochemical tests.",
+    "pmid": "42143394",
+    "title": "Molecular identification of Burkholderia cepacia complex from people with cystic fibrosis in northwestern Iran: a research note.",
+    "year": "2026",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/42143394"
+   }
+  },
+  "cf|TUR": {
+   "abstracts_scanned": 145,
+   "best": {
+    "n": 604,
+    "unit": "patients",
+    "sentence": "Methods We investigated CFTR gene mutations in samples from 604 cystic fibrosis patients diagnosed at Hacettepe University, the largest referral CF center in Turkey, by different techniques such as strip assay and direct sequencing.",
+    "pmid": "32687833",
+    "title": "Mutations of the CFTR gene and novel variants in Turkish patients with cystic fibrosis: 24-years experience.",
+    "year": "2020",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/32687833"
+   }
+  },
+  "cf|IND": {
+   "abstracts_scanned": 200,
+   "best": {
+    "n": 3,
+    "unit": "children",
+    "sentence": "Three Pueblo American Indian children with cystic fibrosis are described.",
+    "pmid": "3967445",
+    "title": "Cystic fibrosis in Pueblo Indian children.",
+    "year": "1985",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/3967445"
+   }
+  },
+  "cf|FRA": {
+   "abstracts_scanned": 300,
+   "best": {
+    "n": 4615,
+    "unit": "individuals",
+    "sentence": "Based on almost 30 years of experience of CFTR testing, CFTR-France (https://cftr.iurc.montp.inserm.fr/cftr) currently compiles 16,819 variant records from 4,615 individuals with cystic fibrosis (CF) or CFTR-RD (related disorders), fetuses with ultrasound bowel anomalies, newborns awaiting clinical diagnosis, and asymptomatic compound heterozygotes.",
+    "pmid": "28603918",
+    "title": "CFTR-France, a national relational patient database for sharing genetic and phenotypic data associated with rare CFTR variants.",
+    "year": "2017",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/28603918"
+   }
+  },
+  "cf|DEU": {
+   "abstracts_scanned": 300,
+   "best": {
+    "n": 670,
+    "unit": "patients",
+    "sentence": "Methods During a routine clinic visit, 670 German patients with cystic fibrosis (12-64 years, M = 23.1) completed questionnaires on their vocational and social achievement, life satisfaction, and symptoms of anxiety and depression.",
+    "pmid": "22215282",
+    "title": "Growing up with cystic fibrosis: achievement, life satisfaction, and mental health.",
+    "year": "2012",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/22215282"
+   }
+  },
+  "cf|GBR": {
+   "abstracts_scanned": 250,
+   "best": {
+    "n": 273,
+    "unit": "children",
+    "sentence": "Life tables were calculated for 273 British children with cystic fibrosis for the period 1974-9.",
+    "pmid": "6639137",
+    "title": "Survival rates in cystic fibrosis.",
+    "year": "1983",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/6639137"
+   }
+  },
+  "cf|USA": {
+   "abstracts_scanned": 300,
+   "best": null
+  },
+  "wilson|TUN": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "wilson|MAR": {
+   "abstracts_scanned": 6,
+   "best": {
+    "n": 46,
+    "unit": "children",
+    "sentence": "Patients and methods The study was carried out at the University Hospital Center of Marrakesh, Morocco; 46 children were diagnosed with Wilson's disease from 2008 to 2019.",
+    "pmid": "35705388",
+    "title": "Epidemiology, clinical features, and mortality rate of Wilson disease in Moroccan children: A pediatric case series.",
+    "year": "2022",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/35705388"
+   }
+  },
+  "wilson|DZA": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "wilson|LBY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "wilson|EGY": {
+   "abstracts_scanned": 8,
+   "best": {
+    "n": 48,
+    "unit": "children",
+    "sentence": "The study consisted of 48 children with Wilson disease from 32 independent families.",
+    "pmid": "18483695",
+    "title": "Mutational analysis of ATP7B gene in Egyptian children with Wilson disease: 12 novel mutations.",
+    "year": "2008",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/18483695"
+   }
+  },
+  "wilson|SDN": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "wilson|SAU": {
+   "abstracts_scanned": 18,
+   "best": {
+    "n": 40,
+    "unit": "patients",
+    "sentence": "A retrospective cohort study of 40 adult patients diagnosed with predominantly hepatic Wilson's disease between 1994 and 2008 at King Abdulaziz Medical City, Riyadh was carried out.",
+    "pmid": "23006462",
+    "title": "Presentation, diagnosis and outcome of predominantly hepatic Wilson's disease in adult Saudi patients: a single centre experience.",
+    "year": "2012",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/23006462"
+   }
+  },
+  "wilson|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "wilson|JOR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "wilson|IRQ": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "wilson|PAK": {
+   "abstracts_scanned": 22,
+   "best": null
+  },
+  "wilson|IRN": {
+   "abstracts_scanned": 28,
+   "best": {
+    "n": 107,
+    "unit": "patients",
+    "sentence": "Results Out of 2198 patients who'd received a liver transplant in the period; 107 patients were diagnosed with Wilson's disease (21 with fulminant hepatic failure); age of patient ranged from 5 to 59 years; 56.07% of patients in this series had some type of neuropsychiatric manifestation before transplantation, of which 66.67% showed improvement after the procedure. 18 patients had aggravation of neuropsychiatric symptoms after transplantation.",
+    "pmid": "27930723",
+    "title": "Fourteen Years of Experience of Liver Transplantation for Wilson's Disease; a Report on 107 Cases from Shiraz, Iran.",
+    "year": "2016",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/27930723"
+   }
+  },
+  "wilson|TUR": {
+   "abstracts_scanned": 21,
+   "best": {
+    "n": 14,
+    "unit": "patients",
+    "sentence": "A series of 14 patients with Wilson's disease were evaluated in order to determine the characteristic bone changes found in this metabolic disorder.",
+    "pmid": "1220508",
+    "title": "Osteoarticular pains and changes in Wilson's disease: a radiological study in fourteen patients in nine Turkish families.",
+    "year": "1975",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/1220508"
+   }
+  },
+  "wilson|IND": {
+   "abstracts_scanned": 139,
+   "best": {
+    "n": 25,
+    "unit": "children",
+    "sentence": "Results Analysis of 25 children with Wilson's disease comprising 19 index cases and 6 siblings detected on family screening, revealed mean age of onset for the hepatic presentation was 6.8 years versus 8 years for the neurologic patient.",
+    "pmid": "10869138",
+    "title": "Wilson's disease--early onset and lessons from a pediatric cohort in India.",
+    "year": "2000",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/10869138"
+   }
+  },
+  "wilson|FRA": {
+   "abstracts_scanned": 48,
+   "best": {
+    "n": 13,
+    "unit": "patients",
+    "sentence": "Patients and methods Thirteen patients with Wilson's disease, transplanted in Lyon France between January 1987 and May 2006, were including in this study: eight women and five men, aged eight to 53 years (median 20 years, seven children and six adults).",
+    "pmid": "18403153",
+    "title": "Long-term results of liver transplantation for Wilson's disease.",
+    "year": "2008",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/18403153"
+   }
+  },
+  "wilson|DEU": {
+   "abstracts_scanned": 47,
+   "best": {
+    "n": 380,
+    "unit": "patients",
+    "sentence": "Methods We performed a retrospective analysis of data on 380 patients with Wilson disease from tertiary care centers in Germany and Austria, and 25 additional patients from the EUROWILSON registry.",
+    "pmid": "23542331",
+    "title": "Efficacy and safety of oral chelators in treatment of patients with Wilson disease.",
+    "year": "2013",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/23542331"
+   }
+  },
+  "wilson|GBR": {
+   "abstracts_scanned": 23,
+   "best": {
+    "n": 3,
+    "unit": "patients",
+    "sentence": "We report the first cases with Wilson's disease due to segmental uniparental isodisomy as well as three patients with three ATP7B mutations and three families with Wilson's disease in two consecutive generations.",
+    "pmid": "23518715",
+    "title": "A genetic study of Wilson's disease in the United Kingdom.",
+    "year": "2013",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/23518715"
+   }
+  },
+  "wilson|USA": {
+   "abstracts_scanned": 85,
+   "best": null
+  },
+  "pompe|TUN": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "pompe|MAR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "pompe|DZA": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "pompe|LBY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "pompe|EGY": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "pompe|SDN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "pompe|SAU": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "pompe|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "pompe|JOR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "pompe|IRQ": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "pompe|PAK": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "pompe|IRN": {
+   "abstracts_scanned": 11,
+   "best": {
+    "n": 9,
+    "unit": "patients",
+    "sentence": "Methods In this case series study, nine patients with Pompe disease without complaints of neuropathy were evaluated.",
+    "pmid": "39731073",
+    "title": "Sensory neuropathy in patients with Pompe disease: a case series in Iran.",
+    "year": "2024",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/39731073"
+   }
+  },
+  "pompe|TUR": {
+   "abstracts_scanned": 7,
+   "best": {
+    "n": 7,
+    "unit": "patients",
+    "sentence": "In 53.6% (n\u00a0=\u00a056) of the patients (23 patients with Gaucher disease [10 type III, 13 type I], 26 patients with MPS [8 type VI, 11 type IVA, 1 type III, 3 type II, and 3 type I], and 7 patients with Pompe disease), an abnormality in at least one of the autoimmunity or immunodeficiency parameters was reported.",
+    "pmid": "35705384",
+    "title": "Real-world patient data on immunity and COVID-19 status of patients with MPS, Gaucher, and Pompe diseases from Turkey.",
+    "year": "2022",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/35705384"
+   }
+  },
+  "pompe|IND": {
+   "abstracts_scanned": 14,
+   "best": {
+    "n": 20,
+    "unit": "patients",
+    "sentence": "We evaluated the clinical histories, motor and pulmonary functions, cardiac phenotypes and GAA genotypes of an Indian cohort of twenty patients with late onset Pompe disease (LOPD) in this multi-centre study.",
+    "pmid": "33741225",
+    "title": "Late onset Pompe Disease in India - Beyond the Caucasian phenotype.",
+    "year": "2021",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/33741225"
+   }
+  },
+  "pompe|FRA": {
+   "abstracts_scanned": 42,
+   "best": {
+    "n": 22,
+    "unit": "children",
+    "sentence": "The aim of the study was to retrospectively review the polysomnographic/polygraphic (PSG/PG) characteristics and longitudinal trajectories of 22 children with Pompe disease in an era of universal access to ERT in France.",
+    "pmid": "42322896",
+    "title": "Pediatric sleep-disordered breathing in Pompe disease in the era of enzyme replacement therapy: A retrospective cohort study.",
+    "year": "2026",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/42322896"
+   }
+  },
+  "pompe|DEU": {
+   "abstracts_scanned": 31,
+   "best": {
+    "n": 210,
+    "unit": "adults",
+    "sentence": "Methods Data on quality of life (SF-36), age, sex, disease duration, wheelchair use, and use of artificial ventilation were collected for 210 adults with Pompe disease from Australia, Germany, the Netherlands, the United Kingdom, and the United States.",
+    "pmid": "15534256",
+    "title": "Late-onset Pompe disease primarily affects quality of life in physical health domains.",
+    "year": "2004",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/15534256"
+   }
+  },
+  "pompe|GBR": {
+   "abstracts_scanned": 9,
+   "best": {
+    "n": 210,
+    "unit": "adults",
+    "sentence": "Methods Data on quality of life (SF-36), age, sex, disease duration, wheelchair use, and use of artificial ventilation were collected for 210 adults with Pompe disease from Australia, Germany, the Netherlands, the United Kingdom, and the United States.",
+    "pmid": "15534256",
+    "title": "Late-onset Pompe disease primarily affects quality of life in physical health domains.",
+    "year": "2004",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/15534256"
+   }
+  },
+  "pompe|USA": {
+   "abstracts_scanned": 64,
+   "best": {
+    "n": 210,
+    "unit": "adults",
+    "sentence": "Methods Data on quality of life (SF-36), age, sex, disease duration, wheelchair use, and use of artificial ventilation were collected for 210 adults with Pompe disease from Australia, Germany, the Netherlands, the United Kingdom, and the United States.",
+    "pmid": "15534256",
+    "title": "Late-onset Pompe disease primarily affects quality of life in physical health domains.",
+    "year": "2004",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/15534256"
+   }
+  },
+  "mps1|TUN": {
+   "abstracts_scanned": 13,
+   "best": {
+    "n": 199,
+    "unit": "patients",
+    "sentence": "Results Over the twenty-two years, 199 patients were diagnosed with MPS in Tunisia.",
+    "pmid": "37948494",
+    "title": "Incidence of the Mucopolysaccharidoses in Tunisia, 1999 - 2021.",
+    "year": "2023",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/37948494"
+   }
+  },
+  "mps1|MAR": {
+   "abstracts_scanned": 9,
+   "best": null
+  },
+  "mps1|DZA": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "mps1|LBY": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "mps1|EGY": {
+   "abstracts_scanned": 5,
+   "best": null
+  },
+  "mps1|SDN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mps1|SAU": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "mps1|YEM": {
+   "abstracts_scanned": 1,
+   "best": {
+    "n": 2,
+    "unit": "children",
+    "sentence": "The aim of this study was the detection and interpretation of IDUA mutation in a family with two children affected with lethal MPS I.",
+    "pmid": "28649516",
+    "title": "Novel frameshift variant in the IDUA gene underlies Mucopolysaccharidoses type I in a consanguineous Yemeni pedigree.",
+    "year": "2017",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/28649516"
+   }
+  },
+  "mps1|JOR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mps1|IRQ": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "mps1|PAK": {
+   "abstracts_scanned": 6,
+   "best": {
+    "n": 14,
+    "unit": "families",
+    "sentence": "We performed clinical, biochemical and genetic analysis using Whole Genome Sequencing (WGS) in 14 Pakistani families affected with MPS III or MPS IV.",
+    "pmid": "37772257",
+    "title": "Identification of genetic variants associated with a wide spectrum of phenotypes clinically diagnosed as Sanfilippo and Morquio syndromes using whole genome sequencing.",
+    "year": "2023",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/37772257"
+   }
+  },
+  "mps1|IRN": {
+   "abstracts_scanned": 10,
+   "best": null
+  },
+  "mps1|TUR": {
+   "abstracts_scanned": 4,
+   "best": {
+    "n": 4,
+    "unit": "patients",
+    "sentence": "Molecular analysis of four MPS I patients revealed three polymorphisms which have been previously reported (A314, T388, and A461T).",
+    "pmid": "11858372",
+    "title": "Biochemical and molecular analysis of mucopolysaccharidoses in Turkey.",
+    "year": "2002",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/11858372"
+   }
+  },
+  "mps1|IND": {
+   "abstracts_scanned": 12,
+   "best": {
+    "n": 2,
+    "unit": "patients",
+    "sentence": "Two patients were diagnosed with Hurler syndrome; two had Sly syndrome and one each of Niemann-Pick disease type A/B, Gaucher's disease, and mucolipidosis.",
+    "pmid": "27928775",
+    "title": "Lysosomal Storage Disorders in Nonimmune Hydrops Fetalis (NIHF): An Indian Experience.",
+    "year": "2017",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/27928775"
+   }
+  },
+  "mps1|FRA": {
+   "abstracts_scanned": 6,
+   "best": {
+    "n": 51,
+    "unit": "patients",
+    "sentence": "We report long-term follow-up (median 9 years, interquartile range 8-16.5) for 51 MPS I-H patients who underwent HSCT between 1986 and 2018 in France. 4 patients died from complications of HSCT and one from disease progression.",
+    "pmid": "36494569",
+    "title": "Long term follow-up after haematopoietic stem cell transplantation for mucopolysaccharidosis type I-H: a retrospective study of 51 patients.",
+    "year": "2023",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/36494569"
+   }
+  },
+  "mps1|DEU": {
+   "abstracts_scanned": 9,
+   "best": null
+  },
+  "mps1|GBR": {
+   "abstracts_scanned": 4,
+   "best": {
+    "n": 38,
+    "unit": "patients",
+    "sentence": "Bone marrow transplantation was carried out on 38 patients with mucopolysaccharidosis type I over a period of 15 years.",
+    "pmid": "9068295",
+    "title": "Bone marrow transplantation for mucopolysaccharidosis type I: experience of two British centres.",
+    "year": "1997",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/9068295"
+   }
+  },
+  "mps1|USA": {
+   "abstracts_scanned": 21,
+   "best": {
+    "n": 103,
+    "unit": "patients",
+    "sentence": "Analysis of a larger independently ascertained group of 103 MPS I patients, mainly of Northern European origin, revealed that together the two novel mutations account for 7% of mutant alleles and are associated with severe clinical phenotypes.",
+    "pmid": "8019563",
+    "title": "Mutation analysis of 19 North American mucopolysaccharidosis type I patients: identification of two additional frequent mutations.",
+    "year": "1994",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/8019563"
+   }
+  },
+  "taysachs|TUN": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "taysachs|MAR": {
+   "abstracts_scanned": 11,
+   "best": {
+    "n": 3,
+    "unit": "children",
+    "sentence": "Results We report on 3 children presented with Tay-Sachs Disease.",
+    "pmid": "33831955",
+    "title": "Tay-Sachs Disease: Two Novel Rare HEXA Mutations from Pakistan and Morocco.",
+    "year": "2021",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/33831955"
+   }
+  },
+  "taysachs|DZA": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "taysachs|LBY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "taysachs|EGY": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "taysachs|SDN": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "taysachs|SAU": {
+   "abstracts_scanned": 8,
+   "best": null
+  },
+  "taysachs|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "taysachs|JOR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "taysachs|IRQ": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "taysachs|PAK": {
+   "abstracts_scanned": 6,
+   "best": {
+    "n": 3,
+    "unit": "children",
+    "sentence": "Results We report on 3 children presented with Tay-Sachs Disease.",
+    "pmid": "33831955",
+    "title": "Tay-Sachs Disease: Two Novel Rare HEXA Mutations from Pakistan and Morocco.",
+    "year": "2021",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/33831955"
+   }
+  },
+  "taysachs|IRN": {
+   "abstracts_scanned": 10,
+   "best": {
+    "n": 21,
+    "unit": "patients",
+    "sentence": "By investigating 21 Iranian patients with Tay-Sachs disease (TSD), one new variant was found as c.622delG.",
+    "pmid": "34554397",
+    "title": "Analysis of the HEXA, HEXB, ARSA, and SMPD1 Genes in 68 Iranian Patients.",
+    "year": "2022",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/34554397"
+   }
+  },
+  "taysachs|TUR": {
+   "abstracts_scanned": 13,
+   "best": {
+    "n": 25,
+    "unit": "infants",
+    "sentence": "Twenty-five Turkish infants with Tay-Sachs disease (TSD) have been diagnosed in the past 8 years.",
+    "pmid": "9851891",
+    "title": "At least six different mutations in HEXA gene cause Tay-Sachs disease among the Turkish population.",
+    "year": "1998",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/9851891"
+   }
+  },
+  "taysachs|IND": {
+   "abstracts_scanned": 24,
+   "best": {
+    "n": 2,
+    "unit": "children",
+    "sentence": "Two South Indian Hindu children with typical clinical features compatible with Tay-Sachs disease are presented.",
+    "pmid": "1132610",
+    "title": "Tay-Sachs disease: case reports with emphasis on chromatographic study of rectal biopsy.",
+    "year": "1975",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/1132610"
+   }
+  },
+  "taysachs|FRA": {
+   "abstracts_scanned": 32,
+   "best": {
+    "n": 2,
+    "unit": "patients",
+    "sentence": "In this report, a complementary DNA clone coding for the alpha chain of human beta-hexosaminidase has been used to analyze the genetic lesions in the alpha-chain locus of two patients with Tay-Sachs disease from each of these groups.",
+    "pmid": "3754980",
+    "title": "Different mutations in Ashkenazi Jewish and non-Jewish French Canadians with Tay-Sachs disease.",
+    "year": "1986",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/3754980"
+   }
+  },
+  "taysachs|DEU": {
+   "abstracts_scanned": 8,
+   "best": null
+  },
+  "taysachs|GBR": {
+   "abstracts_scanned": 11,
+   "best": null
+  },
+  "taysachs|USA": {
+   "abstracts_scanned": 37,
+   "best": {
+    "n": 3,
+    "unit": "infants",
+    "sentence": "Samples of genomic DNA from three unrelated American black infants having both biochemical and clinical features of classical infantile Tay-Sachs disease were sequenced following PCR amplification.",
+    "pmid": "1827945",
+    "title": "A novel mutation in the invariant AG of the acceptor splice site of intron 4 of the beta-hexosaminidase alpha-subunit gene in two unrelated American black GM2-gangliosidosis (Tay-Sachs disease) patients.",
+    "year": "1991",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/1827945"
+   }
+  },
+  "sandhoff|TUN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "sandhoff|MAR": {
+   "abstracts_scanned": 1,
+   "best": {
+    "n": 2,
+    "unit": "families",
+    "sentence": "We investigated two Moroccan families affected by Sandhoff disease through a multidisciplinary approach combining biochemical, chromatographic, bio-informatic, and genetic analyses.",
+    "pmid": "42167572",
+    "title": "Novel HEXB variant and first evidence of urinary Gb4 isoforms in Sandhoff disease: Biochemical and bioinformatic characterization in two Moroccan families.",
+    "year": "2026",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/42167572"
+   }
+  },
+  "sandhoff|DZA": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "sandhoff|LBY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "sandhoff|EGY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "sandhoff|SDN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "sandhoff|SAU": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "sandhoff|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "sandhoff|JOR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "sandhoff|IRQ": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "sandhoff|PAK": {
+   "abstracts_scanned": 4,
+   "best": null
+  },
+  "sandhoff|IRN": {
+   "abstracts_scanned": 11,
+   "best": {
+    "n": 9,
+    "unit": "patients",
+    "sentence": "We assessed age, gender, past medical history, developmental status, clinical manifestations, and neuroimaging findings of 9 patients with Sandhoff disease and 9 with Tay Sachs disease.",
+    "pmid": "25143775",
+    "title": "GM2-Gangliosidosis (Sandhoff and Tay Sachs disease): Diagnosis and Neuroimaging Findings (An Iranian Pediatric Case Series).",
+    "year": "2014",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/25143775"
+   }
+  },
+  "sandhoff|TUR": {
+   "abstracts_scanned": 4,
+   "best": {
+    "n": 18,
+    "unit": "cases",
+    "sentence": "Eighteen cases affected by Sandhoff disease were investigated by an enzymatic study of serum and leukocytes during the period 1988-1996, the clinical expression and enzymatic study were reported and discussed.",
+    "pmid": "9408593",
+    "title": "Sandhoff disease in the Turkish population.",
+    "year": "1997",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/9408593"
+   }
+  },
+  "sandhoff|IND": {
+   "abstracts_scanned": 8,
+   "best": null
+  },
+  "sandhoff|FRA": {
+   "abstracts_scanned": 6,
+   "best": {
+    "n": 11,
+    "unit": "patients",
+    "sentence": "Eleven French Sandhoff patients with infantile or juvenile forms of the disease were completely characterized using sequencing of the HEXB gene.",
+    "pmid": "23046579",
+    "title": "Characterization of seven novel mutations on the HEXB gene in French Sandhoff patients.",
+    "year": "2013",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/23046579"
+   }
+  },
+  "sandhoff|DEU": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "sandhoff|GBR": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "sandhoff|USA": {
+   "abstracts_scanned": 7,
+   "best": null
+  },
+  "mld|TUN": {
+   "abstracts_scanned": 6,
+   "best": null
+  },
+  "mld|MAR": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "mld|DZA": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mld|LBY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mld|EGY": {
+   "abstracts_scanned": 5,
+   "best": {
+    "n": 43,
+    "unit": "patients",
+    "sentence": "This study aimed to sequence the ARSA gene in a total of 43 patients with metachromatic leukodystrophy descendant from 40 Egyptian families.",
+    "pmid": "33185815",
+    "title": "Clinical, Biochemical, and Molecular Characterization of Metachromatic Leukodystrophy Among Egyptian Pediatric Patients: Expansion of the ARSA Mutational Spectrum.",
+    "year": "2021",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/33185815"
+   }
+  },
+  "mld|SDN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mld|SAU": {
+   "abstracts_scanned": 4,
+   "best": {
+    "n": 16,
+    "unit": "patients",
+    "sentence": "Of 16 patients with metachromatic leukodystrophy that were evaluated in our center, 7 patients were diagnosed with arylsulfatase A-deficient metachromatic leukodystrophy, whereas 9 children from 4 unrelated Saudi families were found to have sphingolipid activator protein B deficiency.",
+    "pmid": "19955343",
+    "title": "Sphingolipid activator protein B deficiency: report of 9 Saudi patients and review of the literature.",
+    "year": "2009",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/19955343"
+   }
+  },
+  "mld|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mld|JOR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "mld|IRQ": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mld|PAK": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "mld|IRN": {
+   "abstracts_scanned": 9,
+   "best": {
+    "n": 18,
+    "unit": "patients",
+    "sentence": "We assessed age, gender, past medical history, developmental status, clinical manifestations, and neuroimaging findings of 18 patients with metachromatic leukodystrophy.",
+    "pmid": "26401154",
+    "title": "The clinical features and diagnosis of Metachromatic leukodystrophy: A case series of Iranian Pediatric Patients.",
+    "year": "2015",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/26401154"
+   }
+  },
+  "mld|TUR": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "mld|IND": {
+   "abstracts_scanned": 16,
+   "best": null
+  },
+  "mld|FRA": {
+   "abstracts_scanned": 7,
+   "best": null
+  },
+  "mld|DEU": {
+   "abstracts_scanned": 22,
+   "best": null
+  },
+  "mld|GBR": {
+   "abstracts_scanned": 5,
+   "best": null
+  },
+  "mld|USA": {
+   "abstracts_scanned": 24,
+   "best": null
+  },
+  "krabbe|TUN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "krabbe|MAR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "krabbe|DZA": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "krabbe|LBY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "krabbe|EGY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "krabbe|SDN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "krabbe|SAU": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "krabbe|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "krabbe|JOR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "krabbe|IRQ": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "krabbe|PAK": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "krabbe|IRN": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "krabbe|TUR": {
+   "abstracts_scanned": 4,
+   "best": null
+  },
+  "krabbe|IND": {
+   "abstracts_scanned": 4,
+   "best": null
+  },
+  "krabbe|FRA": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "krabbe|DEU": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "krabbe|GBR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "krabbe|USA": {
+   "abstracts_scanned": 14,
+   "best": null
+  },
+  "npc|TUN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "npc|MAR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "npc|DZA": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "npc|LBY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "npc|EGY": {
+   "abstracts_scanned": 2,
+   "best": {
+    "n": 2,
+    "unit": "patients",
+    "sentence": "Eighty mutant alleles and 17 pathogenic mutations were detected in 48 genetically assessed confirmed patients (30 Gaucher, 16 cystinosis and two Niemann-Pick type C patients).",
+    "pmid": "26830282",
+    "title": "Lysosomal Storage Disorders in Egyptian Children.",
+    "year": "2016",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/26830282"
+   }
+  },
+  "npc|SDN": {
+   "abstracts_scanned": 5,
+   "best": null
+  },
+  "npc|SAU": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "npc|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "npc|JOR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "npc|IRQ": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "npc|PAK": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "npc|IRN": {
+   "abstracts_scanned": 11,
+   "best": {
+    "n": 21,
+    "unit": "patients",
+    "sentence": "This study was conducted to define the age at onset, clinical manifestations, neuroimaging findings and response to treatment in 21 patients diagnosed with Niemann-Pick disease type C and managed in the neurology departments of hospitals in Tehran, Iran.",
+    "pmid": "23143717",
+    "title": "Effects of miglustat on stabilization of neurological disorder in niemann-pick disease type C: Iranian pediatric case series.",
+    "year": "2013",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/23143717"
+   }
+  },
+  "npc|TUR": {
+   "abstracts_scanned": 5,
+   "best": null
+  },
+  "npc|IND": {
+   "abstracts_scanned": 7,
+   "best": null
+  },
+  "npc|FRA": {
+   "abstracts_scanned": 20,
+   "best": null
+  },
+  "npc|DEU": {
+   "abstracts_scanned": 8,
+   "best": null
+  },
+  "npc|GBR": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "npc|USA": {
+   "abstracts_scanned": 22,
+   "best": null
+  },
+  "xp|TUN": {
+   "abstracts_scanned": 31,
+   "best": {
+    "n": 15,
+    "unit": "patients",
+    "sentence": "Patients and methods Between 1993 and 2006, 15 patients with xeroderma pigmentosum and having cutaneous cancers were treated in the Radiotherapy Department of university hospital Habib-Bourguiba of Sfax in Tunisia.",
+    "pmid": "21664850",
+    "title": "[Radiotherapy for cutaneous cancers with xeroderma pigmentosum].",
+    "year": "2011",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/21664850"
+   }
+  },
+  "xp|MAR": {
+   "abstracts_scanned": 11,
+   "best": null
+  },
+  "xp|DZA": {
+   "abstracts_scanned": 7,
+   "best": null
+  },
+  "xp|LBY": {
+   "abstracts_scanned": 4,
+   "best": null
+  },
+  "xp|EGY": {
+   "abstracts_scanned": 11,
+   "best": null
+  },
+  "xp|SDN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "xp|SAU": {
+   "abstracts_scanned": 7,
+   "best": null
+  },
+  "xp|YEM": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "xp|JOR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "xp|IRQ": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "xp|PAK": {
+   "abstracts_scanned": 12,
+   "best": null
+  },
+  "xp|IRN": {
+   "abstracts_scanned": 6,
+   "best": null
+  },
+  "xp|TUR": {
+   "abstracts_scanned": 15,
+   "best": {
+    "n": 2,
+    "unit": "families",
+    "sentence": "We identified homozygous mutations in each of these BPS in two newly diagnosed Turkish families with the autosomal recessive disorder xeroderma pigmentosum (XP).",
+    "pmid": "14662655",
+    "title": "Two essential splice lariat branchpoint sequences in one intron in a xeroderma pigmentosum DNA repair gene: mutations result in reduced XPC mRNA levels that correlate with cancer risk.",
+    "year": "2004",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/14662655"
+   }
+  },
+  "xp|IND": {
+   "abstracts_scanned": 40,
+   "best": null
+  },
+  "xp|FRA": {
+   "abstracts_scanned": 14,
+   "best": null
+  },
+  "xp|DEU": {
+   "abstracts_scanned": 16,
+   "best": {
+    "n": 33,
+    "unit": "patients",
+    "sentence": "Dermatologic, ophthalmologic, and neurologic examinations were carried out on 33 patients with clinical symptoms of xeroderma pigmentosum (XP).",
+    "pmid": "7165374",
+    "title": "Xeroderma pigmentosum patients from Germany: clinical symptoms and DNA repair characteristics.",
+    "year": "1982",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/7165374"
+   }
+  },
+  "xp|GBR": {
+   "abstracts_scanned": 14,
+   "best": {
+    "n": 25,
+    "unit": "adults",
+    "sentence": "This study explored experiences of stigma in 25 adults with xeroderma pigmentosum.",
+    "pmid": "28810476",
+    "title": "Experiences of stigma over the lifetime of people with xeroderma pigmentosum: A qualitative interview study in the United Kingdom.",
+    "year": "2019",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/28810476"
+   }
+  },
+  "xp|USA": {
+   "abstracts_scanned": 38,
+   "best": null
+  },
+  "at|TUN": {
+   "abstracts_scanned": 8,
+   "best": null
+  },
+  "at|MAR": {
+   "abstracts_scanned": 7,
+   "best": {
+    "n": 5,
+    "unit": "families",
+    "sentence": "Chromosomal studies were performed on peripheral blood lymphocytes and cultured skin fibroblasts from five Israeli-Moroccan families with ataxia-telangiectasia.",
+    "pmid": "1222588",
+    "title": "Cytogenetic investigations in families with ataxia-telangiectasia.",
+    "year": "1975",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/1222588"
+   }
+  },
+  "at|DZA": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "at|LBY": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "at|EGY": {
+   "abstracts_scanned": 6,
+   "best": null
+  },
+  "at|SDN": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "at|SAU": {
+   "abstracts_scanned": 17,
+   "best": {
+    "n": 10,
+    "unit": "patients",
+    "sentence": "Ten new patients with ataxia telangiectasia-like disorder (ATLD) from three unrelated Saudi Arabian families have been identified aged 5-37 representing the largest cohort of ATLD patients ever identified.",
+    "pmid": "15574463",
+    "title": "Identification and functional consequences of a novel MRE11 mutation affecting 10 Saudi Arabian patients with the ataxia telangiectasia-like disorder.",
+    "year": "2005",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/15574463"
+   }
+  },
+  "at|YEM": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "at|JOR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "at|IRQ": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "at|PAK": {
+   "abstracts_scanned": 4,
+   "best": null
+  },
+  "at|IRN": {
+   "abstracts_scanned": 37,
+   "best": {
+    "n": 104,
+    "unit": "patients",
+    "sentence": "To evaluate clinical and immunologic features of Iranian patients with ataxia-telangiectasia, the records of 104 patients with ataxia-telangiectasia (54 male, 50 female) with the age range of 1.6-23.5 years were reviewed.",
+    "pmid": "17628218",
+    "title": "Ataxia-telangiectasia in Iran: clinical and laboratory features of 104 patients.",
+    "year": "2007",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/17628218"
+   }
+  },
+  "at|TUR": {
+   "abstracts_scanned": 19,
+   "best": {
+    "n": 14,
+    "unit": "families",
+    "sentence": "To further pinpoint the location of the genes for ataxia-telangiectasia on the long arm of chromosome 11, we performed linkage analysis and analysis of recombinants of genetic haplotypes on 14 Turkish families with ataxia-telangiectasia, 12 of which were consanguineous.",
+    "pmid": "1634048",
+    "title": "Ataxia-telangiectasia: linkage analysis of chromosome 11q22-23 markers in Turkish families.",
+    "year": "1992",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/1634048"
+   }
+  },
+  "at|IND": {
+   "abstracts_scanned": 20,
+   "best": null
+  },
+  "at|FRA": {
+   "abstracts_scanned": 22,
+   "best": {
+    "n": 141,
+    "unit": "families",
+    "sentence": "Methods Data were collected on 141 ataxia-telangiectasia families, 398 hereditary breast and ovarian cancer families, and 96 families with a history of pancreatic cancer enrolled in French nation-wide epidemiological studies CoF-AT2, TUMOSPEC, or GENESIS.",
+    "pmid": "42052916",
+    "title": "Cancer risks for ATM variant heterozygotes.",
+    "year": "2026",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/42052916"
+   }
+  },
+  "at|DEU": {
+   "abstracts_scanned": 16,
+   "best": null
+  },
+  "at|GBR": {
+   "abstracts_scanned": 15,
+   "best": {
+    "n": 95,
+    "unit": "patients",
+    "sentence": "Mortality from cancer among 178 parents and 236 grandparents of 95 British patients with ataxia-telangiectasia was examined.",
+    "pmid": "10098776",
+    "title": "Risk of breast cancer and other cancers in heterozygotes for ataxia-telangiectasia.",
+    "year": "1999",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/10098776"
+   }
+  },
+  "at|USA": {
+   "abstracts_scanned": 54,
+   "best": null
+  },
+  "lgmdr1|TUN": {
+   "abstracts_scanned": 4,
+   "best": null
+  },
+  "lgmdr1|MAR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "lgmdr1|DZA": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "lgmdr1|LBY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "lgmdr1|EGY": {
+   "abstracts_scanned": 5,
+   "best": null
+  },
+  "lgmdr1|SDN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "lgmdr1|SAU": {
+   "abstracts_scanned": 4,
+   "best": null
+  },
+  "lgmdr1|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "lgmdr1|JOR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "lgmdr1|IRQ": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "lgmdr1|PAK": {
+   "abstracts_scanned": 1,
+   "best": {
+    "n": 3,
+    "unit": "families",
+    "sentence": "Here, we describe 11 individuals from three unrelated consanguineous families that present with typical features of LGMDR1 that include proximal muscle wasting, weakness of the upper and lower limbs, and elevated serum creatine kinase.",
+    "pmid": "34697879",
+    "title": "A recurrent rare intronic variant in CAPN3 alters mRNA splicing and causes autosomal recessive limb-girdle muscular dystrophy-1 in three Pakistani pedigrees.",
+    "year": "2022",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/34697879"
+   }
+  },
+  "lgmdr1|IRN": {
+   "abstracts_scanned": 9,
+   "best": null
+  },
+  "lgmdr1|TUR": {
+   "abstracts_scanned": 7,
+   "best": null
+  },
+  "lgmdr1|IND": {
+   "abstracts_scanned": 16,
+   "best": null
+  },
+  "lgmdr1|FRA": {
+   "abstracts_scanned": 5,
+   "best": null
+  },
+  "lgmdr1|DEU": {
+   "abstracts_scanned": 3,
+   "best": {
+    "n": 10,
+    "unit": "patients",
+    "sentence": "Western blot results were available in 9 out of the 10 patients with genetically confirmed LGMD2A and were clearly abnormal in 6 patients, suspicious in 2 and entirely normal in 1.",
+    "pmid": "17702496",
+    "title": "Frequency of calpain-3 c.550delA mutation in limb girdle muscular dystrophy type 2 and isolated hyperCKemia in German patients.",
+    "year": "2007",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/17702496"
+   }
+  },
+  "lgmdr1|GBR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "lgmdr1|USA": {
+   "abstracts_scanned": 17,
+   "best": null
+  },
+  "msud|TUN": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "msud|MAR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "msud|DZA": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "msud|LBY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "msud|EGY": {
+   "abstracts_scanned": 6,
+   "best": null
+  },
+  "msud|SDN": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "msud|SAU": {
+   "abstracts_scanned": 6,
+   "best": null
+  },
+  "msud|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "msud|JOR": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "msud|IRQ": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "msud|PAK": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "msud|IRN": {
+   "abstracts_scanned": 13,
+   "best": null
+  },
+  "msud|TUR": {
+   "abstracts_scanned": 9,
+   "best": null
+  },
+  "msud|IND": {
+   "abstracts_scanned": 14,
+   "best": null
+  },
+  "msud|FRA": {
+   "abstracts_scanned": 8,
+   "best": null
+  },
+  "msud|DEU": {
+   "abstracts_scanned": 11,
+   "best": {
+    "n": 7,
+    "unit": "patients",
+    "sentence": "Besides 7 patients with maple syrup urine disease (MSUD), 3 with homocystinuria and 18 with galactosaemia, a follow-up of the positive screening results confirmed 94 patients with phenylketonuria (PKU) and 76 with non-PKU hyperphenylalaninaemia (non-PKU HPA).",
+    "pmid": "3770001",
+    "title": "Follow-up study of 16 years neonatal screening for inborn errors of metabolism in West Germany.",
+    "year": "1986",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/3770001"
+   }
+  },
+  "msud|GBR": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "msud|USA": {
+   "abstracts_scanned": 19,
+   "best": null
+  },
+  "galt|TUN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "galt|MAR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "galt|DZA": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "galt|LBY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "galt|EGY": {
+   "abstracts_scanned": 2,
+   "best": {
+    "n": 37,
+    "unit": "children",
+    "sentence": "Thus, the clinical presentation, course and outcome of 37 children with documented galactosemia was studied.",
+    "pmid": "30038819",
+    "title": "Pilot study of classic galactosemia: Neurodevelopmental impact and other complications urge neonatal screening in Egypt.",
+    "year": "2018",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/30038819"
+   }
+  },
+  "galt|SDN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "galt|SAU": {
+   "abstracts_scanned": 5,
+   "best": null
+  },
+  "galt|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "galt|JOR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "galt|IRQ": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "galt|PAK": {
+   "abstracts_scanned": 6,
+   "best": {
+    "n": 8,
+    "unit": "patients",
+    "sentence": "ARMS assays were established using standard DNA samples and were used for 8 galactosemia patients and 190 unrelated normal subjects all of Pakistani origin.",
+    "pmid": "22963887",
+    "title": "Detection of common mutations in the GALT gene through ARMS.",
+    "year": "2012",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/22963887"
+   }
+  },
+  "galt|IRN": {
+   "abstracts_scanned": 8,
+   "best": {
+    "n": 14,
+    "unit": "children",
+    "sentence": "Design and methods In the present study, we report molecular analysis of 14 unrelated Iranian galactosemia children with reduced or without GALT activity using PCR-RFLP and SSCP-Sequencing methods.",
+    "pmid": "16765930",
+    "title": "The first study of galactose-1-phosphate uridyl transferase mutations in Iranian galactosemia patients.",
+    "year": "2006",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/16765930"
+   }
+  },
+  "galt|TUR": {
+   "abstracts_scanned": 15,
+   "best": {
+    "n": 76,
+    "unit": "patients",
+    "sentence": "In this study, we describe the clinical phenotypes, time of diagnosis and GALT genotypes of 76 galactosemia patients from Turkey, where the disease is not yet included in the newborn screening program.",
+    "pmid": "31194682",
+    "title": "Clinical and molecular characteristics and time of diagnosis of patients with classical galactosemia in an unscreened population in Turkey.",
+    "year": "2019",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/31194682"
+   }
+  },
+  "galt|IND": {
+   "abstracts_scanned": 26,
+   "best": {
+    "n": 55,
+    "unit": "patients",
+    "sentence": "The characterization of underlying GALT gene lesions was performed in 55 unrelated galactosemia patients.",
+    "pmid": "23022339",
+    "title": "Biochemical and molecular characterization of GALT gene from Indian galactosemia patients: identification of 10 novel mutations and their structural and functional implications.",
+    "year": "2012",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/23022339"
+   }
+  },
+  "galt|FRA": {
+   "abstracts_scanned": 7,
+   "best": null
+  },
+  "galt|DEU": {
+   "abstracts_scanned": 17,
+   "best": {
+    "n": 7,
+    "unit": "patients",
+    "sentence": "Besides 7 patients with maple syrup urine disease (MSUD), 3 with homocystinuria and 18 with galactosaemia, a follow-up of the positive screening results confirmed 94 patients with phenylketonuria (PKU) and 76 with non-PKU hyperphenylalaninaemia (non-PKU HPA).",
+    "pmid": "3770001",
+    "title": "Follow-up study of 16 years neonatal screening for inborn errors of metabolism in West Germany.",
+    "year": "1986",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/3770001"
+   }
+  },
+  "galt|GBR": {
+   "abstracts_scanned": 9,
+   "best": {
+    "n": 2,
+    "unit": "infants",
+    "sentence": "The two infants with galactosemia were in hospital with an undiagnosed acute illness and had only a trace of non-glucose reducing substances in the urine when the screening tests were done.",
+    "pmid": "3986728",
+    "title": "Screening of newborn infants for galactosemia in British Columbia.",
+    "year": "1985",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/3986728"
+   }
+  },
+  "galt|USA": {
+   "abstracts_scanned": 45,
+   "best": {
+    "n": 18,
+    "unit": "patients",
+    "sentence": "A total of 18 male galactosemia patients participated in this study (response rate 69%): 11 Dutch patients and seven American patients.",
+    "pmid": "21350966",
+    "title": "Psychosocial developmental milestones in men with classic galactosemia.",
+    "year": "2011",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/21350966"
+   }
+  },
+  "hcu|TUN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "hcu|MAR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "hcu|DZA": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "hcu|LBY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "hcu|EGY": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "hcu|SDN": {
+   "abstracts_scanned": 1,
+   "best": {
+    "n": 22,
+    "unit": "patients",
+    "sentence": "In this study, we describe the clinical presentations of 22 homocystinuria patients from 13 Saudi Arabian families and 1 North African Sudanese family.",
+    "pmid": "21517828",
+    "title": "Clinical and molecular findings of 13 families from Saudi Arabia and a family from Sudan with homocystinuria.",
+    "year": "2012",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/21517828"
+   }
+  },
+  "hcu|SAU": {
+   "abstracts_scanned": 10,
+   "best": {
+    "n": 22,
+    "unit": "patients",
+    "sentence": "In this study, we describe the clinical presentations of 22 homocystinuria patients from 13 Saudi Arabian families and 1 North African Sudanese family.",
+    "pmid": "21517828",
+    "title": "Clinical and molecular findings of 13 families from Saudi Arabia and a family from Sudan with homocystinuria.",
+    "year": "2012",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/21517828"
+   }
+  },
+  "hcu|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "hcu|JOR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "hcu|IRQ": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "hcu|PAK": {
+   "abstracts_scanned": 9,
+   "best": {
+    "n": 14,
+    "unit": "patients",
+    "sentence": "A total of 14 patients were diagnosed with an IEM i.e., 9 with homocystinuria, 2 with MPS, 2 with Guanidinoacetate methyltransferase (GAMT) deficiency and 1 with sitosterolemia.",
+    "pmid": "31379716",
+    "title": "Biochemical Screening of Intellectually Disabled Patients: A Stepping Stone to Initiate a Newborn Screening Program in Pakistan.",
+    "year": "2019",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/31379716"
+   }
+  },
+  "hcu|IRN": {
+   "abstracts_scanned": 5,
+   "best": {
+    "n": 48,
+    "unit": "patients",
+    "sentence": "A total of 48 pediatric patients diagnosed with homocystinuria and possessing whole-exome sequencing (WES) results were included.",
+    "pmid": "42481616",
+    "title": "Whole exome sequencing and genotype-phenotype correlation in homocystinuria in an Iranian population: a multicenter study.",
+    "year": "2026",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/42481616"
+   }
+  },
+  "hcu|TUR": {
+   "abstracts_scanned": 9,
+   "best": {
+    "n": 26,
+    "unit": "probands",
+    "sentence": "This study provides molecular findings of 26 Turkish probands with homocystinuria and discusses the clinical presentations and putative effects of the CBS mutations.",
+    "pmid": "24211323",
+    "title": "High prevalence of cerebral venous sinus thrombosis (CVST) as presentation of cystathionine beta-synthase deficiency in childhood: molecular and clinical findings of Turkish probands.",
+    "year": "2014",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/24211323"
+   }
+  },
+  "hcu|IND": {
+   "abstracts_scanned": 17,
+   "best": null
+  },
+  "hcu|FRA": {
+   "abstracts_scanned": 11,
+   "best": {
+    "n": 125,
+    "unit": "patients",
+    "sentence": "Results A total of 125 patients with homocystinuria (adults [>\u200918\u2009years]: 50; paediatric [\u226418\u2009years]: 75) were enrolled at 29 centres in France and Spain.",
+    "pmid": "30871635",
+    "title": "Betaine anhydrous in homocystinuria: results from the RoCH registry.",
+    "year": "2019",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/30871635"
+   }
+  },
+  "hcu|DEU": {
+   "abstracts_scanned": 13,
+   "best": {
+    "n": 7,
+    "unit": "patients",
+    "sentence": "Besides 7 patients with maple syrup urine disease (MSUD), 3 with homocystinuria and 18 with galactosaemia, a follow-up of the positive screening results confirmed 94 patients with phenylketonuria (PKU) and 76 with non-PKU hyperphenylalaninaemia (non-PKU HPA).",
+    "pmid": "3770001",
+    "title": "Follow-up study of 16 years neonatal screening for inborn errors of metabolism in West Germany.",
+    "year": "1986",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/3770001"
+   }
+  },
+  "hcu|GBR": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "hcu|USA": {
+   "abstracts_scanned": 22,
+   "best": null
+  },
+  "mcad|TUN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mcad|MAR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mcad|DZA": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mcad|LBY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mcad|EGY": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "mcad|SDN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mcad|SAU": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "mcad|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mcad|JOR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mcad|IRQ": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mcad|PAK": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "mcad|IRN": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "mcad|TUR": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "mcad|IND": {
+   "abstracts_scanned": 4,
+   "best": {
+    "n": 21,
+    "unit": "patients",
+    "sentence": "Methods This single-center study analyzed 21 patients diagnosed with MCADD over ten years.",
+    "pmid": "42749071",
+    "title": "Medium-chain acyl-CoA dehydrogenase deficiency: A ten-year single-center case series from India.",
+    "year": "2026",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/42749071"
+   }
+  },
+  "mcad|FRA": {
+   "abstracts_scanned": 8,
+   "best": null
+  },
+  "mcad|DEU": {
+   "abstracts_scanned": 15,
+   "best": null
+  },
+  "mcad|GBR": {
+   "abstracts_scanned": 11,
+   "best": null
+  },
+  "mcad|USA": {
+   "abstracts_scanned": 16,
+   "best": null
+  },
+  "ga1|TUN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "ga1|MAR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "ga1|DZA": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "ga1|LBY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "ga1|EGY": {
+   "abstracts_scanned": 7,
+   "best": null
+  },
+  "ga1|SDN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "ga1|SAU": {
+   "abstracts_scanned": 5,
+   "best": null
+  },
+  "ga1|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "ga1|JOR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "ga1|IRQ": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "ga1|PAK": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "ga1|IRN": {
+   "abstracts_scanned": 5,
+   "best": null
+  },
+  "ga1|TUR": {
+   "abstracts_scanned": 7,
+   "best": null
+  },
+  "ga1|IND": {
+   "abstracts_scanned": 22,
+   "best": {
+    "n": 14,
+    "unit": "children",
+    "sentence": "We report the clinical features, diagnosis, and management of 14 south Indian children with glutaric aciduria type I.",
+    "pmid": "33911375",
+    "title": "Pediatric Glutaric Aciduria Type 1: 14 Cases, Diagnosis and Management.",
+    "year": "2021",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/33911375"
+   }
+  },
+  "ga1|FRA": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "ga1|DEU": {
+   "abstracts_scanned": 11,
+   "best": null
+  },
+  "ga1|GBR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "ga1|USA": {
+   "abstracts_scanned": 9,
+   "best": null
+  },
+  "pa|TUN": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "pa|MAR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "pa|DZA": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "pa|LBY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "pa|EGY": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "pa|SDN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "pa|SAU": {
+   "abstracts_scanned": 13,
+   "best": {
+    "n": 38,
+    "unit": "patients",
+    "sentence": "A retrospective study of 38 patients with propionic acidemia indicates a high frequency of infections; affecting 80% of such patients.",
+    "pmid": "9727749",
+    "title": "Infectious complications of propionic acidemia in Saudia Arabia.",
+    "year": "1998",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/9727749"
+   }
+  },
+  "pa|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "pa|JOR": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "pa|IRQ": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "pa|PAK": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "pa|IRN": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "pa|TUR": {
+   "abstracts_scanned": 5,
+   "best": {
+    "n": 27,
+    "unit": "patients",
+    "sentence": "Clinical features of 27 Turkish Propionic acidemia patients with 12 novel mutations.",
+    "pmid": "31916709",
+    "title": "Clinical features of 27 Turkish Propionic acidemia patients with 12 novel mutations.",
+    "year": "2019",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/31916709"
+   }
+  },
+  "pa|IND": {
+   "abstracts_scanned": 6,
+   "best": null
+  },
+  "pa|FRA": {
+   "abstracts_scanned": 4,
+   "best": null
+  },
+  "pa|DEU": {
+   "abstracts_scanned": 10,
+   "best": null
+  },
+  "pa|GBR": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "pa|USA": {
+   "abstracts_scanned": 15,
+   "best": null
+  },
+  "mma|TUN": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "mma|MAR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "mma|DZA": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mma|LBY": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mma|EGY": {
+   "abstracts_scanned": 4,
+   "best": {
+    "n": 10,
+    "unit": "families",
+    "sentence": "Here we report the results of mutation study of exon 2 of the methylmalonyl CoA mutase (MUT) gene, coding MCM residues from 1 to 128, in ten unrelated Egyptian families affected with methylmalonic aciduria.",
+    "pmid": "25750861",
+    "title": "Mutation analysis of methylmalonyl CoA mutase gene exon 2 in Egyptian families: Identification of 25 novel allelic variants.",
+    "year": "2015",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/25750861"
+   }
+  },
+  "mma|SDN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mma|SAU": {
+   "abstracts_scanned": 8,
+   "best": {
+    "n": 2,
+    "unit": "patients",
+    "sentence": "The aim of this report is to analyze the clinical features, and mutations of the methylmalonyl CoA mutase (MUT) gene in 2 patients with methylmalonic aciduria (MMA) attending King Saud University Medical City, Riyadh, Saudi Arabia in January 2014.",
+    "pmid": "26318470",
+    "title": "Identification of 2 novel homozygous mutations in the methylmalonyl-CoA mutase gene in Saudi patients.",
+    "year": "2015",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/26318470"
+   }
+  },
+  "mma|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mma|JOR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "mma|IRQ": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "mma|PAK": {
+   "abstracts_scanned": 5,
+   "best": null
+  },
+  "mma|IRN": {
+   "abstracts_scanned": 13,
+   "best": {
+    "n": 20,
+    "unit": "patients",
+    "sentence": "We assessed the age, gender, past medical history, developmental status, clinical manifestations, and neuroimaging findings of 20 patients with methylmalonic acidemia.",
+    "pmid": "24665309",
+    "title": "Methylmalonic acidemia: diagnosis and neuroimaging findings of this neurometabolic disorder (an Iranian pediatric case series).",
+    "year": "2013",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/24665309"
+   }
+  },
+  "mma|TUR": {
+   "abstracts_scanned": 6,
+   "best": null
+  },
+  "mma|IND": {
+   "abstracts_scanned": 11,
+   "best": null
+  },
+  "mma|FRA": {
+   "abstracts_scanned": 8,
+   "best": null
+  },
+  "mma|DEU": {
+   "abstracts_scanned": 7,
+   "best": null
+  },
+  "mma|GBR": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "mma|USA": {
+   "abstracts_scanned": 13,
+   "best": null
+  },
+  "ph1|TUN": {
+   "abstracts_scanned": 25,
+   "best": null
+  },
+  "ph1|MAR": {
+   "abstracts_scanned": 6,
+   "best": null
+  },
+  "ph1|DZA": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "ph1|LBY": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "ph1|EGY": {
+   "abstracts_scanned": 3,
+   "best": null
+  },
+  "ph1|SDN": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "ph1|SAU": {
+   "abstracts_scanned": 6,
+   "best": {
+    "n": 2,
+    "unit": "siblings",
+    "sentence": "Two Arab siblings with nephrocalcinosis and renal failure secondary to primary hyperoxaluria are presented.",
+    "pmid": "2418774",
+    "title": "Nephrocalcinosis due to primary hyperoxaluria: case report from Saudi Arabia.",
+    "year": "1985",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/2418774"
+   }
+  },
+  "ph1|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "ph1|JOR": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "ph1|IRQ": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "ph1|PAK": {
+   "abstracts_scanned": 8,
+   "best": {
+    "n": 87,
+    "unit": "patients",
+    "sentence": "Eighty-seven patients were diagnosed with primary hyperoxaluria, with mutations in alanine-glyoxylate-aminotransferase gene found in 73, followed by glyoxylate reductase/hydroxy-pyruvate reductase in 13, and 4-hydroxy-2-oxaloglutarate aldolase in 1.",
+    "pmid": "35678848",
+    "title": "Primary hyperoxaluria and genetic linkages: an insight into the disease burden from Pakistan.",
+    "year": "2022",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/35678848"
+   }
+  },
+  "ph1|IRN": {
+   "abstracts_scanned": 8,
+   "best": null
+  },
+  "ph1|TUR": {
+   "abstracts_scanned": 6,
+   "best": null
+  },
+  "ph1|IND": {
+   "abstracts_scanned": 12,
+   "best": {
+    "n": 3,
+    "unit": "children",
+    "sentence": "We report three Indian children with primary hyperoxaluria type1 having a common mutation in this gene.",
+    "pmid": "23439734",
+    "title": "Common mutation underlying primary hyperoxaluria type1 in three Indian children.",
+    "year": "2012",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/23439734"
+   }
+  },
+  "ph1|FRA": {
+   "abstracts_scanned": 15,
+   "best": null
+  },
+  "ph1|DEU": {
+   "abstracts_scanned": 5,
+   "best": null
+  },
+  "ph1|GBR": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "ph1|USA": {
+   "abstracts_scanned": 26,
+   "best": null
+  },
+  "dfnb1|TUN": {
+   "abstracts_scanned": 18,
+   "best": {
+    "n": 22,
+    "unit": "individuals",
+    "sentence": "Objectives In this study, we investigated genetic causes in 22 individuals with non- GJB2  HI.",
+    "pmid": "34194829",
+    "title": "Novel pathogenic mutations and further evidence for clinical relevance of genes and variants causing hearing impairment in Tunisian population.",
+    "year": "2021",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/34194829"
+   }
+  },
+  "dfnb1|MAR": {
+   "abstracts_scanned": 20,
+   "best": null
+  },
+  "dfnb1|DZA": {
+   "abstracts_scanned": 9,
+   "best": {
+    "n": 4,
+    "unit": "patients",
+    "sentence": "Four additional patients were identified with a single DFNB1 mutation.",
+    "pmid": "19375528",
+    "title": "Molecular screening of deafness in Algeria: high genetic heterogeneity involving DFNB1 and the Usher loci, DFNB2/USH1B, DFNB12/USH1D and DFNB23/USH1F.",
+    "year": "2009",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/19375528"
+   }
+  },
+  "dfnb1|LBY": {
+   "abstracts_scanned": 1,
+   "best": null
+  },
+  "dfnb1|EGY": {
+   "abstracts_scanned": 9,
+   "best": null
+  },
+  "dfnb1|SDN": {
+   "abstracts_scanned": 2,
+   "best": null
+  },
+  "dfnb1|SAU": {
+   "abstracts_scanned": 7,
+   "best": {
+    "n": 366,
+    "unit": "families",
+    "sentence": "To evaluate the importance of TMC1 mutations in the Saudi population, we used a combination of autozygome-guided candidate gene mutation analysis and targeted next generation sequencing in 366 families with HL previously shown to lack mutations in GJB2.",
+    "pmid": "31854501",
+    "title": "Identification of TMC1 as a relatively common cause for nonsyndromic hearing loss in the Saudi population.",
+    "year": "2020",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/31854501"
+   }
+  },
+  "dfnb1|YEM": {
+   "abstracts_scanned": 0,
+   "best": null
+  },
+  "dfnb1|JOR": {
+   "abstracts_scanned": 4,
+   "best": {
+    "n": 168,
+    "unit": "families",
+    "sentence": "To determine putatively functional sequence variants in the transmembrane inner ear (TMIE) gene in Pakistani and Jordanian families with autosomal recessive (AR) NSHI, four Jordanian and 168 Pakistani families with ARNSHI that is not due to GJB2 (CX26) were submitted to a genome scan.",
+    "pmid": "16389551",
+    "title": "Novel sequence variants in the TMIE gene in families with autosomal recessive nonsyndromic hearing impairment.",
+    "year": "2006",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/16389551"
+   }
+  },
+  "dfnb1|IRQ": {
+   "abstracts_scanned": 5,
+   "best": null
+  },
+  "dfnb1|PAK": {
+   "abstracts_scanned": 37,
+   "best": {
+    "n": 168,
+    "unit": "families",
+    "sentence": "To determine putatively functional sequence variants in the transmembrane inner ear (TMIE) gene in Pakistani and Jordanian families with autosomal recessive (AR) NSHI, four Jordanian and 168 Pakistani families with ARNSHI that is not due to GJB2 (CX26) were submitted to a genome scan.",
+    "pmid": "16389551",
+    "title": "Novel sequence variants in the TMIE gene in families with autosomal recessive nonsyndromic hearing impairment.",
+    "year": "2006",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/16389551"
+   }
+  },
+  "dfnb1|IRN": {
+   "abstracts_scanned": 118,
+   "best": {
+    "n": 250,
+    "unit": "patients",
+    "sentence": "Furthermore, exome sequencing was applied in 250 patients with negative GJB2 sequencing results and 30 patients with syndromic hearing loss.",
+    "pmid": "39107234",
+    "title": "Genetic landscape of hearing loss in prelingual deaf patients of eastern Iran: Insights from exome sequencing analysis.",
+    "year": "2024",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/39107234"
+   }
+  },
+  "dfnb1|TUR": {
+   "abstracts_scanned": 45,
+   "best": null
+  },
+  "dfnb1|IND": {
+   "abstracts_scanned": 54,
+   "best": null
+  },
+  "dfnb1|FRA": {
+   "abstracts_scanned": 22,
+   "best": {
+    "n": 255,
+    "unit": "patients",
+    "sentence": "We looked for GJB2 mutations and GJB6 deletions in 255 French patients presenting with a phenotype compatible with DFNB1. 32% of the patients had biallelic GJB2 mutations and 6% were a heterozygous for a GJB2 mutation and a GJB6 deletion.",
+    "pmid": "15150777",
+    "title": "Large deletion of the GJB6 gene in deaf patients heterozygous for the GJB2 gene mutation: genotypic and phenotypic analysis.",
+    "year": "2004",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/15150777"
+   }
+  },
+  "dfnb1|DEU": {
+   "abstracts_scanned": 17,
+   "best": {
+    "n": 99,
+    "unit": "individuals",
+    "sentence": "Forty-five (45.5%) GJB2-cases were identified in 99 individuals diagnosed with severe to profound hearing loss, 14 (17.7%) GJB2-cases were identified in 79 individuals with moderate deafness whereas no clear GJB2 mutation was found in 10 patients with mild hearing loss (p < 0.001).",
+    "pmid": "25214170",
+    "title": "Identification and genotype/phenotype correlation of mutations in a large German cohort with hearing loss.",
+    "year": "2015",
+    "journal": null,
+    "url": "https://europepmc.org/article/MED/25214170"
+   }
+  },
+  "dfnb1|GBR": {
+   "abstracts_scanned": 10,
+   "best": null
+  },
+  "dfnb1|USA": {
+   "abstracts_scanned": 93,
+   "best": null
+  }
+ },
+ "retrieved_at": "2026-10-03T23:03:45+00:00"
+}
