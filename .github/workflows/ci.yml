@@ -44,4 +44,6 @@ jobs:
       - run: npm test
       - name: Type-check the serverless function
         run: npx tsc -p api/tsconfig.json
+      - name: Load the function the way Vercel runs it (plain Node ESM)
+        run: npm run smoke
       - run: npm run build

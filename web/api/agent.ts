@@ -6,8 +6,8 @@
  * (verifyNumbers). If anything is ungrounded it gets one chance to fix it; otherwise the client
  * falls back to the deterministic engine. Individual medical advice is refused before any model call.
  */
-import { TOOL_SPECS, runTool, verifyNumbers, type ToolSource } from "../src/lib/tools";
-import type { Atlas } from "../src/lib/types";
+import { TOOL_SPECS, runTool, verifyNumbers, type ToolSource } from "../src/lib/tools.js";
+import type { Atlas } from "../src/lib/types.js";
 
 declare const process: { env: Record<string, string | undefined> };
 
