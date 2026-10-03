@@ -5,6 +5,9 @@
  */
 const MAX_LEN = 4000;
 
+// Minimal typing for the Node env object, so this function type-checks without @types/node.
+declare const process: { env: Record<string, string | undefined> };
+
 export async function POST(request: Request): Promise<Response> {
   const key = process.env.OPENAI_API_KEY;
   if (!key) return Response.json({ error: "narrator disabled" }, { status: 501 });
