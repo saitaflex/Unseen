@@ -9,6 +9,7 @@ import { PanelOptimizer } from "./components/PanelOptimizer";
 import { Leaderboard } from "./components/Leaderboard";
 import { AskAtlas } from "./components/AskAtlas";
 import { MethodPage } from "./components/MethodPage";
+import { navigate } from "./lib/route";
 
 const WEST = new Set(["FRA", "DEU", "GBR", "USA"]);
 const LAYERS: Layer[] = ["expected", "rate", "attention", "trials"];
@@ -65,7 +66,7 @@ export default function App() {
     if (country) p.set("c", country);
     if (layer !== "expected") p.set("l", layer);
     const qs = p.toString();
-    window.history.replaceState(null, "", `${window.location.pathname}${qs ? `?${qs}` : ""}${window.location.hash}`);
+    window.history.replaceState(null, "", `/atlas${qs ? `?${qs}` : ""}${window.location.hash}`);
   }, [disease, country, layer]);
 
   const index = useMemo(() => (atlas ? indexPairs(atlas) : null), [atlas]);
@@ -183,8 +184,7 @@ export default function App() {
             href="/"
             onClick={(e) => {
               e.preventDefault();
-              setPage("atlas");
-              window.location.hash = "";
+              navigate("/");
             }}
             className="flex items-center gap-3"
             aria-label="UNSEEN home"
@@ -228,26 +228,20 @@ export default function App() {
         <MethodPage atlas={atlas} index={index} />
       ) : (
         <main className="mx-auto max-w-7xl space-y-6 px-4 py-6 sm:px-6 sm:py-8">
-          {/* Hero */}
-          <header className="rise grid gap-6 lg:grid-cols-[1.35fr_1fr] lg:items-end">
+          {/* Compact hero: the landing page tells the full story */}
+          <header className="rise flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <div className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-deep">Hack-Nation 7 · AI Atlas for the World's Rare Diseases</div>
-              <h1 className="mt-3 font-serif text-[2.6rem] leading-[1.02] sm:text-6xl">
-                Every rare-disease map shows where patients have been found.
-                <span className="italic text-brand"> This one shows where they haven't.</span>
+              <h1 className="font-display text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
+                Where patients <span className="text-brand">haven't been found yet</span>
               </h1>
-              <p className="mt-4 max-w-2xl text-ink-2">
-                Registries count diagnosed patients, so where there are no geneticists the data says "no disease". UNSEEN uses
-                population genetics to estimate how many affected children <em>should</em> be born, then measures how much the world is looking.
+              <p className="mt-1 text-sm text-ink-3">
+                22 diseases × 18 countries · {fmtBig(headline.births)} births a year · click any country
               </p>
             </div>
-            <div className="grid grid-cols-3 gap-2.5">
-              <HeroStat value={fmtCount(headline.tot)} label="expected affected births / year" />
-              <HeroStat value={fmtPct(headline.shareE)} label="born outside W. Europe & US" accent />
-              <HeroStat value={fmtPct(headline.shareP)} label="of the research goes to them" accent />
-              <div className="col-span-3 text-[0.7rem] text-ink-3">
-                22 diseases × 18 countries · {fmtBig(headline.births)} births/yr · method v{atlas.meta.method_version}
-              </div>
+            <div className="grid grid-cols-3 gap-2.5 lg:w-[30rem]">
+              <HeroStat value={fmtCount(headline.tot)} label="expected births / yr" />
+              <HeroStat value={fmtPct(headline.shareE)} label="outside W. Europe & US" accent />
+              <HeroStat value={fmtPct(headline.shareP)} label="of the research" accent />
             </div>
           </header>
 
@@ -301,7 +295,7 @@ export default function App() {
             <div className="space-y-6 min-w-0">
               <section className="card overflow-hidden p-3 sm:p-5" aria-label="Map">
                 <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2 px-1">
-                  <h2 className="font-serif text-2xl">{LAYER_META[layer].label}</h2>
+                  <h2 className="font-display text-2xl">{LAYER_META[layer].label}</h2>
                   <span className="text-xs text-ink-3">{disease === "all" ? "All diseases" : atlas.diseases.find((d) => d.id === disease)?.name}</span>
                 </div>
                 <p className="px-1 text-xs text-ink-3">{LAYER_META[layer].help}</p>
@@ -354,7 +348,7 @@ export default function App() {
                 <div className="text-xs font-semibold uppercase tracking-[0.14em] text-unseen">
                   Story · {story + 1} / {storySteps.length}
                 </div>
-                <div className="mt-1 font-serif text-2xl leading-tight">{storySteps[story].title}</div>
+                <div className="mt-1 font-display text-2xl leading-tight">{storySteps[story].title}</div>
               </div>
               <button onClick={() => { setStory(null); setAskOpen(false); }} className="rounded-full p-1.5 hover:bg-paper-2" aria-label="Exit story">
                 <X size={16} />
@@ -405,15 +399,19 @@ function HeroStat({ value, label, accent }: { value: string; label: string; acce
 }
 
 function HowToRead() {
+  const items = [
+    { k: "Rings", v: "expected patients per year" },
+    { k: "Colour", v: "the layer you pick" },
+    { k: "Click", v: "a country for evidence & action plan" },
+  ];
   return (
-    <section className="card p-5 text-sm">
-      <div className="font-serif text-2xl">How to read the atlas</div>
-      <ol className="mt-2 space-y-2 text-ink-2">
-        <li><strong className="text-ink">Rings</strong> are the patients genetics says exist: expected affected births per year.</li>
-        <li><strong className="text-ink">Colour</strong> is the selected layer. Try <em>Research attention</em>: orange means few papers for the burden.</li>
-        <li><strong className="text-ink">Click a country</strong> to see the full evidence chain, where every number shows its source and whether it was observed, taken from literature, or inferred.</li>
-        <li><strong className="text-ink">Action plan</strong>: the best diagnostic gene panel for that country.</li>
-      </ol>
+    <section className="card grid gap-3 p-5 sm:grid-cols-3">
+      {items.map((i) => (
+        <div key={i.k}>
+          <div className="font-display text-lg font-semibold">{i.k}</div>
+          <div className="text-sm text-ink-3">{i.v}</div>
+        </div>
+      ))}
     </section>
   );
 }

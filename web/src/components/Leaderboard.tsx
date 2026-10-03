@@ -17,7 +17,7 @@ export function Leaderboard({ cells, selected, onSelect }: Props) {
       <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-ink-3">
         <EyeOff size={14} /> Most unseen
       </div>
-      <h3 id="lb-title" className="font-serif text-2xl mt-1">Large burden, little attention</h3>
+      <h3 id="lb-title" className="font-display text-2xl mt-1">Large burden, little attention</h3>
       <p className="text-xs text-ink-3 mt-1">Ranked by expected births ÷ research attention.</p>
       <ol className="mt-3 space-y-1">
         {ranked.map((c, i) => {

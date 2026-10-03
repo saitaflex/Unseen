@@ -1,9 +1,15 @@
 import type { Atlas, CellView, DiseaseKey, Interval, Layer, Pair } from "./types";
 
-export async function loadAtlas(): Promise<Atlas> {
-  const res = await fetch("/data/atlas.json");
-  if (!res.ok) throw new Error(`Could not load atlas data (${res.status})`);
-  return (await res.json()) as Atlas;
+let atlasPromise: Promise<Atlas> | null = null;
+
+/** Fetched once per page load and shared by the landing page and the atlas. */
+export function loadAtlas(): Promise<Atlas> {
+  atlasPromise ??= fetch("/data/atlas.json").then(async (res) => {
+    if (!res.ok) throw new Error(`Could not load atlas data (${res.status})`);
+    return (await res.json()) as Atlas;
+  });
+  atlasPromise.catch(() => (atlasPromise = null));
+  return atlasPromise;
 }
 
 const sumIntervals = (xs: Interval[]): Interval => ({

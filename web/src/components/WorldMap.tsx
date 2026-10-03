@@ -30,25 +30,25 @@ export const LAYER_META: Record<Layer, { label: string; legendLow: string; legen
     label: "Expected affected births / year",
     legendLow: "fewer",
     legendHigh: "more",
-    help: "How many children with these diseases population genetics says are born each year.",
+    help: "Children born each year with these diseases, from population genetics.",
   },
   rate: {
     label: "Risk per 100,000 births",
     legendLow: "lower",
     legendHigh: "higher",
-    help: "Expected affected births per 100k births: genetics × consanguinity, independent of population size.",
+    help: "Risk per birth, independent of population size.",
   },
   attention: {
     label: "Research attention vs. burden",
     legendLow: "under-studied",
     legendHigh: "over-studied",
-    help: "Share of published papers ÷ share of expected patients. 1× = research matches burden. Below 1× = patients nobody is writing about.",
+    help: "Papers ÷ expected patients. Below 1× (orange) = patients nobody is writing about.",
   },
   trials: {
     label: "Open trials per 100 expected births",
     legendLow: "trial desert",
     legendHigh: "more access",
-    help: "Recruiting trials with a site in the country, per 100 expected affected births per year.",
+    help: "Recruiting trials per 100 expected births a year.",
   },
 };
 

@@ -3,6 +3,12 @@
 <h3 align="center">The Hidden Patients Atlas</h3>
 <p align="center"><em>Every rare-disease map shows where patients have been found. UNSEEN shows where they haven't been found yet.</em></p>
 <p align="center">Hack-Nation 7 · Challenge 05 · AI Atlas for the World's Rare Diseases (Buffalo Initiative × OpenAI)</p>
+<p align="center">
+  <a href="https://unseen-atlas.vercel.app"><b>Live demo</b></a> ·
+  <a href="https://unseen-atlas.vercel.app/atlas?story=1">60-second story</a> ·
+  <a href="https://unseen-atlas.vercel.app/data/unseen_estimates.csv">Download the data (CSV)</a><br/>
+  <a href="https://github.com/saitaflex/Unseen/actions/workflows/ci.yml"><img src="https://github.com/saitaflex/Unseen/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+</p>
 
 ---
 
@@ -31,12 +37,15 @@ expected affected births / year = [q²(1−F) + q·F] × births
 **Headline finding:** about **91%** of the expected affected births across the 18 countries are outside Western Europe and the US. Those countries get **37%** of the papers.
 
 ### Features
+- **Animated intro:** a big dot (the unseen patient) opens into the logo's ring, the dots drip down and the U draws itself. The mark is rebuilt as SVG from the logo's own measured geometry, and it respects reduced motion. Short visual chapters follow: problem, method, finding, proof, under the hood.
 - **Map:** choropleth for four layers (expected births, risk per birth, research attention, trial access). Hollow rings show the expected patients, the open circle from the logo.
 - **Evidence chain:** every number carries its source and a provenance badge: `observed · literature · inferred · curated · computed`.
 - **Action plan:** the best k-gene diagnostic panel per country, with newborn-screening coverage.
 - **Most unseen ranking:** countries with a large expected burden and little research attention.
 - **Ask the Atlas:** works in English, French and Arabic. The deterministic engine answers only from the atlas, with citations, and refuses individual medical advice. An optional OpenAI narrator (`/api/ask`) may only rephrase facts that are already verified.
-- **Story mode:** a 7-step guided demo with deep links (`?story=1..7`), plus shareable state (`?d=pku&c=SDN&l=attention`).
+- **Story mode:** a 7-step guided demo with deep links (`/atlas?story=1..7`), plus shareable state (`/atlas?d=pku&c=SDN&l=attention`).
+- **Open data:** every estimate as a flat CSV (`/data/unseen_estimates.csv`) and the full atlas as JSON.
+- **Engineering:** 26 automated tests (15 pipeline + 11 web), and CI that re-runs the tests, rebuilds the app and checks that the dataset is byte-reproducible from cached inputs (pinned numpy, fixed seed).
 - **Validation:** the model is checked against countries with universal newborn screening, including the cases where it misses:
 
 | Check | Observed | UNSEEN |
@@ -52,7 +61,7 @@ expected affected births / year = [q²(1−F) + q·F] × births
 ```bash
 # 1) data pipeline (Python 3.11+): only needed to refresh data; results are committed
 cd pipeline
-pip install httpx numpy pytest
+pip install -r requirements.txt
 python fetch_gnomad.py      # cached per gene in data/raw/gnomad
 python fetch_context.py     # Orphanet, World Bank, Europe PMC, ClinicalTrials.gov
 python compute.py           # → web/public/data/atlas.json

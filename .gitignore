@@ -9,3 +9,4 @@ __pycache__/
 data/raw/pdhs.pdf
 data/raw/pdhs.txt
 data/raw/context.log
+*.tsbuildinfo

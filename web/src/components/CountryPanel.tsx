@@ -36,7 +36,7 @@ export function CountryPanel({ atlas, cell, disease, onClose, onPickDisease }: P
       <div className="flex items-start justify-between gap-3">
         <div>
           <div className="text-xs font-semibold uppercase tracking-[0.14em] text-ink-3">{d ? d.name : "All 22 modelled diseases"}</div>
-          <h2 className="font-serif text-4xl leading-tight">{c.name}</h2>
+          <h2 className="font-display text-4xl leading-tight">{c.name}</h2>
         </div>
         <button onClick={onClose} className="rounded-full p-2 hover:bg-paper-2" aria-label="Close country panel">
           <X size={18} />
@@ -75,10 +75,9 @@ export function CountryPanel({ atlas, cell, disease, onClose, onPickDisease }: P
       </div>
 
       {cell.consanguinityShare > 0.05 && (
-        <p className="text-sm text-ink-2 leading-relaxed">
-          <span className="font-semibold text-ink">{fmtPct(cell.consanguinityShare)}</span> of these expected births come from the
-          inbreeding term (q·F): children of related parents inheriting the <em>same</em> rare allele twice. This is why national
-          registries built on Western prevalence figures miss them.
+        <p className="text-sm text-ink-2">
+          <span className="font-semibold text-unseen">{fmtPct(cell.consanguinityShare)}</span> come from related parents (the q·F
+          term), a group Western prevalence figures miss.
         </p>
       )}
 
@@ -127,16 +126,15 @@ export function CountryPanel({ atlas, cell, disease, onClose, onPickDisease }: P
         </EvidenceCard>
 
         <EvidenceCard title="Genetic ancestry mapping" kind="inferred">
-          gnomAD groups people by genetic ancestry, not passport. We approximate {c.name} as{" "}
+          Approximated as{" "}
           {Object.entries(c.ancestry)
             .map(([g, w]) => `${Math.round(w * 100)}% ${GROUP_LABEL[g] ?? g}`)
             .join(" + ")}
           .
           {Object.keys(c.ancestry).includes("mid") && (
             <span className="block mt-1 text-ink-2">
-              gnomAD's Middle Eastern group has only <span className="num">{fmtCount(atlas.meta.gnomad_alleles.mid / 2)}</span> people
-              (vs <span className="num">{fmtCount(atlas.meta.gnomad_alleles.nfe / 2)}</span> Europeans) — local founder alleles are likely
-              missed, so this estimate is probably <strong>too low</strong>.
+              Only <span className="num">{fmtCount(atlas.meta.gnomad_alleles.mid / 2)}</span> Middle-Eastern genomes in gnomAD, so this is
+              probably <strong>too low</strong>.
             </span>
           )}
         </EvidenceCard>

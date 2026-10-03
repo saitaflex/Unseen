@@ -33,7 +33,7 @@ export function PanelOptimizer({ countryName, genes }: Props) {
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-ink-3">
             <TestTubes size={14} /> Action plan
           </div>
-          <h3 id="panel-title" className="font-serif text-3xl leading-tight mt-1">
+          <h3 id="panel-title" className="font-display text-3xl leading-tight mt-1">
             Best {k}-gene diagnostic panel for {countryName}
           </h3>
           <p className="text-sm text-ink-2 mt-1 max-w-xl">

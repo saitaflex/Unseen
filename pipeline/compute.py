@@ -3,6 +3,7 @@
 Deterministic (fixed seed). Every number in the output can be traced to config.py
 citations, the cached gnomAD/context files, or the formulas in model.py.
 """
+import csv
 import json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -174,6 +175,30 @@ def main() -> None:
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(atlas, separators=(",", ":")), encoding="utf-8")
     print(f"wrote {OUT} ({OUT.stat().st_size / 1024:.0f} KB), {len(pairs)} pairs")
+    write_csv(atlas)
+
+
+def write_csv(atlas: dict) -> None:
+    """Flat, analysis-ready export of every disease x country estimate."""
+    names = {d["id"]: d for d in atlas["diseases"]}
+    countries = {c["iso3"]: c for c in atlas["countries"]}
+    path = OUT.parent / "unseen_estimates.csv"
+    with path.open("w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["disease", "orpha", "genes", "iso3", "country", "births_per_year", "F_median",
+                    "expected_births_p5", "expected_births_median", "expected_births_p95",
+                    "per_100k_median", "carrier_freq_median", "consanguinity_share",
+                    "papers", "open_trials", "attention_ratio", "method_version"])
+        for p in atlas["pairs"]:
+            d, c = names[p["disease"]], countries[p["country"]]
+            e = p["expected_births"]
+            w.writerow([d["name"], d["orpha"], "/".join(d["genes"]), c["iso3"], c["name"],
+                        c["births"]["births_per_year"], f'{c["consanguinity"]["F"]["median"]:.5f}',
+                        f'{e["p5"]:.2f}', f'{e["median"]:.2f}', f'{e["p95"]:.2f}',
+                        f'{p["per_100k"]["median"]:.3f}', f'{p["carrier_freq"]["median"]:.6f}',
+                        f'{p["consanguinity_share"]:.3f}', p["papers"]["papers"], p["trials"]["open_trials"],
+                        "" if p["attention_ratio"] is None else f'{p["attention_ratio"]:.4f}', METHOD_VERSION])
+    print(f"wrote {path}")
 
 
 if __name__ == "__main__":

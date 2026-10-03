@@ -30,7 +30,7 @@ export function MethodPage({ atlas, index }: { atlas: Atlas; index: Map<string, 
     <div className="mx-auto max-w-5xl space-y-6 px-4 py-8 sm:px-6">
       <header className="rise">
         <div className="text-xs font-semibold uppercase tracking-[0.14em] text-ink-3">Method · v{atlas.meta.method_version}</div>
-        <h1 className="mt-2 font-serif text-5xl leading-[1.05]">How UNSEEN counts the patients nobody has counted</h1>
+        <h1 className="mt-2 font-display text-5xl leading-[1.05]">How UNSEEN counts the patients nobody has counted</h1>
         <p className="mt-3 max-w-3xl text-lg text-ink-2">
           Registries count diagnosed patients. Where there are few geneticists there are few diagnoses, so the registry says "no
           disease", so nobody funds tests. UNSEEN breaks that loop by asking population genetics how many affected children{" "}
@@ -39,7 +39,7 @@ export function MethodPage({ atlas, index }: { atlas: Atlas; index: Map<string, 
       </header>
 
       <section className="card p-6 space-y-4">
-        <h2 className="flex items-center gap-2 font-serif text-3xl"><FlaskConical className="text-brand" /> The formula</h2>
+        <h2 className="flex items-center gap-2 font-display text-3xl"><FlaskConical className="text-brand" /> The formula</h2>
         <div className="grid gap-4 md:grid-cols-3">
           <Formula title="1 · Pathogenic allele frequency" body="q = Σ AC / AN over qualifying variants, per gnomAD ancestry group, mixed by the country's ancestry weights." />
           <Formula title="2 · Inbreeding coefficient" body="F = (first-cousin share) × 1/16 + (other consanguineous) × 1/64, from national surveys." />
@@ -75,7 +75,7 @@ export function MethodPage({ atlas, index }: { atlas: Atlas; index: Map<string, 
       </section>
 
       <section className="card p-6 space-y-3">
-        <h2 className="flex items-center gap-2 font-serif text-3xl"><CheckCircle2 className="text-brand" /> Does it work? Validation where screening is universal</h2>
+        <h2 className="flex items-center gap-2 font-display text-3xl"><CheckCircle2 className="text-brand" /> Does it work? Validation where screening is universal</h2>
         <p className="text-sm text-ink-2">
           Where every newborn is screened, observed incidence is close to the truth, so expected and observed should match. We test a
           low-consanguinity country (Germany) and two high-consanguinity ones (Turkey, Iran), and we show the misses too.
@@ -127,7 +127,7 @@ export function MethodPage({ atlas, index }: { atlas: Atlas; index: Map<string, 
       </section>
 
       <section className="card p-6 space-y-3">
-        <h2 className="flex items-center gap-2 font-serif text-3xl"><Database className="text-brand" /> Data sources</h2>
+        <h2 className="flex items-center gap-2 font-display text-3xl"><Database className="text-brand" /> Data sources</h2>
         <ul className="divide-y divide-line">
           {DATA_SOURCES.map((s) => (
             <li key={s.name} className="flex flex-wrap items-center justify-between gap-2 py-2.5 text-sm">
@@ -147,7 +147,7 @@ export function MethodPage({ atlas, index }: { atlas: Atlas; index: Map<string, 
       </section>
 
       <section className="card p-6 space-y-3">
-        <h2 className="flex items-center gap-2 font-serif text-3xl"><Scale className="text-brand" /> Honest limits</h2>
+        <h2 className="flex items-center gap-2 font-display text-3xl"><Scale className="text-brand" /> Honest limits</h2>
         <ul className="list-disc space-y-1.5 pl-5 text-sm text-ink-2">
           <li>
             <strong>Under-representation.</strong> gnomAD's Middle Eastern group has ~{Math.round(atlas.meta.gnomad_alleles.mid / 2).toLocaleString()} people
@@ -171,7 +171,7 @@ export function MethodPage({ atlas, index }: { atlas: Atlas; index: Map<string, 
       </section>
 
       <section className="card p-6 space-y-2">
-        <h2 className="flex items-center gap-2 font-serif text-3xl"><ShieldAlert className="text-brand" /> Ethics</h2>
+        <h2 className="flex items-center gap-2 font-display text-3xl"><ShieldAlert className="text-brand" /> Ethics</h2>
         <p className="text-sm text-ink-2">
           Consanguineous marriage is a long-standing cultural practice, not a moral failing. UNSEEN uses it only to bring diagnostic
           services <em>to</em> communities that have been left out. All estimates are population-level: no personal data, no individual

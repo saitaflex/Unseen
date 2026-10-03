@@ -16,8 +16,8 @@
   --color-amber: #c98a1b;
   --color-sky: #3b7bbf;
 
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+  --font-sans: "Inter", "IBM Plex Sans Arabic", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "IBM Plex Sans Arabic", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
@@ -93,4 +93,66 @@ input:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .pulse-ring, .rise { animation: none; }
   .country-path { transition: none; }
+}
+
+/* ---------- Animated logo (landing intro) ---------- */
+.unseen-logo .logo-u { stroke-dasharray: 1; stroke-dashoffset: 0; }
+.unseen-logo .logo-seed { opacity: 0; }
+.unseen-logo.is-animated .logo-seed {
+  transform-box: fill-box; transform-origin: center;
+  animation: seed-in 1.6s cubic-bezier(.65,0,.35,1) both;
+}
+.unseen-logo.is-animated .logo-ring {
+  transform-box: fill-box; transform-origin: center;
+  animation: ring-in 1.6s cubic-bezier(.65,0,.35,1) both;
+}
+.unseen-logo .logo-ripple { opacity: 0; }
+.unseen-logo.is-animated .logo-ripple {
+  transform-box: fill-box; transform-origin: center;
+  animation: ring-ripple 0.9s ease-out 1.45s forwards;
+}
+.unseen-logo.is-animated .logo-dot {
+  transform-box: fill-box; transform-origin: center;
+  animation: dot-fall 0.62s cubic-bezier(.3,1.45,.55,1) both;
+}
+.unseen-logo.is-animated .logo-u { animation: u-draw 0.9s cubic-bezier(.5,0,.2,1) 2.15s both; }
+.unseen-logo.is-animated .logo-text { animation: text-wipe 0.75s cubic-bezier(.6,0,.2,1) 2.9s both; }
+
+/* One big dot appears in the centre, breathes, then travels to its place and opens into the ring. */
+@keyframes seed-in {
+  0%   { opacity: 1; transform: translate(var(--rx), var(--ry)) scale(0); }
+  28%  { opacity: 1; transform: translate(var(--rx), var(--ry)) scale(5.2); }
+  45%  { opacity: 1; transform: translate(var(--rx), var(--ry)) scale(4.6); }
+  88%  { opacity: 1; transform: translate(0, 0) scale(1); }
+  100% { opacity: 0; transform: translate(0, 0) scale(1); }
+}
+@keyframes ring-in {
+  0%, 80% { opacity: 0; transform: translate(0, 0) scale(1); }
+  100%    { opacity: 1; transform: translate(0, 0) scale(1); }
+}
+@keyframes ring-ripple {
+  0%   { opacity: .6; transform: scale(1); }
+  100% { opacity: 0;  transform: scale(2.8); }
+}
+@keyframes dot-fall {
+  0%   { opacity: 0; transform: translateY(var(--fall)) scale(.25); }
+  60%  { opacity: 1; }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes u-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes text-wipe {
+  from { clip-path: inset(0 100% 0 0); opacity: .2; }
+  to   { clip-path: inset(0 0 0 0); opacity: 1; }
+}
+.intro-fade { animation: rise 700ms cubic-bezier(.2,.7,.2,1) both; }
+
+/* reveal-on-scroll for landing chapters */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity 700ms ease, transform 700ms cubic-bezier(.2,.7,.2,1); }
+.reveal.is-in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .unseen-logo.is-animated .logo-ring, .unseen-logo.is-animated .logo-dot, .unseen-logo.is-animated .logo-seed,
+  .unseen-logo.is-animated .logo-u, .unseen-logo.is-animated .logo-text,
+  .unseen-logo.is-animated .logo-ripple, .intro-fade { animation: none; }
+  .reveal { opacity: 1; transform: none; transition: none; }
 }
