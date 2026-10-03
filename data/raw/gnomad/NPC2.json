@@ -1,0 +1,2047 @@
+{
+ "gene": "NPC2",
+ "gene_id": "ENSG00000119655",
+ "dataset": "gnomad_r4",
+ "retrieved_at": "2026-10-03T19:56:23+00:00",
+ "max_an": {
+  "afr": 75068,
+  "amr": 60034,
+  "asj": 29608,
+  "eas": 44902,
+  "fin": 64046,
+  "mid": 6084,
+  "nfe": 1180050,
+  "sas": 91092
+ },
+ "n_variants_total": 1907,
+ "variants": [
+  {
+   "id": "14-74476593-C-T",
+   "hgvsc": "c.442-1G>A",
+   "hgvsp": null,
+   "consequence": "splice_acceptor_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 8,
+   "an": 1534682,
+   "pops": {
+    "amr": [
+     0,
+     50976
+    ],
+    "fin": [
+     0,
+     44092
+    ],
+    "eas": [
+     8,
+     40924
+    ],
+    "mid": [
+     0,
+     6012
+    ],
+    "sas": [
+     0,
+     84048
+    ],
+    "asj": [
+     0,
+     28640
+    ],
+    "afr": [
+     0,
+     73000
+    ],
+    "nfe": [
+     0,
+     1146124
+    ]
+   }
+  },
+  {
+   "id": "14-74476594-T-C",
+   "hgvsc": "c.442-2A>G",
+   "hgvsp": null,
+   "consequence": "splice_acceptor_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 1,
+   "an": 1534602,
+   "pops": {
+    "amr": [
+     0,
+     50986
+    ],
+    "fin": [
+     0,
+     44090
+    ],
+    "eas": [
+     1,
+     40912
+    ],
+    "mid": [
+     0,
+     5990
+    ],
+    "sas": [
+     0,
+     84044
+    ],
+    "asj": [
+     0,
+     28644
+    ],
+    "afr": [
+     0,
+     73108
+    ],
+    "nfe": [
+     0,
+     1145946
+    ]
+   }
+  },
+  {
+   "id": "14-74476594-T-G",
+   "hgvsc": "c.442-2A>C",
+   "hgvsp": null,
+   "consequence": "splice_acceptor_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 2,
+   "an": 1534484,
+   "pops": {
+    "amr": [
+     0,
+     50966
+    ],
+    "fin": [
+     0,
+     44090
+    ],
+    "eas": [
+     0,
+     40924
+    ],
+    "mid": [
+     0,
+     6012
+    ],
+    "sas": [
+     0,
+     84048
+    ],
+    "asj": [
+     0,
+     28644
+    ],
+    "afr": [
+     2,
+     72986
+    ],
+    "nfe": [
+     0,
+     1145954
+    ]
+   }
+  },
+  {
+   "id": "14-74480289-C-T",
+   "hgvsc": "c.442-1G>A",
+   "hgvsp": null,
+   "consequence": "splice_acceptor_variant",
+   "clinvar": "Uncertain significance",
+   "stars": 0,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 5,
+   "an": 1613162,
+   "pops": {
+    "amr": [
+     0,
+     60016
+    ],
+    "fin": [
+     0,
+     64036
+    ],
+    "eas": [
+     0,
+     44874
+    ],
+    "mid": [
+     0,
+     5718
+    ],
+    "sas": [
+     0,
+     91056
+    ],
+    "asj": [
+     0,
+     29602
+    ],
+    "afr": [
+     0,
+     75018
+    ],
+    "nfe": [
+     4,
+     1179504
+    ]
+   }
+  },
+  {
+   "id": "14-74480685-C-T",
+   "hgvsc": "c.457+1G>A",
+   "hgvsp": null,
+   "consequence": "splice_donor_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 1,
+   "an": 1605814,
+   "pops": {
+    "amr": [
+     0,
+     60018
+    ],
+    "fin": [
+     0,
+     63988
+    ],
+    "eas": [
+     1,
+     44838
+    ],
+    "mid": [
+     0,
+     6044
+    ],
+    "sas": [
+     0,
+     90918
+    ],
+    "asj": [
+     0,
+     29530
+    ],
+    "afr": [
+     0,
+     74858
+    ],
+    "nfe": [
+     0,
+     1172488
+    ]
+   }
+  },
+  {
+   "id": "14-74480685-C-G",
+   "hgvsc": "c.457+1G>C",
+   "hgvsp": null,
+   "consequence": "splice_donor_variant",
+   "clinvar": "Likely benign",
+   "stars": 1,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 5,
+   "an": 1605696,
+   "pops": {
+    "amr": [
+     0,
+     59998
+    ],
+    "fin": [
+     0,
+     63988
+    ],
+    "eas": [
+     0,
+     44850
+    ],
+    "mid": [
+     0,
+     6066
+    ],
+    "sas": [
+     0,
+     90922
+    ],
+    "asj": [
+     0,
+     29530
+    ],
+    "afr": [
+     0,
+     74736
+    ],
+    "nfe": [
+     5,
+     1172496
+    ]
+   }
+  },
+  {
+   "id": "14-74480701-C-T",
+   "hgvsc": "c.441+1G>A",
+   "hgvsp": null,
+   "consequence": "splice_donor_variant",
+   "clinvar": "Conflicting classifications of pathogenicity",
+   "stars": 1,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 10185,
+   "an": 1612688,
+   "pops": {
+    "amr": [
+     70,
+     60020
+    ],
+    "fin": [
+     174,
+     64012
+    ],
+    "eas": [
+     2,
+     44874
+    ],
+    "mid": [
+     3,
+     6062
+    ],
+    "sas": [
+     137,
+     91054
+    ],
+    "asj": [
+     34,
+     29594
+    ],
+    "afr": [
+     82,
+     74998
+    ],
+    "nfe": [
+     9334,
+     1178702
+    ]
+   }
+  },
+  {
+   "id": "14-74480707-G-A",
+   "hgvsc": "c.436C>T",
+   "hgvsp": "p.Gln146Ter",
+   "consequence": "stop_gained",
+   "clinvar": "Pathogenic",
+   "stars": 1,
+   "lof_hc": false,
+   "filters": [],
+   "ac": 1,
+   "an": 1613104,
+   "pops": {
+    "amr": [
+     0,
+     60030
+    ],
+    "fin": [
+     0,
+     64018
+    ],
+    "eas": [
+     0,
+     44872
+    ],
+    "mid": [
+     0,
+     6060
+    ],
+    "sas": [
+     0,
+     91070
+    ],
+    "asj": [
+     0,
+     29600
+    ],
+    "afr": [
+     0,
+     74994
+    ],
+    "nfe": [
+     1,
+     1179086
+    ]
+   }
+  },
+  {
+   "id": "14-74480710-C-T",
+   "hgvsc": "c.432+1G>A",
+   "hgvsp": null,
+   "consequence": "splice_donor_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 2,
+   "an": 1613880,
+   "pops": {
+    "amr": [
+     0,
+     60026
+    ],
+    "fin": [
+     0,
+     64024
+    ],
+    "eas": [
+     0,
+     44882
+    ],
+    "mid": [
+     0,
+     6062
+    ],
+    "sas": [
+     0,
+     91080
+    ],
+    "asj": [
+     0,
+     29604
+    ],
+    "afr": [
+     0,
+     75028
+    ],
+    "nfe": [
+     2,
+     1179772
+    ]
+   }
+  },
+  {
+   "id": "14-74480721-C-T",
+   "hgvsc": "c.422G>A",
+   "hgvsp": "p.Trp141Ter",
+   "consequence": "stop_gained",
+   "clinvar": "Pathogenic",
+   "stars": 1,
+   "lof_hc": false,
+   "filters": [],
+   "ac": 2,
+   "an": 1614008,
+   "pops": {
+    "amr": [
+     0,
+     60022
+    ],
+    "fin": [
+     0,
+     63990
+    ],
+    "eas": [
+     0,
+     44882
+    ],
+    "mid": [
+     0,
+     6062
+    ],
+    "sas": [
+     1,
+     91080
+    ],
+    "asj": [
+     0,
+     29602
+    ],
+    "afr": [
+     1,
+     75042
+    ],
+    "nfe": [
+     0,
+     1179910
+    ]
+   }
+  },
+  {
+   "id": "14-74480737-G-A",
+   "hgvsc": "c.406C>T",
+   "hgvsp": "p.Gln136Ter",
+   "consequence": "stop_gained",
+   "clinvar": "Pathogenic",
+   "stars": 1,
+   "lof_hc": false,
+   "filters": [],
+   "ac": 5,
+   "an": 1614034,
+   "pops": {
+    "amr": [
+     0,
+     60008
+    ],
+    "fin": [
+     0,
+     64010
+    ],
+    "eas": [
+     0,
+     44886
+    ],
+    "mid": [
+     0,
+     6062
+    ],
+    "sas": [
+     0,
+     91082
+    ],
+    "asj": [
+     0,
+     29606
+    ],
+    "afr": [
+     0,
+     75016
+    ],
+    "nfe": [
+     5,
+     1179952
+    ]
+   }
+  },
+  {
+   "id": "14-74480781-T-C",
+   "hgvsc": "c.364-2A>G",
+   "hgvsp": null,
+   "consequence": "splice_acceptor_variant",
+   "clinvar": "Likely pathogenic",
+   "stars": 1,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 5,
+   "an": 1612384,
+   "pops": {
+    "amr": [
+     0,
+     60016
+    ],
+    "fin": [
+     0,
+     64020
+    ],
+    "eas": [
+     0,
+     44876
+    ],
+    "mid": [
+     1,
+     6060
+    ],
+    "sas": [
+     0,
+     91038
+    ],
+    "asj": [
+     0,
+     29598
+    ],
+    "afr": [
+     0,
+     74996
+    ],
+    "nfe": [
+     4,
+     1178426
+    ]
+   }
+  },
+  {
+   "id": "14-74484420-G-A",
+   "hgvsc": "c.358C>T",
+   "hgvsp": "p.Pro120Ser",
+   "consequence": "missense_variant",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2,
+   "lof_hc": false,
+   "filters": [],
+   "ac": 3,
+   "an": 1614046,
+   "pops": {
+    "amr": [
+     0,
+     60006
+    ],
+    "fin": [
+     0,
+     64012
+    ],
+    "eas": [
+     0,
+     44872
+    ],
+    "mid": [
+     0,
+     6062
+    ],
+    "sas": [
+     1,
+     91076
+    ],
+    "asj": [
+     0,
+     29600
+    ],
+    "afr": [
+     0,
+     74994
+    ],
+    "nfe": [
+     0,
+     1180008
+    ]
+   }
+  },
+  {
+   "id": "14-74484425-TCG-T",
+   "hgvsc": "c.351_352del",
+   "hgvsp": "p.Ser117ArgfsTer16",
+   "consequence": "frameshift_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 1,
+   "an": 1614146,
+   "pops": {
+    "amr": [
+     0,
+     60012
+    ],
+    "fin": [
+     1,
+     64030
+    ],
+    "eas": [
+     0,
+     44874
+    ],
+    "mid": [
+     0,
+     6062
+    ],
+    "sas": [
+     0,
+     91086
+    ],
+    "asj": [
+     0,
+     29608
+    ],
+    "afr": [
+     0,
+     75030
+    ],
+    "nfe": [
+     0,
+     1180026
+    ]
+   }
+  },
+  {
+   "id": "14-74484426-C-A",
+   "hgvsc": "c.352G>T",
+   "hgvsp": "p.Glu118Ter",
+   "consequence": "stop_gained",
+   "clinvar": "Pathogenic",
+   "stars": 2,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 8,
+   "an": 1613972,
+   "pops": {
+    "amr": [
+     0,
+     59996
+    ],
+    "fin": [
+     0,
+     64008
+    ],
+    "eas": [
+     0,
+     44882
+    ],
+    "mid": [
+     0,
+     6084
+    ],
+    "sas": [
+     1,
+     91068
+    ],
+    "asj": [
+     0,
+     29600
+    ],
+    "afr": [
+     0,
+     74908
+    ],
+    "nfe": [
+     7,
+     1180030
+    ]
+   }
+  },
+  {
+   "id": "14-74484445-AT-A",
+   "hgvsc": "c.332del",
+   "hgvsp": "p.Asn111IlefsTer5",
+   "consequence": "frameshift_variant",
+   "clinvar": "Pathogenic",
+   "stars": 1,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 4,
+   "an": 1613958,
+   "pops": {
+    "amr": [
+     0,
+     60004
+    ],
+    "fin": [
+     0,
+     64006
+    ],
+    "eas": [
+     0,
+     44890
+    ],
+    "mid": [
+     0,
+     6082
+    ],
+    "sas": [
+     0,
+     91092
+    ],
+    "asj": [
+     0,
+     29604
+    ],
+    "afr": [
+     0,
+     74870
+    ],
+    "nfe": [
+     4,
+     1180020
+    ]
+   }
+  },
+  {
+   "id": "14-74484463-CTT-C",
+   "hgvsc": "c.313_314del",
+   "hgvsp": "p.Lys105AspfsTer3",
+   "consequence": "frameshift_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 1,
+   "an": 1614060,
+   "pops": {
+    "amr": [
+     0,
+     60012
+    ],
+    "fin": [
+     0,
+     64008
+    ],
+    "eas": [
+     0,
+     44872
+    ],
+    "mid": [
+     0,
+     6062
+    ],
+    "sas": [
+     0,
+     91078
+    ],
+    "asj": [
+     0,
+     29606
+    ],
+    "afr": [
+     0,
+     74990
+    ],
+    "nfe": [
+     1,
+     1180022
+    ]
+   }
+  },
+  {
+   "id": "14-74484483-A-G",
+   "hgvsc": "c.295T>C",
+   "hgvsp": "p.Cys99Arg",
+   "consequence": "missense_variant",
+   "clinvar": "Pathogenic",
+   "stars": 2,
+   "lof_hc": false,
+   "filters": [],
+   "ac": 2,
+   "an": 1614014,
+   "pops": {
+    "amr": [
+     0,
+     59990
+    ],
+    "fin": [
+     0,
+     64028
+    ],
+    "eas": [
+     1,
+     44892
+    ],
+    "mid": [
+     0,
+     6084
+    ],
+    "sas": [
+     0,
+     91082
+    ],
+    "asj": [
+     0,
+     29606
+    ],
+    "afr": [
+     0,
+     74902
+    ],
+    "nfe": [
+     1,
+     1180032
+    ]
+   }
+  },
+  {
+   "id": "14-74484498-T-TA",
+   "hgvsc": "c.279dup",
+   "hgvsp": "p.Lys94Ter",
+   "consequence": "frameshift_variant",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 1,
+   "an": 1613966,
+   "pops": {
+    "amr": [
+     0,
+     59988
+    ],
+    "fin": [
+     0,
+     64002
+    ],
+    "eas": [
+     0,
+     44896
+    ],
+    "mid": [
+     0,
+     6084
+    ],
+    "sas": [
+     0,
+     91086
+    ],
+    "asj": [
+     0,
+     29604
+    ],
+    "afr": [
+     1,
+     74876
+    ],
+    "nfe": [
+     0,
+     1180032
+    ]
+   }
+  },
+  {
+   "id": "14-74484573-T-TTTTA",
+   "hgvsc": "c.201_204dup",
+   "hgvsp": "p.Ser69Ter",
+   "consequence": "stop_gained",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 2,
+   "an": 1614064,
+   "pops": {
+    "amr": [
+     0,
+     60004
+    ],
+    "fin": [
+     0,
+     64010
+    ],
+    "eas": [
+     0,
+     44880
+    ],
+    "mid": [
+     0,
+     6062
+    ],
+    "sas": [
+     0,
+     91084
+    ],
+    "asj": [
+     0,
+     29608
+    ],
+    "afr": [
+     0,
+     75010
+    ],
+    "nfe": [
+     2,
+     1179992
+    ]
+   }
+  },
+  {
+   "id": "14-74484576-T-A",
+   "hgvsc": "c.202A>T",
+   "hgvsp": "p.Lys68Ter",
+   "consequence": "stop_gained",
+   "clinvar": "Likely pathogenic",
+   "stars": 1,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 11,
+   "an": 1613976,
+   "pops": {
+    "amr": [
+     0,
+     59986
+    ],
+    "fin": [
+     0,
+     64014
+    ],
+    "eas": [
+     0,
+     44888
+    ],
+    "mid": [
+     0,
+     6084
+    ],
+    "sas": [
+     0,
+     91088
+    ],
+    "asj": [
+     0,
+     29606
+    ],
+    "afr": [
+     11,
+     74880
+    ],
+    "nfe": [
+     0,
+     1180034
+    ]
+   }
+  },
+  {
+   "id": "14-74484588-C-A",
+   "hgvsc": "c.191-1G>T",
+   "hgvsp": null,
+   "consequence": "splice_acceptor_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [
+    "AC0"
+   ],
+   "ac": 1,
+   "an": 1613390,
+   "pops": {
+    "amr": [
+     0,
+     59936
+    ],
+    "fin": [
+     0,
+     63842
+    ],
+    "eas": [
+     0,
+     44886
+    ],
+    "mid": [
+     0,
+     6084
+    ],
+    "sas": [
+     0,
+     91060
+    ],
+    "asj": [
+     0,
+     29592
+    ],
+    "afr": [
+     0,
+     74766
+    ],
+    "nfe": [
+     1,
+     1179856
+    ]
+   }
+  },
+  {
+   "id": "14-74484589-T-A",
+   "hgvsc": "c.191-2A>T",
+   "hgvsp": null,
+   "consequence": "splice_acceptor_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [
+    "AC0"
+   ],
+   "ac": 1,
+   "an": 1613442,
+   "pops": {
+    "amr": [
+     0,
+     59950
+    ],
+    "fin": [
+     0,
+     63884
+    ],
+    "eas": [
+     0,
+     44886
+    ],
+    "mid": [
+     0,
+     6084
+    ],
+    "sas": [
+     0,
+     91070
+    ],
+    "asj": [
+     0,
+     29598
+    ],
+    "afr": [
+     0,
+     74736
+    ],
+    "nfe": [
+     1,
+     1179858
+    ]
+   }
+  },
+  {
+   "id": "14-74486324-C-T",
+   "hgvsc": "c.190+5G>A",
+   "hgvsp": null,
+   "consequence": "intron_variant",
+   "clinvar": "Pathogenic/Likely pathogenic",
+   "stars": 2,
+   "lof_hc": false,
+   "filters": [],
+   "ac": 31,
+   "an": 1583322,
+   "pops": {
+    "amr": [
+     3,
+     55218
+    ],
+    "fin": [
+     2,
+     62312
+    ],
+    "eas": [
+     0,
+     44166
+    ],
+    "mid": [
+     0,
+     6028
+    ],
+    "sas": [
+     5,
+     86666
+    ],
+    "asj": [
+     0,
+     28912
+    ],
+    "afr": [
+     2,
+     74762
+    ],
+    "nfe": [
+     16,
+     1163002
+    ]
+   }
+  },
+  {
+   "id": "14-74486327-A-C",
+   "hgvsc": "c.190+2T>G",
+   "hgvsp": null,
+   "consequence": "splice_donor_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 1,
+   "an": 1587590,
+   "pops": {
+    "amr": [
+     0,
+     55884
+    ],
+    "fin": [
+     0,
+     62536
+    ],
+    "eas": [
+     0,
+     44354
+    ],
+    "mid": [
+     0,
+     6038
+    ],
+    "sas": [
+     1,
+     86992
+    ],
+    "asj": [
+     0,
+     28980
+    ],
+    "afr": [
+     0,
+     74822
+    ],
+    "nfe": [
+     0,
+     1165534
+    ]
+   }
+  },
+  {
+   "id": "14-74486354-G-T",
+   "hgvsc": "c.165C>A",
+   "hgvsp": "p.Tyr55Ter",
+   "consequence": "stop_gained",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 1,
+   "an": 1602578,
+   "pops": {
+    "amr": [
+     0,
+     58388
+    ],
+    "fin": [
+     0,
+     63418
+    ],
+    "eas": [
+     0,
+     44710
+    ],
+    "mid": [
+     0,
+     6052
+    ],
+    "sas": [
+     1,
+     88532
+    ],
+    "asj": [
+     0,
+     29244
+    ],
+    "afr": [
+     0,
+     74970
+    ],
+    "nfe": [
+     0,
+     1174252
+    ]
+   }
+  },
+  {
+   "id": "14-74486365-C-A",
+   "hgvsc": "c.154G>T",
+   "hgvsp": "p.Gly52Ter",
+   "consequence": "stop_gained",
+   "clinvar": "Likely pathogenic",
+   "stars": 1,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 1,
+   "an": 1605016,
+   "pops": {
+    "amr": [
+     0,
+     58690
+    ],
+    "fin": [
+     0,
+     63540
+    ],
+    "eas": [
+     0,
+     44760
+    ],
+    "mid": [
+     0,
+     6050
+    ],
+    "sas": [
+     0,
+     88846
+    ],
+    "asj": [
+     0,
+     29322
+    ],
+    "afr": [
+     0,
+     74954
+    ],
+    "nfe": [
+     1,
+     1175752
+    ]
+   }
+  },
+  {
+   "id": "14-74486378-G-T",
+   "hgvsc": "c.141C>A",
+   "hgvsp": "p.Cys47Ter",
+   "consequence": "stop_gained",
+   "clinvar": "Pathogenic",
+   "stars": 2,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 3,
+   "an": 1606096,
+   "pops": {
+    "amr": [
+     0,
+     58854
+    ],
+    "fin": [
+     0,
+     63602
+    ],
+    "eas": [
+     0,
+     44802
+    ],
+    "mid": [
+     0,
+     6056
+    ],
+    "sas": [
+     3,
+     89052
+    ],
+    "asj": [
+     0,
+     29352
+    ],
+    "afr": [
+     0,
+     74976
+    ],
+    "nfe": [
+     0,
+     1176252
+    ]
+   }
+  },
+  {
+   "id": "14-74486389-T-TGGGG",
+   "hgvsc": "c.126_129dup",
+   "hgvsp": "p.Thr44ProfsTer26",
+   "consequence": "frameshift_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 1,
+   "an": 1605636,
+   "pops": {
+    "amr": [
+     0,
+     58804
+    ],
+    "fin": [
+     0,
+     63542
+    ],
+    "eas": [
+     0,
+     44794
+    ],
+    "mid": [
+     0,
+     6054
+    ],
+    "sas": [
+     0,
+     89026
+    ],
+    "asj": [
+     0,
+     29332
+    ],
+    "afr": [
+     1,
+     74940
+    ],
+    "nfe": [
+     0,
+     1176026
+    ]
+   }
+  },
+  {
+   "id": "14-74486393-G-T",
+   "hgvsc": "c.126C>A",
+   "hgvsp": "p.Cys42Ter",
+   "consequence": "stop_gained",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 2,
+   "an": 1604952,
+   "pops": {
+    "amr": [
+     0,
+     58702
+    ],
+    "fin": [
+     0,
+     63504
+    ],
+    "eas": [
+     0,
+     44784
+    ],
+    "mid": [
+     0,
+     6056
+    ],
+    "sas": [
+     2,
+     88916
+    ],
+    "asj": [
+     0,
+     29312
+    ],
+    "afr": [
+     0,
+     74940
+    ],
+    "nfe": [
+     0,
+     1175650
+    ]
+   }
+  },
+  {
+   "id": "14-74486407-TCA-T",
+   "hgvsc": "c.110_111del",
+   "hgvsp": "p.Val37GlufsTer31",
+   "consequence": "frameshift_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 1,
+   "an": 1601314,
+   "pops": {
+    "amr": [
+     0,
+     58102
+    ],
+    "fin": [
+     0,
+     63318
+    ],
+    "eas": [
+     0,
+     44744
+    ],
+    "mid": [
+     0,
+     6052
+    ],
+    "sas": [
+     0,
+     88430
+    ],
+    "asj": [
+     0,
+     29190
+    ],
+    "afr": [
+     0,
+     74942
+    ],
+    "nfe": [
+     1,
+     1173588
+    ]
+   }
+  },
+  {
+   "id": "14-74486410-CT-C",
+   "hgvsc": "c.108del",
+   "hgvsp": "p.Val37Ter",
+   "consequence": "frameshift_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 2,
+   "an": 1600592,
+   "pops": {
+    "amr": [
+     0,
+     57992
+    ],
+    "fin": [
+     0,
+     63262
+    ],
+    "eas": [
+     0,
+     44716
+    ],
+    "mid": [
+     0,
+     6050
+    ],
+    "sas": [
+     0,
+     88358
+    ],
+    "asj": [
+     0,
+     29184
+    ],
+    "afr": [
+     0,
+     74954
+    ],
+    "nfe": [
+     2,
+     1173146
+    ]
+   }
+  },
+  {
+   "id": "14-74486435-AC-A",
+   "hgvsc": "c.83del",
+   "hgvsp": "p.Gly28ValfsTer7",
+   "consequence": "frameshift_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 1,
+   "an": 1585716,
+   "pops": {
+    "amr": [
+     0,
+     55588
+    ],
+    "fin": [
+     0,
+     62390
+    ],
+    "eas": [
+     0,
+     44314
+    ],
+    "mid": [
+     0,
+     6032
+    ],
+    "sas": [
+     0,
+     86840
+    ],
+    "asj": [
+     0,
+     28930
+    ],
+    "afr": [
+     0,
+     74756
+    ],
+    "nfe": [
+     1,
+     1164482
+    ]
+   }
+  },
+  {
+   "id": "14-74486438-T-A",
+   "hgvsc": "c.83-2A>T",
+   "hgvsp": null,
+   "consequence": "splice_acceptor_variant",
+   "clinvar": "Likely pathogenic",
+   "stars": 1,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 5,
+   "an": 1582516,
+   "pops": {
+    "amr": [
+     0,
+     55160
+    ],
+    "fin": [
+     0,
+     62158
+    ],
+    "eas": [
+     0,
+     44172
+    ],
+    "mid": [
+     0,
+     6034
+    ],
+    "sas": [
+     0,
+     86592
+    ],
+    "asj": [
+     0,
+     28892
+    ],
+    "afr": [
+     0,
+     74662
+    ],
+    "nfe": [
+     5,
+     1162612
+    ]
+   }
+  },
+  {
+   "id": "14-74486438-T-C",
+   "hgvsc": "c.83-2A>G",
+   "hgvsp": null,
+   "consequence": "splice_acceptor_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 1,
+   "an": 1582516,
+   "pops": {
+    "amr": [
+     0,
+     55160
+    ],
+    "fin": [
+     0,
+     62158
+    ],
+    "eas": [
+     0,
+     44172
+    ],
+    "mid": [
+     0,
+     6034
+    ],
+    "sas": [
+     0,
+     86592
+    ],
+    "asj": [
+     0,
+     28892
+    ],
+    "afr": [
+     0,
+     74662
+    ],
+    "nfe": [
+     1,
+     1162612
+    ]
+   }
+  },
+  {
+   "id": "14-74493191-A-G",
+   "hgvsc": "c.82+2T>C",
+   "hgvsp": null,
+   "consequence": "splice_donor_variant",
+   "clinvar": "Pathogenic",
+   "stars": 0,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 1,
+   "an": 1607730,
+   "pops": {
+    "amr": [
+     0,
+     59256
+    ],
+    "fin": [
+     0,
+     63086
+    ],
+    "eas": [
+     0,
+     44576
+    ],
+    "mid": [
+     0,
+     5856
+    ],
+    "sas": [
+     0,
+     89562
+    ],
+    "asj": [
+     0,
+     29322
+    ],
+    "afr": [
+     0,
+     74990
+    ],
+    "nfe": [
+     0,
+     1177976
+    ]
+   }
+  },
+  {
+   "id": "14-74493195-C-CA",
+   "hgvsc": "c.79dup",
+   "hgvsp": "p.Cys27LeufsTer42",
+   "consequence": "frameshift_variant",
+   "clinvar": "Pathogenic",
+   "stars": 1,
+   "lof_hc": false,
+   "filters": [],
+   "ac": 19,
+   "an": 1609198,
+   "pops": {
+    "amr": [
+     0,
+     59452
+    ],
+    "fin": [
+     0,
+     63244
+    ],
+    "eas": [
+     0,
+     44650
+    ],
+    "mid": [
+     0,
+     5904
+    ],
+    "sas": [
+     0,
+     89856
+    ],
+    "asj": [
+     0,
+     29372
+    ],
+    "afr": [
+     0,
+     75014
+    ],
+    "nfe": [
+     19,
+     1178528
+    ]
+   }
+  },
+  {
+   "id": "14-74493217-C-A",
+   "hgvsc": "c.58G>T",
+   "hgvsp": "p.Glu20Ter",
+   "consequence": "stop_gained",
+   "clinvar": "Pathogenic",
+   "stars": 2,
+   "lof_hc": false,
+   "filters": [],
+   "ac": 194,
+   "an": 1612162,
+   "pops": {
+    "amr": [
+     4,
+     59858
+    ],
+    "fin": [
+     1,
+     63634
+    ],
+    "eas": [
+     0,
+     44838
+    ],
+    "mid": [
+     0,
+     6042
+    ],
+    "sas": [
+     0,
+     90614
+    ],
+    "asj": [
+     0,
+     29512
+    ],
+    "afr": [
+     2,
+     74898
+    ],
+    "nfe": [
+     176,
+     1179486
+    ]
+   }
+  },
+  {
+   "id": "14-74493256-TAGCTGCC-T",
+   "hgvsc": "c.12_18del",
+   "hgvsp": "p.Ala5HisfsTer28",
+   "consequence": "frameshift_variant",
+   "clinvar": "Pathogenic",
+   "stars": 1,
+   "lof_hc": false,
+   "filters": [],
+   "ac": 1,
+   "an": 1613346,
+   "pops": {
+    "amr": [
+     0,
+     59976
+    ],
+    "fin": [
+     0,
+     63848
+    ],
+    "eas": [
+     0,
+     44854
+    ],
+    "mid": [
+     0,
+     6056
+    ],
+    "sas": [
+     0,
+     90890
+    ],
+    "asj": [
+     0,
+     29556
+    ],
+    "afr": [
+     0,
+     75046
+    ],
+    "nfe": [
+     1,
+     1179740
+    ]
+   }
+  },
+  {
+   "id": "14-74493272-C-A",
+   "hgvsc": "c.3G>T",
+   "hgvsp": "p.Met1?",
+   "consequence": "start_lost",
+   "clinvar": "Pathogenic",
+   "stars": 1,
+   "lof_hc": false,
+   "filters": [],
+   "ac": 3,
+   "an": 1613164,
+   "pops": {
+    "amr": [
+     0,
+     59940
+    ],
+    "fin": [
+     0,
+     63860
+    ],
+    "eas": [
+     0,
+     44844
+    ],
+    "mid": [
+     0,
+     6058
+    ],
+    "sas": [
+     0,
+     90816
+    ],
+    "asj": [
+     0,
+     29542
+    ],
+    "afr": [
+     0,
+     75054
+    ],
+    "nfe": [
+     3,
+     1179676
+    ]
+   }
+  },
+  {
+   "id": "14-74494029-A-C",
+   "hgvsc": "c.147+2T>G",
+   "hgvsp": null,
+   "consequence": "splice_donor_variant",
+   "clinvar": null,
+   "stars": null,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 4,
+   "an": 1526634,
+   "pops": {
+    "amr": [
+     0,
+     50170
+    ],
+    "fin": [
+     0,
+     48952
+    ],
+    "eas": [
+     0,
+     40528
+    ],
+    "mid": [
+     0,
+     5856
+    ],
+    "sas": [
+     0,
+     83766
+    ],
+    "asj": [
+     0,
+     28392
+    ],
+    "afr": [
+     0,
+     72544
+    ],
+    "nfe": [
+     4,
+     1136252
+    ]
+   }
+  },
+  {
+   "id": "14-74494030-C-T",
+   "hgvsc": "c.147+1G>A",
+   "hgvsp": null,
+   "consequence": "splice_donor_variant",
+   "clinvar": "Likely benign",
+   "stars": 2,
+   "lof_hc": true,
+   "filters": [],
+   "ac": 64,
+   "an": 1530572,
+   "pops": {
+    "amr": [
+     0,
+     50610
+    ],
+    "fin": [
+     0,
+     49148
+    ],
+    "eas": [
+     0,
+     40656
+    ],
+    "mid": [
+     0,
+     5868
+    ],
+    "sas": [
+     0,
+     83842
+    ],
+    "asj": [
+     0,
+     28482
+    ],
+    "afr": [
+     55,
+     72934
+    ],
+    "nfe": [
+     0,
+     1138704
+    ]
+   }
+  },
+  {
+   "id": "14-74494094-C-A",
+   "hgvsc": "c.85G>T",
+   "hgvsp": "p.Asp29Tyr",
+   "consequence": "missense_variant",
+   "clinvar": "Likely pathogenic",
+   "stars": 1,
+   "lof_hc": false,
+   "filters": [],
+   "ac": 13,
+   "an": 1567380,
+   "pops": {
+    "amr": [
+     0,
+     54368
+    ],
+    "fin": [
+     0,
+     53278
+    ],
+    "eas": [
+     0,
+     42540
+    ],
+    "mid": [
+     0,
+     6040
+    ],
+    "sas": [
+     0,
+     86410
+    ],
+    "asj": [
+     0,
+     28878
+    ],
+    "afr": [
+     0,
+     74032
+    ],
+    "nfe": [
+     13,
+     1160036
+    ]
+   }
+  },
+  {
+   "id": "14-74494117-G-T",
+   "hgvsc": "c.62C>A",
+   "hgvsp": "p.Ser21Ter",
+   "consequence": "stop_gained",
+   "clinvar": "Pathogenic",
+   "stars": 1,
+   "lof_hc": false,
+   "filters": [],
+   "ac": 8,
+   "an": 1580414,
+   "pops": {
+    "amr": [
+     0,
+     55594
+    ],
+    "fin": [
+     0,
+     57320
+    ],
+    "eas": [
+     0,
+     43138
+    ],
+    "mid": [
+     0,
+     6044
+    ],
+    "sas": [
+     0,
+     87562
+    ],
+    "asj": [
+     0,
+     29012
+    ],
+    "afr": [
+     7,
+     74288
+    ],
+    "nfe": [
+     0,
+     1165302
+    ]
+   }
+  }
+ ]
+}

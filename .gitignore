@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.vercel/
+.env*
+__pycache__/
+.pytest_cache/
+*.pyc
+# third-party report kept local only (re-download: https://dhsprogram.com/pubs/pdf/SR257/SR257.pdf)
+data/raw/pdhs.pdf
+data/raw/pdhs.txt
+data/raw/context.log
